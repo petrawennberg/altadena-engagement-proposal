@@ -216,7 +216,7 @@ How we’ll know this worked:
 
 **This week:**
 - [ ] CAPS presentation (Thu May 21) — Gabriella presents; Petra in Stockholm
-- [ ] Send proposal doc to working group via Signal (Petra, before Tue 5pm)
+- [ ] Send proposal doc to working group (Petra, before Tue 5pm)
 - [ ] John Mayo confirms Altagether co-presenting
 
 **This month:**
@@ -224,6 +224,7 @@ How we’ll know this worked:
 - [ ] ATC Land Use Committee outreach for ratification
 - [ ] First draft of delivery standard (Petra) opens for review
 - [ ] First draft of captain toolkit (Megan) opens for review
+- [ ] **Ask LA County when PFA is reconvening** — no 2026 dates posted; flag any meetings in Jul 13–Aug 9 (Petra in Sweden) for proxy attendance
 
 **By end of June:**
 - [ ] Delivery standard v1 published
