@@ -30,15 +30,18 @@ Each runs its own engagement (or none). Residents are asked the same questions f
 
 ## 2 · Values
 
-Five principles guide every decision the working group makes — and every Sponsor that adopts this process commits to upholding them. They are the standard the project is measured against.
+Eight principles guide every decision the working group makes — and every Sponsor that adopts this process commits to upholding them. They are the standard the project is measured against.
 
 | # | Value | What it means |
 |---|---|---|
 | 01 | **Proximity** | Lived knowledge from being on the block carries weight. The closer to the place, the closer to the call. Community members carry context the County doesn’t have — this process makes sure it lands. |
 | 02 | **Local agency** | People affected have a defined path to shape what gets built — not just commented on. Commercial owners and residents move from being consulted to being decision partners. |
-| 03 | **Coordination** | Multiple agencies, utilities, and developers converge in one process the community can follow — no more being asked the same question five times by five different sponsors on five different schedules. |
-| 04 | **Accountability** | Every input is traceable to an outcome — or to an explicit decision not to act on it, with a reason. Promises don’t expire silently. |
-| 05 | **Trauma-informed** | Engagement is designed for a community that has lost a lot. Pace, format, language, and tone honor the cost. Multi-modal delivery (text · video · walking tours · languages · ADA) is non-negotiable. |
+| 03 | **Co-creation** | Community is not consulted on a finished proposal — it shapes the question from the start. Sponsors and community members draft, revise, and decide together. Engagement is participatory architecture, not surveying. |
+| 04 | **Coordination** | Multiple agencies, utilities, and developers converge in one process the community can follow — no more being asked the same question five times by five different sponsors on five different schedules. |
+| 05 | **Transparency** | The process is visible end-to-end. Proposals, decisions, and decision rationales are public. Stakeholders can see at any moment what’s been proposed, decided, or ruled out — and why. Private dialogue stays private; outcomes become public record. |
+| 06 | **Accountability** | Every input is traceable to an outcome — or to an explicit decision not to act on it, with a reason. Promises don’t expire silently. |
+| 07 | **Access to conflict resolution** | Disagreement has a clear, low-cost path. When community input is rejected, when sponsors and stakeholders clash, when factions within the community disagree — there is a defined way to surface, hear, and resolve it inside the process. Conflict that has no channel routes to lawsuits, social media, or exit; this process refuses that default. |
+| 08 | **Trauma-informed** | Engagement is designed for a community that has lost a lot. Pace, format, language, and tone honor the cost. Multi-modal delivery (text · video · walking tours · languages · ADA) is non-negotiable. |
 
 ---
 
