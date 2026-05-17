@@ -167,7 +167,7 @@ Used consistently throughout this proposal and the deck:
 | When | What | Lead |
 |---|---|---|
 | **May 21, 2026** | CAPS presentation; ask for endorsement | Gabriella (presenting), Petra (in Stockholm) |
-| **May 21 onward** | Socializing — informal conversations, mentions at adjacent meetings | All |
+| **May 21 onward** | Feedback & refinement — informal conversations, mentions at adjacent meetings | All |
 | **Late May – Jun 30** | Build out project plan · open feedback & refinement · outreach & circulation | Petra + working group |
 | **May 22 – Jun 30** | ATC + Altagether ratification | Esther + John |
 | **Jun – Sep 2026** | Delivery standard + captain toolkit built | Petra, Megan |
