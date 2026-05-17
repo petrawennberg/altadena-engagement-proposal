@@ -167,7 +167,7 @@ Used consistently throughout this proposal and the deck:
 | When | What | Lead |
 |---|---|---|
 | **May 21, 2026** | CAPS presentation; ask for buy-in | Gabriella (presenting), Petra (in Stockholm) |
-| **May 21 onward** | Feedback & refinement — informal conversations, mentions at adjacent meetings | All |
+| **May 21 – Jun 4** | Feedback & refinement window — closes at next CAPS meeting | All |
 | **Late May – Jun 30** | Build out project plan · open feedback & refinement · outreach & circulation | Petra + working group |
 | **May 22 – Jun 30** | ATC + Altagether ratification | Esther + John |
 | **Jun – Sep 2026** | Delivery standard + captain toolkit built | Petra, Megan |
@@ -241,7 +241,7 @@ How we’ll know this worked:
 - [ ] CAPS presentation — Gabriella presents; Petra in Stockholm
 - [ ] CAPS coalition co-signs the framework — or surfaces feedback that feeds the next phase
 
-**Today onward (Feedback & refinement window):**
+**Today – Jun 4 (Feedback & refinement window — closes at next CAPS meeting):**
 - [ ] Informal conversations from the CAPS room outward; mentions at adjacent meetings
 - [ ] Integrate inputs from CAPS, ATC, and community partners into v1
 
