@@ -233,18 +233,25 @@ How we’ll know this worked:
 
 ## 11 · Next steps
 
-**This week:**
-- [ ] CAPS presentation (Thu May 21) — Gabriella presents; Petra in Stockholm
+**This week (May 17 – 20):**
 - [ ] Send proposal doc to working group (Petra, before Tue 5pm)
 - [ ] John Mayo confirms Altagether co-presenting
 
-**This month (open feedback & refinement window):**
-- [ ] CAPS coalition co-signs (or surfaces feedback that feeds the next phase)
+**Today — May 21:**
+- [ ] CAPS presentation — Gabriella presents; Petra in Stockholm
+- [ ] CAPS coalition co-signs the framework — or surfaces feedback that feeds the next phase
+
+**Today onward (Feedback & refinement window):**
+- [ ] Informal conversations from the CAPS room outward; mentions at adjacent meetings
 - [ ] Integrate inputs from CAPS, ATC, and community partners into v1
-- [ ] **Build out the full project plan** — expand owners, milestones, dependencies, and deliverable specs
-- [ ] **Socializing** — informal conversations with key partners and decision-makers; mentions at adjacent meetings to build familiarity ahead of formal asks
+
+**Late May:**
+- [ ] **Build out the full structured proposal** — expand owners, milestones, dependencies, and deliverable specs
+
+**June:**
 - [ ] **Outreach & circulation** — share the plan with EFC, ACONA, ART, Altadena Rising, My Tribe Rise, Hands in the Soul, broader CAPS coalition, ATC, partners, and community
-- [ ] ATC Land Use Committee outreach for ratification
+- [ ] ATC Land Use Committee briefing & ratification outreach
+- [ ] First captain training cohort scheduled (mid-Aug — after Petra returns Aug 9)
 - [ ] First draft of delivery standard (Petra) opens for review
 - [ ] First draft of captain toolkit (Megan) opens for review
 - [ ] **Ask LA County when PFA is reconvening** — no 2026 dates posted; flag any meetings in Jul 13–Aug 9 (Petra in Sweden) for proxy attendance
@@ -252,8 +259,13 @@ How we’ll know this worked:
 **By end of June:**
 - [ ] Delivery standard v1 published
 - [ ] Captain toolkit v1 published
-- [ ] First training cohort scheduled (mid-Aug — after Petra returns Aug 9)
 - [ ] EIFD advocacy plan with PFA hearing calendar
+
+**Jul – Dec 2026:**
+- [ ] PFA hearings: advocate for an EIFD earmark for engagement infrastructure
+
+**Fall 2026:**
+- [ ] Fair Oaks corridor pilot launches using the standard
 
 ---
 
