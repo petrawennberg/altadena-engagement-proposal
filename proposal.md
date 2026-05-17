@@ -156,7 +156,7 @@ Used consistently throughout this proposal and the deck:
 | **PFA** | Public Financing Authority — the body administering EIFD/AWRIFD funds. The funding agency. Stands alone |
 | **Community** | Residents, commercial owners, and anyone with a verified Altadena location |
 | **Block captain** | An Altagether-trained resident facilitating deliberation on their block |
-| **Subject & cause experts** | Subject-matter expertise (architects, planners, mediators) AND cause-based representation (cultural advocacy groups, environmental orgs). Pulled in by **relevance**, not self-selection |
+| Subject & cause experts | Subject-matter expertise (architects, planners, mediators) AND cause-based representation (cultural advocacy groups, environmental orgs). Pulled in by **relevance**, not self-selection |
 | **Partners** | Organizations that help in some way — CAPS Roundtable members, ARRC, ARLA, others |
 | **Stakeholder** | Anyone with a vested interest in the process — community, sponsors, partners, experts |
 
