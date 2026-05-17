@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="DM Sans, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <style>
+      .box-title { font-size: 28px; fill: #2E3D26; font-weight: 700; letter-spacing: 1px; }
+      .box-body { font-size: 17px; fill: #2E3D26; font-weight: 400; }
+      .box-italic { font-size: 15px; fill: #5A6953; font-weight: 400; font-style: italic; }
+      .arrow-label { font-size: 15px; fill: #2E3D26; font-style: italic; font-weight: 500; }
+      .sponsor-title { font-size: 28px; fill: #FAF6F0; font-weight: 700; letter-spacing: 1.5px; }
+      .sponsor-body { font-size: 16px; fill: #FAF6F0; font-weight: 400; opacity: 0.85; }
+      .blocks-title { font-size: 34px; fill: #2E3D26; font-weight: 700; letter-spacing: 1.5px; }
+      .col-tag { font-size: 13px; letter-spacing: 4px; text-transform: uppercase; font-weight: 700; }
+    </style>
+    <marker id="arrow-down" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#E5905A"/>
+    </marker>
+    <marker id="arrow-up" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#7A8A6E"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="#FAF6F0"/>
+
+  <!-- Subtle column tint bands -->
+  <rect x="100" y="80" width="600" height="780" rx="12" fill="#FBEBDC" opacity="0.35"/>
+  <rect x="900" y="80" width="600" height="780" rx="12" fill="#E8EDE3" opacity="0.5"/>
+
+  <!-- Column tags -->
+  <text x="400" y="120" text-anchor="middle" class="col-tag" fill="#E5905A">CONTENT FLOWS DOWN &#8595;</text>
+  <text x="1200" y="120" text-anchor="middle" class="col-tag" fill="#7A8A6E">&#8593; CONSENSUS FLOWS UP</text>
+
+  <!-- SPONSOR (centered top) -->
+  <rect x="450" y="160" width="700" height="100" rx="8" fill="#2E3D26"/>
+  <text x="800" y="200" text-anchor="middle" class="sponsor-title">PROJECT SPONSOR</text>
+  <text x="800" y="232" text-anchor="middle" class="sponsor-body">agency &#183; utility &#183; developer &#183; consultant</text>
+
+  <!-- Down arrow: Sponsor → Distribution -->
+  <line x1="400" y1="280" x2="400" y2="370" stroke="#E5905A" stroke-width="4" marker-end="url(#arrow-down)"/>
+  <text x="425" y="332" class="arrow-label">delivers to standard</text>
+
+  <!-- Up arrow: Aggregation → Sponsor -->
+  <line x1="1200" y1="370" x2="1200" y2="280" stroke="#7A8A6E" stroke-width="4" marker-end="url(#arrow-up)"/>
+  <text x="1225" y="332" class="arrow-label">loop closes</text>
+
+  <!-- DISTRIBUTION (left middle) -->
+  <rect x="180" y="380" width="440" height="160" rx="8" fill="white" stroke="#E5905A" stroke-width="3"/>
+  <text x="400" y="430" text-anchor="middle" class="box-title">DISTRIBUTION</text>
+  <text x="400" y="468" text-anchor="middle" class="box-body">150+ block captains</text>
+  <text x="400" y="498" text-anchor="middle" class="box-body">+ commercial-owner network</text>
+
+  <!-- AGGREGATION (right middle) -->
+  <rect x="980" y="380" width="440" height="160" rx="8" fill="white" stroke="#7A8A6E" stroke-width="3"/>
+  <text x="1200" y="430" text-anchor="middle" class="box-title">AGGREGATION</text>
+  <text x="1200" y="468" text-anchor="middle" class="box-body">corridor &amp; zone</text>
+  <text x="1200" y="498" text-anchor="middle" class="box-body">coordinators</text>
+
+  <!-- Down arrow: Distribution → Blocks -->
+  <line x1="400" y1="560" x2="400" y2="660" stroke="#E5905A" stroke-width="4" marker-end="url(#arrow-down)"/>
+  <text x="425" y="617" class="arrow-label">reaches blocks</text>
+
+  <!-- Up arrow: Blocks → Aggregation -->
+  <line x1="1200" y1="660" x2="1200" y2="560" stroke="#7A8A6E" stroke-width="4" marker-end="url(#arrow-up)"/>
+  <text x="1225" y="617" class="arrow-label">records aggregate</text>
+
+  <!-- BLOCKS DELIBERATE (bottom, spanning) -->
+  <rect x="180" y="670" width="1240" height="170" rx="8" fill="#7A8A6E"/>
+  <text x="800" y="724" text-anchor="middle" class="blocks-title" fill="#FAF6F0">BLOCKS DELIBERATE</text>
+  <text x="800" y="762" text-anchor="middle" class="box-body" fill="#FAF6F0">commercial &#183; intersection &amp; corridor &#183; frontage residential</text>
+  <text x="800" y="800" text-anchor="middle" class="box-italic" fill="#FAF6F0" opacity="0.85">decision records: private dialogue, public outcome</text>
+</svg>
