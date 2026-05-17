@@ -223,7 +223,7 @@ How we’ll know this worked:
 - [ ] CAPS coalition co-signs (or surfaces feedback that feeds the next phase)
 - [ ] Integrate inputs from CAPS, ATC, and community partners into v1
 - [ ] **Build out the full project plan** — expand owners, milestones, dependencies, and deliverable specs
-- [ ] **Outreach & circulation** — share the plan with broader CAPS coalition, ATC, partners, funders, and community
+- [ ] **Outreach & circulation** — share the plan with EFC, broader CAPS coalition, ATC, partners, funders, and community
 - [ ] ATC Land Use Committee outreach for ratification
 - [ ] First draft of delivery standard (Petra) opens for review
 - [ ] First draft of captain toolkit (Megan) opens for review
