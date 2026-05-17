@@ -240,6 +240,7 @@ How we’ll know this worked:
 - [ ] CAPS coalition co-signs (or surfaces feedback that feeds the next phase)
 - [ ] Integrate inputs from CAPS, ATC, and community partners into v1
 - [ ] **Build out the full project plan** — expand owners, milestones, dependencies, and deliverable specs
+- [ ] **Socializing** — informal conversations with key partners and decision-makers; mentions at adjacent meetings to build familiarity ahead of formal asks
 - [ ] **Outreach & circulation** — share the plan with EFC, ACONA, ART, Altadena Rising, My Tribe Rise, Hands in the Soul, broader CAPS coalition, ATC, partners, and community
 - [ ] ATC Land Use Committee outreach for ratification
 - [ ] First draft of delivery standard (Petra) opens for review
