@@ -195,9 +195,14 @@ How we’ll know this worked:
 ## 9 · The ask
 
 **For CAPS — Thursday May 21:**
-- **Endorsement of the approach**, co-signing this process alongside Altadena Village, CoLab, Alting, and Altagether
-- Not a separate letter to County. Not a budget commitment
-- Endorsement enables: joint visibility at PFA hearings, your co-signature on the Fair Oaks pilot framing, a credible voice when this lands at ATC
+
+**Co-sign and carry it forward.** We’re not asking for approval — the working group is moving with or without endorsement. We’re asking the coalition gathered at CAPS to take this up:
+
+- **Co-sign** the framework where it fits your org
+- **Carry it forward** into your constituency and the conversations you’re already in
+- **Convene the right voices** when this lands at ATC and the PFA
+
+*This is a coalition framework. It’s stronger with your name on it.*
 
 **For ATC — Jun–Jul:**
 - Land Use Committee ratification of the engagement standard as the structured channel for community input on rebuild projects
@@ -215,7 +220,7 @@ How we’ll know this worked:
 - [ ] John Mayo confirms Altagether co-presenting
 
 **This month:**
-- [ ] CAPS endorsement secured (or feedback incorporated and re-presented)
+- [ ] CAPS coalition co-signs (or surfaces feedback we integrate before v1)
 - [ ] ATC Land Use Committee outreach for ratification
 - [ ] First draft of delivery standard (Petra) opens for review
 - [ ] First draft of captain toolkit (Megan) opens for review

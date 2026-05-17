@@ -685,6 +685,32 @@
   .ask-enables-text {
     font-size: var(--t-body); line-height: 1.5; color: rgba(250,246,240,0.85);
   }
+  .ask-next-steps {
+    border-top: 1px solid rgba(250,246,240,0.25);
+    padding-top: 28px; max-width: 1100px;
+  }
+  .ask-next-label {
+    font-size: var(--t-label-sm); letter-spacing: 3px; text-transform: uppercase;
+    color: var(--coral); margin-bottom: 18px; font-weight: 700;
+  }
+  .ask-next-list { list-style: none; padding: 0; margin: 0; }
+  .ask-next-list li {
+    font-size: var(--t-body); line-height: 1.5;
+    color: rgba(250,246,240,0.92);
+    padding: 11px 0 11px 32px; position: relative;
+    border-bottom: 1px solid rgba(250,246,240,0.10);
+    display: flex; align-items: baseline; gap: 22px;
+  }
+  .ask-next-list li:last-child { border-bottom: none; }
+  .ask-next-list li::before {
+    content: "→"; position: absolute; left: 0; top: 11px;
+    color: var(--coral); font-weight: 700; font-size: var(--t-body);
+  }
+  .ask-next-when {
+    flex: 0 0 170px; color: var(--coral); font-weight: 700;
+    font-size: var(--t-label); letter-spacing: 1px; text-transform: uppercase;
+  }
+  .ask-next-what { flex: 1; }
 
   /* ============ TITLE SLIDE ============ */
   .title-slide {
@@ -959,8 +985,8 @@
         <div class="flow-step">
           <div class="flow-num">01</div>
           <div>
-            <div class="flow-step-name">Local insight</div>
-            <div class="flow-step-text">Residents carry context the County doesn&rsquo;t have, with no channel for it to land.</div>
+            <div class="flow-step-name">Proximity</div>
+            <div class="flow-step-text">Community carries context the County doesn&rsquo;t have, with no channel for it to land.</div>
           </div>
         </div>
         <div class="flow-step">
@@ -1370,15 +1396,18 @@
   <section class="slide ask-slide">
     <div class="slide-header">
       <div class="slide-tag">What we want from you today</div>
-      <h2 class="ask-main">Endorsement of the approach &mdash; co-signing this process.</h2>
+      <h2 class="ask-main">Co-sign and carry it forward.</h2>
     </div>
     <div class="slide-body">
-      <div class="ask-detail">
-        Not a separate letter to County. Not a budget commitment. CAPS standing alongside Altadena Village, CoLab, Alting, and Altagether in saying this is how community engagement should work. That weight helps move EIFD toward an earmark for the engagement infrastructure.
-      </div>
-      <div class="ask-enables">
-        <div class="ask-enables-label">What endorsement enables next</div>
-        <div class="ask-enables-text">Joint visibility at PFA hearings &nbsp;&middot;&nbsp; your co-signature on the Fair Oaks pilot framing &nbsp;&middot;&nbsp; a credible voice when this lands at ATC</div>
+      <div class="ask-next-steps">
+        <div class="ask-next-label">Next steps</div>
+        <ul class="ask-next-list">
+          <li><span class="ask-next-when">Today</span><span class="ask-next-what">CAPS coalition co-signs the framework &mdash; or surfaces feedback we integrate before v1</span></li>
+          <li><span class="ask-next-when">Within 2 weeks</span><span class="ask-next-what">Working group publishes v1 delivery standard and block-captain toolkit</span></li>
+          <li><span class="ask-next-when">June</span><span class="ask-next-what">ATC Land Use Committee briefing &middot; first captain training cohort scheduled</span></li>
+          <li><span class="ask-next-when">Jul &ndash; Sep</span><span class="ask-next-what">PFA hearings: advocate for an EIFD earmark for engagement infrastructure</span></li>
+          <li><span class="ask-next-when">Fall 2026</span><span class="ask-next-what">Fair Oaks corridor pilot launches using the standard</span></li>
+        </ul>
       </div>
     </div>
     <div class="slide-footer">
