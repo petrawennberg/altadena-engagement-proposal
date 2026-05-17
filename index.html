@@ -222,36 +222,31 @@
     background: white;
     border-radius: 10px;
     overflow: hidden;
-    display: grid;
-    grid-template-columns: 44px 1fr;
   }
   .flow-bottom {
-    background: var(--forest);
-    color: var(--cream);
+    background: white;
+    color: var(--forest);
     border-radius: 10px;
     overflow: hidden;
-    display: grid;
-    grid-template-columns: 44px 1fr;
   }
-  .flow-bottom .flow-arrow-col {
-    background: var(--forest-soft);
-    color: var(--cream);
-  }
-  .flow-bottom .flow-col-content { padding: 24px 28px; }
-  .flow-arrow-col {
-    display: flex; flex-direction: column;
+  .flow-arrow-col { display: none; } /* legacy left arrow column — replaced by inline .flow-step-arrow */
+  .flow-step-arrow {
+    display: inline-flex;
     align-items: center; justify-content: center;
-    gap: 6px;
-    font-size: 22px; line-height: 1;
-    font-weight: 700;
-  }
-  .flow-col.down .flow-arrow-col {
+    width: 32px; height: 32px;
+    border-radius: 50%;
     background: var(--coral-tint);
     color: var(--coral);
+    font-weight: 700;
+    font-size: 18px; line-height: 1;
+    margin-right: 14px;
+    flex-shrink: 0;
+    vertical-align: -7px;
   }
-  .flow-col.up .flow-arrow-col {
-    background: var(--sage-tint);
-    color: var(--sage);
+  .flow-step-arrow.cycle {
+    background: var(--coral);
+    color: var(--cream);
+    font-size: 18px;
   }
   .flow-col-content {
     padding: 24px 28px;
@@ -272,26 +267,21 @@
     align-items: flex-start;
   }
   .flow-step + .flow-step { border-top: 1px solid var(--sage-tint); }
-  .flow-bottom .flow-step + .flow-step { border-top-color: rgba(250,246,240,0.15); }
   .flow-col-arrow { display: none; }
   .flow-num {
     font-family: var(--serif); font-size: var(--t-numeral);
     line-height: 1; color: var(--coral);
     flex-shrink: 0; min-width: 54px;
   }
-  .flow-col.up .flow-num { color: var(--sage); }
-  .flow-bottom .flow-num { color: var(--coral); }
   .flow-step-name {
     font-size: var(--t-lead); font-weight: 700;
     letter-spacing: 0; text-transform: none;
     color: var(--forest); margin-bottom: 6px;
   }
-  .flow-bottom .flow-step-name { color: var(--cream); }
   .flow-step-text {
     font-size: var(--t-body); line-height: 1.45;
     color: var(--forest);
   }
-  .flow-bottom .flow-step-text { color: rgba(250,246,240,0.85); }
 
   /* Who's involved (under each flow-step description) */
   .flow-who {
@@ -310,9 +300,6 @@
     margin-right: 8px;
     font-size: 12px;
   }
-  .flow-bottom .flow-who { color: rgba(250,246,240,0.75); }
-  .flow-bottom .flow-who-label { color: var(--coral); }
-
   /* Sub-bullets inside flow-step (used on slide 4) */
   .flow-bullets {
     margin-top: 8px;
@@ -332,9 +319,6 @@
     color: var(--coral);
     font-weight: 700;
   }
-  .flow-bottom .flow-bullets li { color: rgba(250,246,240,0.7); }
-  .flow-bottom .flow-bullets li::before { color: var(--coral); }
-
   /* Simple numbered list (used on slide 3) — matches stakeholder slide type */
   .flow-list { display: flex; flex-direction: column; }
   .flow-list .flow-step { padding: 16px 0; gap: 24px; }
@@ -1048,7 +1032,7 @@
               <div class="flow-step">
                 <div class="flow-num">01</div>
                 <div>
-                  <div class="flow-step-name">Definition</div>
+                  <div class="flow-step-name"><span class="flow-step-arrow">&darr;</span>Definition</div>
                   <div class="flow-step-text">Sponsors define their decision based on <strong>community standards</strong> &mdash; problem, ask, geographic area, timeline, and multi-modal delivery (text &middot; video &middot; Spanish &middot; walking tours) with expert access.</div>
                   <div class="flow-who"><span class="flow-who-label">Who</span>County agencies &middot; utilities &middot; developers &middot; consultants</div>
                 </div>
@@ -1056,7 +1040,7 @@
               <div class="flow-step">
                 <div class="flow-num">02</div>
                 <div>
-                  <div class="flow-step-name">Training &amp; Distribution</div>
+                  <div class="flow-step-name"><span class="flow-step-arrow">&darr;</span>Training &amp; Distribution</div>
                   <div class="flow-step-text">Through existing channels &mdash; <strong>Altagether&rsquo;s 150+ block captains</strong> and the commercial-owner network, trained to facilitate with on-call backup.</div>
                   <div class="flow-who"><span class="flow-who-label">Who</span>Altagether captains &middot; commercial-owner network &middot; CoLab (training)</div>
                 </div>
@@ -1073,7 +1057,7 @@
               <div class="flow-step">
                 <div class="flow-num">05</div>
                 <div>
-                  <div class="flow-step-name">Shared record</div>
+                  <div class="flow-step-name"><span class="flow-step-arrow">&uarr;</span>Shared record</div>
                   <div class="flow-step-text">The record goes public &mdash; tracked on a dashboard, visible to all stakeholders.</div>
                   <div class="flow-who"><span class="flow-who-label">Who</span>All stakeholders see &middot; working group maintains</div>
                 </div>
@@ -1081,7 +1065,7 @@
               <div class="flow-step">
                 <div class="flow-num">04</div>
                 <div>
-                  <div class="flow-step-name">Aggregation</div>
+                  <div class="flow-step-name"><span class="flow-step-arrow">&uarr;</span>Aggregation</div>
                   <div class="flow-step-text">Block deliberations compile into a coherent record &mdash; organized by area, corridor, zone, and by the sponsor&rsquo;s own categories. Private dialogue stays private; outcomes become public.</div>
                   <div class="flow-who"><span class="flow-who-label">Who</span>Captains record &middot; CoLab captures &middot; Alting synthesizes</div>
                 </div>
@@ -1099,7 +1083,7 @@
             <div class="flow-step">
               <div class="flow-num">03</div>
               <div>
-                <div class="flow-step-name">Facilitating Discussion</div>
+                <div class="flow-step-name"><span class="flow-step-arrow cycle">&#10227;</span>Facilitating Discussion</div>
                 <div class="flow-step-text">Block captains facilitate time-bound community deliberation at the block level.</div>
               <div class="flow-who"><span class="flow-who-label">Who</span>Block captains lead &middot; Altadena public participates &middot; local facilitators support</div>
               </div>
@@ -1133,14 +1117,14 @@
               <div class="flow-step">
                 <div class="flow-num">01</div>
                 <div>
-                  <div class="flow-step-name">Definition</div>
+                  <div class="flow-step-name"><span class="flow-step-arrow">&darr;</span>Definition</div>
                   <div class="flow-step-text">CIP surveys customized for Altadena &mdash; by area, across six categories (Mobility &middot; Stormwater &middot; Sewer &middot; Water &middot; Energy &middot; Multi-Benefit). Plain-language briefs in EN + ES.</div>
                 </div>
               </div>
               <div class="flow-step">
                 <div class="flow-num">02</div>
                 <div>
-                  <div class="flow-step-name">Training &amp; Distribution</div>
+                  <div class="flow-step-name"><span class="flow-step-arrow">&darr;</span>Training &amp; Distribution</div>
                   <div class="flow-step-text">Altagether&rsquo;s 150+ captains + commercial-owner network + QR signage at storefronts and yards.</div>
                 </div>
               </div>
@@ -1156,14 +1140,14 @@
               <div class="flow-step">
                 <div class="flow-num">05</div>
                 <div>
-                  <div class="flow-step-name">Shared record</div>
+                  <div class="flow-step-name"><span class="flow-step-arrow">&uarr;</span>Shared record</div>
                   <div class="flow-step-text">Structured packets to CIP &mdash; manually plotted on map. <em>No automated dashboard yet.</em></div>
                 </div>
               </div>
               <div class="flow-step">
                 <div class="flow-num">04</div>
                 <div>
-                  <div class="flow-step-name">Aggregation</div>
+                  <div class="flow-step-name"><span class="flow-step-arrow">&uarr;</span>Aggregation</div>
                   <div class="flow-step-text">Decision-record cards &middot; shared Google docs &middot; per-category compilation. <em>Manual &mdash; no dashboard yet.</em></div>
                 </div>
               </div>
@@ -1180,7 +1164,7 @@
             <div class="flow-step">
               <div class="flow-num">03</div>
               <div>
-                <div class="flow-step-name">Facilitating Discussion</div>
+                <div class="flow-step-name"><span class="flow-step-arrow cycle">&#10227;</span>Facilitating Discussion</div>
                 <div class="flow-step-text">Walking tours &middot; Zoom calls &middot; facilitated input sessions &middot; Design Fair for commercial owners and adjacent residents.</div>
               </div>
             </div>
