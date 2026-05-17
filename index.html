@@ -215,19 +215,26 @@
     gap: 18px; flex-grow: 1;
   }
   .flow-top {
-    display: grid; grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 18px; flex: 1;
   }
   .flow-col {
     background: white;
     border-radius: 10px;
     overflow: hidden;
+    padding: 22px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .flow-bottom {
     background: white;
     color: var(--forest);
     border-radius: 10px;
     overflow: hidden;
+    padding: 22px 26px;
   }
   .flow-arrow-col { display: none; } /* legacy left arrow column — replaced by inline .flow-step-arrow */
   .flow-step-arrow {
@@ -249,9 +256,10 @@
     font-size: 18px;
   }
   .flow-col-content {
-    padding: 24px 28px;
+    padding: 0;
     display: flex; flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    flex: 1;
   }
   .flow-label {
     font-size: var(--t-label); letter-spacing: 3px;
@@ -1022,71 +1030,54 @@
     <div class="slide-body">
       <div class="flow-layout">
         <div class="flow-top">
-          <div class="flow-col down">
-            <div class="flow-arrow-col">
-              <span>&darr;</span>
-              <span>&darr;</span>
-            </div>
-            <div class="flow-col-content">
-              <div class="flow-label">Content flows down</div>
-              <div class="flow-step">
-                <div class="flow-num">01</div>
-                <div>
-                  <div class="flow-step-name"><span class="flow-step-arrow">&darr;</span>Definition</div>
-                  <div class="flow-step-text">Sponsors define their decision based on <strong>community standards</strong> &mdash; problem, ask, geographic area, timeline, and multi-modal delivery (text &middot; video &middot; Spanish &middot; walking tours) with expert access.</div>
-                  <div class="flow-who"><span class="flow-who-label">Who</span>County agencies &middot; utilities &middot; developers &middot; consultants</div>
-                </div>
-              </div>
-              <div class="flow-step">
-                <div class="flow-num">02</div>
-                <div>
-                  <div class="flow-step-name"><span class="flow-step-arrow">&darr;</span>Training &amp; Distribution</div>
-                  <div class="flow-step-text">Through existing channels &mdash; <strong>Altagether&rsquo;s 150+ block captains</strong> and the commercial-owner network, trained to facilitate with on-call backup.</div>
-                  <div class="flow-who"><span class="flow-who-label">Who</span>Altagether captains &middot; commercial-owner network &middot; CoLab (training)</div>
-                </div>
+          <div class="flow-col">
+            <div class="flow-step">
+              <div class="flow-num">01</div>
+              <div>
+                <div class="flow-step-name"><span class="flow-step-arrow">&darr;</span>Definition</div>
+                <div class="flow-step-text">Sponsors define their decision based on <strong>community standards</strong> &mdash; problem, ask, geographic area, timeline, and multi-modal delivery (text &middot; video &middot; Spanish &middot; walking tours) with expert access.</div>
+                <div class="flow-who"><span class="flow-who-label">Who</span>County agencies &middot; utilities &middot; developers &middot; consultants</div>
               </div>
             </div>
           </div>
-          <div class="flow-col up">
-            <div class="flow-arrow-col">
-              <span>&uarr;</span>
-              <span>&uarr;</span>
-            </div>
-            <div class="flow-col-content">
-              <div class="flow-label">Consensus flows up</div>
-              <div class="flow-step">
-                <div class="flow-num">05</div>
-                <div>
-                  <div class="flow-step-name"><span class="flow-step-arrow">&uarr;</span>Shared record</div>
-                  <div class="flow-step-text">The record goes public &mdash; tracked on a dashboard, visible to all stakeholders.</div>
-                  <div class="flow-who"><span class="flow-who-label">Who</span>All stakeholders see &middot; working group maintains</div>
-                </div>
+          <div class="flow-col">
+            <div class="flow-step">
+              <div class="flow-num">05</div>
+              <div>
+                <div class="flow-step-name"><span class="flow-step-arrow">&uarr;</span>Shared record</div>
+                <div class="flow-step-text">The record goes public &mdash; tracked on a dashboard, visible to all stakeholders.</div>
+                <div class="flow-who"><span class="flow-who-label">Who</span>All stakeholders see &middot; working group maintains</div>
               </div>
-              <div class="flow-step">
-                <div class="flow-num">04</div>
-                <div>
-                  <div class="flow-step-name"><span class="flow-step-arrow">&uarr;</span>Aggregation</div>
-                  <div class="flow-step-text">Block deliberations compile into a coherent record &mdash; organized by area, corridor, zone, and by the sponsor&rsquo;s own categories. Private dialogue stays private; outcomes become public.</div>
-                  <div class="flow-who"><span class="flow-who-label">Who</span>Captains record &middot; CoLab captures &middot; Alting synthesizes</div>
-                </div>
+            </div>
+          </div>
+          <div class="flow-col">
+            <div class="flow-step">
+              <div class="flow-num">02</div>
+              <div>
+                <div class="flow-step-name"><span class="flow-step-arrow">&darr;</span>Training &amp; Distribution</div>
+                <div class="flow-step-text">Through existing channels &mdash; <strong>Altagether&rsquo;s 150+ block captains</strong> and the commercial-owner network, trained to facilitate with on-call backup.</div>
+                <div class="flow-who"><span class="flow-who-label">Who</span>Altagether captains &middot; commercial-owner network &middot; CoLab (training)</div>
+              </div>
+            </div>
+          </div>
+          <div class="flow-col">
+            <div class="flow-step">
+              <div class="flow-num">04</div>
+              <div>
+                <div class="flow-step-name"><span class="flow-step-arrow">&uarr;</span>Aggregation</div>
+                <div class="flow-step-text">Block deliberations compile into a coherent record &mdash; organized by area, corridor, zone, and by the sponsor&rsquo;s own categories. Private dialogue stays private; outcomes become public.</div>
+                <div class="flow-who"><span class="flow-who-label">Who</span>Captains record &middot; CoLab captures &middot; Alting synthesizes</div>
               </div>
             </div>
           </div>
         </div>
         <div class="flow-bottom">
-          <div class="flow-arrow-col">
-            <span>&bull;</span>
-            <span>&bull;</span>
-          </div>
-          <div class="flow-col-content">
-            <div class="flow-label">Deliberation</div>
-            <div class="flow-step">
-              <div class="flow-num">03</div>
-              <div>
-                <div class="flow-step-name"><span class="flow-step-arrow cycle">&#10227;</span>Facilitating Discussion</div>
-                <div class="flow-step-text">Block captains facilitate time-bound community deliberation at the block level.</div>
+          <div class="flow-step">
+            <div class="flow-num">03</div>
+            <div>
+              <div class="flow-step-name"><span class="flow-step-arrow cycle">&#10227;</span>Facilitating Discussion</div>
+              <div class="flow-step-text">Block captains facilitate time-bound community deliberation at the block level.</div>
               <div class="flow-who"><span class="flow-who-label">Who</span>Block captains lead &middot; Altadena public participates &middot; local facilitators support</div>
-              </div>
             </div>
           </div>
         </div>
@@ -1107,66 +1098,49 @@
     <div class="slide-body">
       <div class="flow-layout">
         <div class="flow-top">
-          <div class="flow-col down">
-            <div class="flow-arrow-col">
-              <span>&darr;</span>
-              <span>&darr;</span>
-            </div>
-            <div class="flow-col-content">
-              <div class="flow-label">Content flows down</div>
-              <div class="flow-step">
-                <div class="flow-num">01</div>
-                <div>
-                  <div class="flow-step-name"><span class="flow-step-arrow">&darr;</span>Definition</div>
-                  <div class="flow-step-text">CIP surveys customized for Altadena &mdash; by area, across six categories (Mobility &middot; Stormwater &middot; Sewer &middot; Water &middot; Energy &middot; Multi-Benefit). Plain-language briefs in EN + ES.</div>
-                </div>
-              </div>
-              <div class="flow-step">
-                <div class="flow-num">02</div>
-                <div>
-                  <div class="flow-step-name"><span class="flow-step-arrow">&darr;</span>Training &amp; Distribution</div>
-                  <div class="flow-step-text">Altagether&rsquo;s 150+ captains + commercial-owner network + QR signage at storefronts and yards.</div>
-                </div>
+          <div class="flow-col">
+            <div class="flow-step">
+              <div class="flow-num">01</div>
+              <div>
+                <div class="flow-step-name"><span class="flow-step-arrow">&darr;</span>Definition</div>
+                <div class="flow-step-text">CIP surveys customized for Altadena &mdash; by area, across six categories (Mobility &middot; Stormwater &middot; Sewer &middot; Water &middot; Energy &middot; Multi-Benefit). Plain-language briefs in EN + ES.</div>
               </div>
             </div>
           </div>
-          <div class="flow-col up">
-            <div class="flow-arrow-col">
-              <span>&uarr;</span>
-              <span>&uarr;</span>
-            </div>
-            <div class="flow-col-content">
-              <div class="flow-label">Consensus flows up</div>
-              <div class="flow-step">
-                <div class="flow-num">05</div>
-                <div>
-                  <div class="flow-step-name"><span class="flow-step-arrow">&uarr;</span>Shared record</div>
-                  <div class="flow-step-text">Structured packets to CIP &mdash; manually plotted on map. <em>No automated dashboard yet.</em></div>
-                </div>
+          <div class="flow-col">
+            <div class="flow-step">
+              <div class="flow-num">05</div>
+              <div>
+                <div class="flow-step-name"><span class="flow-step-arrow">&uarr;</span>Shared record</div>
+                <div class="flow-step-text">Structured packets to CIP &mdash; manually plotted on map. <em>No automated dashboard yet.</em></div>
               </div>
-              <div class="flow-step">
-                <div class="flow-num">04</div>
-                <div>
-                  <div class="flow-step-name"><span class="flow-step-arrow">&uarr;</span>Aggregation</div>
-                  <div class="flow-step-text">Decision-record cards &middot; shared Google docs &middot; per-category compilation. <em>Manual &mdash; no dashboard yet.</em></div>
-                </div>
+            </div>
+          </div>
+          <div class="flow-col">
+            <div class="flow-step">
+              <div class="flow-num">02</div>
+              <div>
+                <div class="flow-step-name"><span class="flow-step-arrow">&darr;</span>Training &amp; Distribution</div>
+                <div class="flow-step-text">Altagether&rsquo;s 150+ captains + commercial-owner network + QR signage at storefronts and yards.</div>
+              </div>
+            </div>
+          </div>
+          <div class="flow-col">
+            <div class="flow-step">
+              <div class="flow-num">04</div>
+              <div>
+                <div class="flow-step-name"><span class="flow-step-arrow">&uarr;</span>Aggregation</div>
+                <div class="flow-step-text">Decision-record cards &middot; shared Google docs &middot; per-category compilation. <em>Manual &mdash; no dashboard yet.</em></div>
               </div>
             </div>
           </div>
         </div>
         <div class="flow-bottom">
-          <div class="flow-arrow-col">
-            <span>&bull;</span>
-            <span>&bull;</span>
-          </div>
-          <div class="flow-col-content">
-            <div class="flow-label">Deliberation</div>
-            <div class="flow-step">
-              <div class="flow-num">03</div>
-              <div>
-                <div class="flow-step-name"><span class="flow-step-arrow cycle">&#10227;</span>Facilitating Discussion</div>
-                <div class="flow-step-text">Walking tours &middot; Zoom calls &middot; facilitated input sessions &middot; Design Fair for commercial owners and adjacent residents.</div>
-              </div>
+          <div class="flow-step">
+            <div class="flow-num">03</div>
+            <div>
+              <div class="flow-step-name"><span class="flow-step-arrow cycle">&#10227;</span>Facilitating Discussion</div>
+              <div class="flow-step-text">Walking tours &middot; Zoom calls &middot; facilitated input sessions &middot; Design Fair for commercial owners and adjacent residents.</div>
             </div>
           </div>
         </div>
