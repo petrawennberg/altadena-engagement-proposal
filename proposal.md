@@ -153,7 +153,7 @@ Used consistently throughout this proposal and the deck:
 | **May 22 – Jun 30** | ATC + Altagether ratification | Esther + John |
 | **Jun – Sep 2026** | Delivery standard + captain toolkit built | Petra, Megan |
 | **Jul – Dec 2026** | EIFD advocacy at PFA hearings | All |
-| **Aug – Nov 2026** | Captain training cohorts | Megan, Gabriella, John |
+| **Mid-Aug – Nov 2026** | Captain training cohorts (kick-off after Petra returns Aug 9) | Megan, Gabriella, John |
 | **Sep 2026 – Jun 2027** | Fair Oaks pilot — hand-hacked live use case | All |
 | **Mar – Aug 2027** | Dashboard MVP build | Petra (design lead) |
 | **Apr – Jul 2027** | Iterate from pilot learnings | All |
@@ -228,7 +228,7 @@ How we’ll know this worked:
 **By end of June:**
 - [ ] Delivery standard v1 published
 - [ ] Captain toolkit v1 published
-- [ ] First training cohort scheduled (Aug)
+- [ ] First training cohort scheduled (mid-Aug — after Petra returns Aug 9)
 - [ ] EIFD advocacy plan with PFA hearing calendar
 
 ---
