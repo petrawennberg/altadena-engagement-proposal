@@ -219,8 +219,9 @@ How we’ll know this worked:
 - [ ] Send proposal doc to working group (Petra, before Tue 5pm)
 - [ ] John Mayo confirms Altagether co-presenting
 
-**This month:**
-- [ ] CAPS coalition co-signs (or surfaces feedback we integrate before v1)
+**This month (open feedback & refinement window):**
+- [ ] CAPS coalition co-signs (or surfaces feedback that feeds the next phase)
+- [ ] Integrate inputs from CAPS, ATC, and community partners into v1
 - [ ] ATC Land Use Committee outreach for ratification
 - [ ] First draft of delivery standard (Petra) opens for review
 - [ ] First draft of captain toolkit (Megan) opens for review
