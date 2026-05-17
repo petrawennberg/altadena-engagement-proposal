@@ -3,14 +3,23 @@
 Working group: **Altadena Village · CoLab · Alting · Altagether**
 CAPS presentation: **Thursday, May 21, 2026**
 
-## Two artifacts, two purposes
+## Live URLs
 
-| File | What it is | When to use it |
-|---|---|---|
-| **[`index.html`](https://petrawennberg.github.io/altadena-engagement-proposal/)** | The deck — 10 slides, visual, designed for the live presentation room | Present from this. Open in browser. Arrow keys to navigate, F for fullscreen |
-| **[`proposal.md`](proposal.md)** | The proposal document — structured, scannable, signable | Read this when reviewing, marking up, or endorsing. Renders natively on GitHub |
+| | View at |
+|---|---|
+| **🎨 Deck** (10 slides, presentation) | https://petrawennberg.github.io/altadena-engagement-proposal/ |
+| **📄 Proposal** (structured doc, endorsement substrate) | https://petrawennberg.github.io/altadena-engagement-proposal/proposal.html |
 
-Both kept in sync as v1 evolves. The deck tells the story; the proposal defines what gets built.
+Both are styled with the same joinalting brand language. Share either URL.
+
+## Files in this repo
+
+| File | What it is |
+|---|---|
+| `index.html` | The deck — open in browser, arrow keys, F for fullscreen |
+| `proposal.html` | The structured proposal — scrollable doc, print-friendly |
+| `proposal.md` | The proposal in markdown — source for collaborative edits via PRs |
+| `README.md` | This file |
 
 ## Working group
 
