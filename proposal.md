@@ -178,8 +178,6 @@ Used consistently throughout this proposal and the deck:
 | **Apr – Jul 2027** | Iterate from pilot learnings | All |
 | **Jul 2027 →** | Scale to additional corridors | All |
 
-Full Gantt: `index.html` slide 7.
-
 ---
 
 ## 8 · Cost
