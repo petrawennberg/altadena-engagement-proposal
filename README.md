@@ -8,7 +8,7 @@ CAPS presentation: **Thursday, May 21, 2026**
 | | View at |
 |---|---|
 | **🎨 Deck** (10 slides, presentation) | https://petrawennberg.github.io/altadena-engagement-proposal/ |
-| **📄 Proposal** (structured doc, endorsement substrate) | https://petrawennberg.github.io/altadena-engagement-proposal/proposal.html |
+| **📄 Proposal** (structured doc, buy-in substrate) | https://petrawennberg.github.io/altadena-engagement-proposal/proposal.html |
 
 Both are styled with the same joinalting brand language. Share either URL.
 

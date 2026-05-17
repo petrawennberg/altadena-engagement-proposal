@@ -1,6 +1,6 @@
 # Altadena Community Engagement Proposal
 
-**v1 — for working group review & CAPS endorsement · May 21, 2026**
+**v1 — for working group review & CAPS buy-in · May 21, 2026**
 
 A collaboration: **Altadena Village · CoLab · Alting · Altagether**
 
@@ -166,7 +166,7 @@ Used consistently throughout this proposal and the deck:
 
 | When | What | Lead |
 |---|---|---|
-| **May 21, 2026** | CAPS presentation; ask for endorsement | Gabriella (presenting), Petra (in Stockholm) |
+| **May 21, 2026** | CAPS presentation; ask for buy-in | Gabriella (presenting), Petra (in Stockholm) |
 | **May 21 onward** | Feedback & refinement — informal conversations, mentions at adjacent meetings | All |
 | **Late May – Jun 30** | Build out project plan · open feedback & refinement · outreach & circulation | Petra + working group |
 | **May 22 – Jun 30** | ATC + Altagether ratification | Esther + John |
@@ -192,7 +192,7 @@ Three pockets — honest about who pays for what:
 | **EIFD via PFA** | A small fraction of the $2B financing layer funds the engagement infrastructure — delivery standard, captain toolkit, decision-record system, dashboard, mediation |
 | **Local hires** | Community-side professionals (facilitators, mediators, legal, translators) — paid via EIFD + external grants (Annenberg, Emerson, Omidyar lanes). Local-first so dollars recirculate inside Altadena |
 
-CAPS is not asked to fund any of this. CAPS endorsement is what moves EIFD toward an actual earmark.
+CAPS is not asked to fund any of this. CAPS buy-in is what moves EIFD toward an actual earmark.
 
 ---
 
@@ -215,7 +215,7 @@ How we’ll know this worked:
 
 **For CAPS — Thursday May 21:**
 
-**Co-sign and carry it forward.** We’re not asking for approval — the working group is moving with or without endorsement. We’re asking the coalition gathered at CAPS to take this up:
+**Co-sign and carry it forward.** We’re not asking for approval — the working group is moving with or without buy-in. We’re asking the coalition gathered at CAPS to take this up:
 
 - **Co-sign** the framework where it fits your org
 - **Carry it forward** into your constituency and the conversations you’re already in
@@ -311,4 +311,4 @@ Other: PUSD · Paradigm (Edison’s outreach consultant) · Toole Design (County
 - [ ] Petra Wennberg (Alting)
 - [ ] John Mayo (Altagether)
 
-*CAPS endorsement target: Thursday, May 21, 2026.*
+*CAPS buy-in target: Thursday, May 21, 2026.*
