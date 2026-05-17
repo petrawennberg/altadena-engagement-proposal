@@ -222,6 +222,7 @@ How we’ll know this worked:
 **This month (open feedback & refinement window):**
 - [ ] CAPS coalition co-signs (or surfaces feedback that feeds the next phase)
 - [ ] Integrate inputs from CAPS, ATC, and community partners into v1
+- [ ] **Build out the full project plan** — expand owners, milestones, dependencies, and deliverable specs
 - [ ] ATC Land Use Committee outreach for ratification
 - [ ] First draft of delivery standard (Petra) opens for review
 - [ ] First draft of captain toolkit (Megan) opens for review

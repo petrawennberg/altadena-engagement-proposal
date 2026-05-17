@@ -755,6 +755,28 @@
     padding-bottom: 2px;
     display: inline-block;
   }
+  .ask-today-callout {
+    background: var(--coral);
+    color: var(--cream);
+    border-radius: 6px;
+    padding: 20px 26px;
+    margin-bottom: 28px;
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+  }
+  .ask-today-label {
+    font-size: var(--t-label-sm); letter-spacing: 3px;
+    text-transform: uppercase; color: rgba(250,246,240,0.9);
+    font-weight: 700; flex-shrink: 0;
+  }
+  .ask-today-main {
+    font-family: var(--serif);
+    font-size: 30px; line-height: 1.15;
+    color: var(--cream);
+    flex: 1;
+  }
 
   /* ============ TITLE SLIDE ============ */
   .title-slide {
@@ -1409,6 +1431,10 @@
       <h2 class="ask-main">Co-sign and carry it forward.</h2>
     </div>
     <div class="slide-body">
+      <div class="ask-today-callout">
+        <div class="ask-today-label">Today</div>
+        <div class="ask-today-main">Buy-in on the overall approach.</div>
+      </div>
       <div class="ask-proposal-callout">
         <div class="ask-proposal-label">Full structured proposal &middot; Work in Progress</div>
         <div class="ask-proposal-text">Project plan, deliverables, owners, timeline, cost, and success criteria &mdash; read the full document.</div>
@@ -1419,6 +1445,7 @@
         <ul class="ask-next-list">
           <li><span class="ask-next-when">Today</span><span class="ask-next-what">CAPS coalition co-signs the framework &mdash; or surfaces feedback that feeds the next phase</span></li>
           <li><span class="ask-next-when">Late May &ndash; Jun</span><span class="ask-next-what">Open feedback &amp; refinement window &mdash; integrate inputs from CAPS, ATC, and community partners</span></li>
+          <li><span class="ask-next-when">Late May &ndash; Jun</span><span class="ask-next-what">Build out the full project plan &mdash; expand owners, milestones, dependencies, and deliverable specs</span></li>
           <li><span class="ask-next-when">End of June</span><span class="ask-next-what">Working group publishes v1 delivery standard and block-captain toolkit</span></li>
           <li><span class="ask-next-when">June</span><span class="ask-next-what">ATC Land Use Committee briefing &middot; first captain training cohort scheduled</span></li>
           <li><span class="ask-next-when">Jul &ndash; Dec</span><span class="ask-next-what">PFA hearings: advocate for an EIFD earmark for engagement infrastructure</span></li>
