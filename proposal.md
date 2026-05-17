@@ -1,6 +1,8 @@
 # Altadena Community Engagement Proposal
 
-**v1 — for working group review & CAPS buy-in · May 21, 2026**
+*Working Group Proposal · v1 · Work in Progress*
+
+**For working group review & CAPS buy-in · May 21, 2026**
 
 A collaboration: **Altadena Village · CoLab · Alting · Altagether**
 
