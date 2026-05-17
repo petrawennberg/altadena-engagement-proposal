@@ -28,7 +28,21 @@ Each runs its own engagement (or none). Residents are asked the same questions f
 
 ---
 
-## 2 · Proposal — the five-step process
+## 2 · Values
+
+Five principles guide every decision the working group makes — and every Sponsor that adopts this process commits to upholding them. They are the standard the project is measured against.
+
+| # | Value | What it means |
+|---|---|---|
+| 01 | **Proximity** | Lived knowledge from being on the block carries weight. The closer to the place, the closer to the call. Community members carry context the County doesn’t have — this process makes sure it lands. |
+| 02 | **Local agency** | People affected have a defined path to shape what gets built — not just commented on. Commercial owners and residents move from being consulted to being decision partners. |
+| 03 | **Coordination** | Multiple agencies, utilities, and developers converge in one process the community can follow — no more being asked the same question five times by five different sponsors on five different schedules. |
+| 04 | **Accountability** | Every input is traceable to an outcome — or to an explicit decision not to act on it, with a reason. Promises don’t expire silently. |
+| 05 | **Trauma-informed** | Engagement is designed for a community that has lost a lot. Pace, format, language, and tone honor the cost. Multi-modal delivery (text · video · walking tours · languages · ADA) is non-negotiable. |
+
+---
+
+## 3 · Proposal — the five-step process
 
 A **defined process every project sponsor follows** when working in Altadena. Five steps; the framework flows top-down (content) and bottom-up (consensus):
 
@@ -51,7 +65,7 @@ A **defined process every project sponsor follows** when working in Altadena. Fi
 
 ---
 
-## 3 · What gets built (deliverables)
+## 4 · What gets built (deliverables)
 
 Five tangible things produced in the first 9 months. Each has an owner and acceptance criteria.
 
@@ -118,7 +132,7 @@ A public-facing view showing what input each project is getting, across all spon
 
 ---
 
-## 4 · Who does what
+## 5 · Who does what
 
 | Org | Role | Lead |
 |---|---|---|
@@ -129,7 +143,7 @@ A public-facing view showing what input each project is getting, across all spon
 
 ---
 
-## 5 · Vocabulary
+## 6 · Vocabulary
 
 Used consistently throughout this proposal and the deck:
 
@@ -145,7 +159,7 @@ Used consistently throughout this proposal and the deck:
 
 ---
 
-## 6 · Timeline
+## 7 · Timeline
 
 | When | What | Lead |
 |---|---|---|
@@ -163,7 +177,7 @@ Full Gantt: `index.html` slide 7.
 
 ---
 
-## 7 · Cost
+## 8 · Cost
 
 Three pockets — honest about who pays for what:
 
@@ -177,7 +191,7 @@ CAPS is not asked to fund any of this. CAPS endorsement is what moves EIFD towar
 
 ---
 
-## 8 · Success criteria
+## 9 · Success criteria
 
 How we’ll know this worked:
 
@@ -192,7 +206,7 @@ How we’ll know this worked:
 
 ---
 
-## 9 · The ask
+## 10 · The ask
 
 **For CAPS — Thursday May 21:**
 
@@ -212,7 +226,7 @@ How we’ll know this worked:
 
 ---
 
-## 10 · Next steps
+## 11 · Next steps
 
 **This week:**
 - [ ] CAPS presentation (Thu May 21) — Gabriella presents; Petra in Stockholm
