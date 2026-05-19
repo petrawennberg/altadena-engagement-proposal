@@ -409,6 +409,22 @@
     grid-template-columns: 180px 1fr;
     align-items: center;
   }
+  /* slide 3: two label columns (scope | entity) */
+  .gantt.cols2 .gantt-header, .gantt.cols2 .gantt-row {
+    grid-template-columns: 105px 158px 1fr;
+  }
+  .gantt-colhead {
+    font-size: var(--t-label-sm); letter-spacing: 2px; text-transform: uppercase;
+    color: var(--coral); font-weight: 700;
+  }
+  .gantt-scope {
+    font-size: var(--t-body-sm); font-weight: 700;
+    color: var(--forest); padding-right: 10px; line-height: 1.2;
+  }
+  .gantt-entity {
+    font-size: var(--t-label-sm); font-weight: 400;
+    color: var(--forest-soft); padding-right: 12px; line-height: 1.25;
+  }
   .gantt-time-axis { display: flex; flex-direction: column; gap: 3px; }
   .gantt-years {
     display: grid;
@@ -965,9 +981,10 @@
       <h2 class="slide-title">Separate schedules, no coordination</h2>
     </div>
     <div class="slide-body">
-      <div class="gantt">
+      <div class="gantt cols2">
         <div class="gantt-header">
-          <div></div>
+          <div class="gantt-colhead">Scope</div>
+          <div class="gantt-colhead">Entity</div>
           <div class="gantt-time-axis">
             <div class="gantt-years">
               <div class="gantt-year" style="grid-column: 1 / 11;">2026</div>
@@ -1000,81 +1017,94 @@
           </div>
         </div>
         <div class="gantt-row">
-          <div class="gantt-row-label">CIP<span>LA County Public Works</span></div>
+          <div class="gantt-scope">CIP</div>
+          <div class="gantt-entity">LA County Public Works</div>
           <div class="gantt-track">
             <div class="gantt-bar" style="grid-column: 1 / 3;">Survey</div>
             <div class="gantt-bar tbd" style="grid-column: 4 / 15;">Comment period TBD</div>
           </div>
         </div>
         <div class="gantt-row">
-          <div class="gantt-row-label">Regional Planning<span>WSGVAP refresh</span></div>
+          <div class="gantt-scope">Land use</div>
+          <div class="gantt-entity">LA County Regional Planning (WSGVAP)</div>
           <div class="gantt-track">
             <div class="gantt-bar tbd sage-tbd" style="grid-column: 5 / 20;">Refresh cycle TBD</div>
           </div>
         </div>
         <div class="gantt-row">
-          <div class="gantt-row-label">Sanitation<span>LA County sewer</span></div>
+          <div class="gantt-scope">Sewer</div>
+          <div class="gantt-entity">LA County Sanitation</div>
           <div class="gantt-track">
             <div class="gantt-bar sage" style="grid-column: 1 / 23;">Ongoing rebuild interaction</div>
           </div>
         </div>
         <div class="gantt-row">
-          <div class="gantt-row-label">Water utilities<span>Las Flores &middot; Lincoln &middot; Rubio Ca&ntilde;on</span></div>
+          <div class="gantt-scope">Water</div>
+          <div class="gantt-entity">Las Flores &middot; Lincoln &middot; Rubio Ca&ntilde;on</div>
           <div class="gantt-track">
             <div class="gantt-bar sage" style="grid-column: 1 / 23;">Ongoing restoration &amp; planning</div>
           </div>
         </div>
         <div class="gantt-row">
-          <div class="gantt-row-label">Flood Control<span>LA County stormwater</span></div>
+          <div class="gantt-scope">Stormwater</div>
+          <div class="gantt-entity">LA County Flood Control</div>
           <div class="gantt-track">
             <div class="gantt-bar tbd sage-tbd" style="grid-column: 4 / 17;">Stormwater windows TBD</div>
           </div>
         </div>
         <div class="gantt-row">
-          <div class="gantt-row-label">Edison / SCE</div>
+          <div class="gantt-scope">Energy</div>
+          <div class="gantt-entity">Edison / SCE</div>
           <div class="gantt-track">
             <div class="gantt-bar sage" style="grid-column: 1 / 23;">Undergrounding &amp; restoration planning &mdash; ongoing</div>
           </div>
         </div>
         <div class="gantt-row">
-          <div class="gantt-row-label">SoCalGas</div>
+          <div class="gantt-scope">Gas</div>
+          <div class="gantt-entity">SoCalGas</div>
           <div class="gantt-track">
             <div class="gantt-bar sage" style="grid-column: 1 / 23;">Gas restoration ongoing</div>
           </div>
         </div>
         <div class="gantt-row">
-          <div class="gantt-row-label">PUSD<span>School-site rebuild</span></div>
+          <div class="gantt-scope">Schools</div>
+          <div class="gantt-entity">PUSD</div>
           <div class="gantt-track">
             <div class="gantt-bar tbd" style="grid-column: 5 / 18;">Decisions TBD</div>
           </div>
         </div>
         <div class="gantt-row">
-          <div class="gantt-row-label">Parks &amp; Rec<span>LA County multi-benefit</span></div>
+          <div class="gantt-scope">Multi-benefit</div>
+          <div class="gantt-entity">LA County Parks &amp; Rec</div>
           <div class="gantt-track">
             <div class="gantt-bar tbd sage-tbd" style="grid-column: 6 / 20;">Parks &amp; green corridors TBD</div>
           </div>
         </div>
         <div class="gantt-row">
-          <div class="gantt-row-label">Tree restoration<span>LA County &middot; TreePeople &middot; Altadena Bloom</span></div>
+          <div class="gantt-scope">Urban canopy</div>
+          <div class="gantt-entity">LA County &middot; TreePeople &middot; Altadena Bloom</div>
           <div class="gantt-track">
             <div class="gantt-bar tbd sage-tbd" style="grid-column: 6 / 23;">Urban canopy restoration TBD</div>
           </div>
         </div>
         <div class="gantt-row">
-          <div class="gantt-row-label">Outside investments<span>Private developers &amp; rebuild projects</span></div>
+          <div class="gantt-scope">Private rebuild</div>
+          <div class="gantt-entity">Outside investments &amp; developers</div>
           <div class="gantt-track">
             <div class="gantt-bar sage" style="grid-column: 1 / 12;">Active rebuild projects ongoing</div>
             <div class="gantt-bar tbd sage-tbd" style="grid-column: 12 / 23;">New permits &amp; projects TBD</div>
           </div>
         </div>
         <div class="gantt-row">
-          <div class="gantt-row-label">Paradigm<span>Edison&rsquo;s outreach consultant</span></div>
+          <div class="gantt-scope">Outreach</div>
+          <div class="gantt-entity">Paradigm (for Edison)</div>
           <div class="gantt-track">
             <div class="gantt-bar tbd" style="grid-column: 1 / 23;">Engagement windows TBD</div>
           </div>
         </div>
         <div class="gantt-row">
-          <div class="gantt-row-label">Toole<span>LA County&rsquo;s planning consultant</span></div>
+          <div class="gantt-scope">Master plan</div>
+          <div class="gantt-entity">Toole (for LA County)</div>
           <div class="gantt-track">
             <div class="gantt-bar forest" style="grid-column: 1 / 6;">Master plan in progress</div>
             <div class="gantt-bar tbd" style="grid-column: 6 / 23;">No engagement scheduled</div>
