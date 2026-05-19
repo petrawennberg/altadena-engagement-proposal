@@ -10,7 +10,7 @@ A collaboration: **Altadena Village · CoLab · Alting · Altagether**
 
 ## TL;DR
 
-Altadena’s commercial and public spaces are being rebuilt. There’s no defined process for the community to shape what they become or see the impact of their input. We propose a five-step engagement process — anchored in proximity, supported by Altadena’s 150+ block captains, with subject & cause experts pulled in by relevance — and a small set of concrete tools to make it run. We’re asking CAPS to **co-sign this process** so it becomes the default standard for every sponsor working in Altadena.
+Altadena’s commercial and public spaces are being rebuilt. There’s no defined process for the community to shape what they become or see the impact of their input. We propose a five-step engagement process — anchored in proximity, supported by Altadena’s 150+ block captains, with subject & cause experts pulled in by relevance — and a small set of concrete tools to make it run. We’re asking CAPS to **co-sign this process** so it becomes the default standard for every project owner working in Altadena.
 
 ---
 
@@ -32,27 +32,26 @@ Each runs its own engagement (or none). Residents are asked the same questions f
 
 ## 2 · Values
 
-Eight principles guide every decision the working group makes — and every Sponsor that adopts this process commits to upholding them. They are the standard the project is measured against.
+Seven principles guide every decision the working group makes — and every Project owner that adopts this process commits to upholding them. They are the standard the project is measured against.
 
 | # | Value | What it means |
 |---|---|---|
-| 01 | **Proximity** | Lived knowledge from being on the block carries weight. The closer to the place, the closer to the call. Community members carry context the County doesn’t have — this process makes sure it lands. |
+| 01 | **Proximity** | Neighbors know what their block needs. Lived knowledge from being on the block carries weight — the closer to the place, the closer to the call. This process makes sure that knowledge lands in County decisions. |
 | 02 | **Local agency** | People affected have a defined path to shape what gets built — not just commented on. Commercial owners and residents move from being consulted to being decision partners. |
-| 03 | **Co-creation** | Community is not consulted on a finished proposal — it shapes the question from the start. Sponsors and community members draft, revise, and decide together. Engagement is participatory architecture, not surveying. |
-| 04 | **Coordination** | Multiple agencies, utilities, and developers converge in one process the community can follow — no more being asked the same question five times by five different sponsors on five different schedules. |
-| 05 | **Transparency** | The process is visible end-to-end. Proposals, decisions, and decision rationales are public. Stakeholders can see at any moment what’s been proposed, decided, or ruled out — and why. Private dialogue stays private; outcomes become public record. |
-| 06 | **Accountability** | Every input is traceable to an outcome — or to an explicit decision not to act on it, with a reason. Promises don’t expire silently. |
-| 07 | **Access to conflict resolution** | Disagreement has a clear, low-cost path. When community input is rejected, when sponsors and stakeholders clash, when factions within the community disagree — there is a defined way to surface, hear, and resolve it inside the process. Conflict that has no channel routes to lawsuits, social media, or exit; this process refuses that default. |
-| 08 | **Trauma-informed** | Engagement is designed for a community that has lost a lot. Pace, format, language, and tone honor the cost. Multi-modal delivery (text · video · walking tours · languages · ADA) is non-negotiable. |
+| 03 | **Co-creation** | Community is not consulted on a finished proposal — it shapes the question from the start. Project owners and community members draft, revise, and decide together. Engagement is participatory architecture, not surveying. |
+| 04 | **Coordination** | Multiple agencies, utilities, and developers converge in one process the community can follow — no more being asked the same question five times by five different project owners on five different schedules. |
+| 05 | **Visibility** | Visibility goes both ways. Community can see what project owners are planning, deciding, and changing — plans, bid packages, design decisions, and where they deviate from stated intent. Project owners can see what the community has surfaced, decided, and prioritized. Visibility lets everyone act *before* it's too late — to question, hold the line, or ground decisions in shared evidence. |
+| 06 | **Access to conflict resolution** | Disagreement has a clear, low-cost path. When community input is rejected, when project owners and stakeholders clash, when factions within the community disagree — there is a defined way to surface, hear, and resolve it inside the process. Conflict that has no channel routes to lawsuits, social media, or exit; this process refuses that default. |
+| 07 | **Trauma-informed** | Engagement is designed for a community that has lost a lot. Pace, format, language, and tone honor the cost. Multi-modal delivery (text · video · walking tours · languages · ADA) is non-negotiable. Trauma-informed support, in partnership with Trauma Resource Institute, EFC, Hillsides, and Dept of Mental Health, is built into captain training. |
 
 ---
 
 ## 3 · Proposal — the five-step process
 
-A **defined process every project sponsor follows** when working in Altadena. Five steps; the framework flows top-down (content) and bottom-up (consensus):
+A **defined process every project project owner follows** when working in Altadena. Five steps; the framework flows top-down (content) and bottom-up (consensus):
 
 ```
-↓ CONTENT FLOWS DOWN                       ↑ CONSENSUS FLOWS UP
+↓ INFORMATION FLOWS DOWN                       ↑ CONSENSUS FLOWS UP
    01 DEFINITION                              05 SHARED RECORD
    02 TRAINING & DISTRIBUTION                 04 AGGREGATION
 
@@ -62,10 +61,10 @@ A **defined process every project sponsor follows** when working in Altadena. Fi
 
 | # | Step | What happens |
 |---|------|---|
-| 01 | **Definition** | Sponsor defines decision per community standards — problem, ask, geographic area, timeline, multi-modal delivery (text · video · Spanish · walking tours), expert access |
+| 01 | **Definition** | Project owner defines decision per engagement standards — problem, ask, geographic area, timeline, multi-modal delivery (text · video · Spanish · walking tours), expert access |
 | 02 | **Training & Distribution** | Materials route through Altagether’s 150+ block captains and the commercial-owner network; subject & cause experts pulled in by relevance |
 | 03 | **Facilitating Discussion** | Block captains lead time-bound community deliberation at the block level |
-| 04 | **Aggregation** | Block deliberations compile into a coherent record, organized by area and sponsor’s categories. Private dialogue stays private; outcomes become public |
+| 04 | **Aggregation** | Block deliberations compile into a coherent record, organized by area and project owner’s categories. Private dialogue stays private; outcomes become public |
 | 05 | **Shared record** | The record goes public — tracked on a dashboard, visible to all stakeholders |
 
 ---
@@ -76,14 +75,14 @@ Five tangible things produced in the first 9 months. Each has an owner and accep
 
 ### 3.1 — Delivery standard (the spec)
 
-A single document describing what every sponsor must produce before community engagement begins.
+A single document describing what every project owner must produce before community engagement begins.
 
 - **Owner:** Alting (Petra)
 - **Acceptance criteria:**
   - Specifies the six required elements (problem definition, ask, geographic area, timeline, expert access, multi-modal materials)
   - Co-signed by CAPS, ATC, and at least one County agency
-  - Templated so any sponsor can fill it in <2 hours
-- **User story:** *As a sponsor, I want a clear spec to deliver to, so I know what community engagement looks like for my project.*
+  - Templated so any project owner can fill it in <2 hours
+- **User story:** *As a project owner, I want a clear spec to deliver to, so I know what community engagement looks like for my project.*
 
 ### 3.2 — Block-captain toolkit
 
@@ -93,7 +92,7 @@ Pre-built facilitation guides, conversation prompts, and decision-record templat
 - **Acceptance criteria:**
   - Facilitation guide for a 1-hour block meeting (printable + digital)
   - Decision-record template that captures consensus, dissent, and unresolved questions
-  - Plain-language brief template (translates any sponsor’s delivery into a 1-page summary)
+  - Plain-language brief template (translates any project owner’s delivery into a 1-page summary)
   - All materials available in English & Spanish
 - **User story:** *As a block captain, I want pre-built guides, so I can run conversations without designing the form each time.*
 
@@ -103,9 +102,9 @@ The structured artifact that captures what each block decided. Private dialogue,
 
 - **Owner:** Alting (Petra) + CoLab (Gabriella)
 - **Acceptance criteria:**
-  - Records use the standard template (block, date, sponsor, decision, dissent)
+  - Records use the standard template (block, date, project owner, decision, dissent)
   - Stored in shared Google Drive folder per corridor
-  - Aggregation by corridor / zone / sponsor category is straightforward (manual)
+  - Aggregation by corridor / zone / project owner category is straightforward (manual)
   - No individual attribution — outcomes public, dialogue private
 - **User story:** *As a resident, I want my block’s input recorded in a way that’s traceable, so I know my voice was heard.*
 
@@ -123,7 +122,7 @@ A short, repeatable training that prepares block captains to facilitate. On-call
 
 ### 3.5 — Cross-instrument dashboard
 
-A public-facing view showing what input each project is getting, across all sponsors. MVP = manually maintained; v2 = automated.
+A public-facing view showing what input each project is getting, across all project owners. MVP = manually maintained; v2 = automated.
 
 - **Owner:** Alting (Petra) — design; build TBD
 - **Acceptance criteria (MVP):**
@@ -142,7 +141,7 @@ A public-facing view showing what input each project is getting, across all spon
 | Org | Role | Lead |
 |---|---|---|
 | **Altadena Village** | Commercial-corridor work, mobility, CIP/EIFD accuracy, planner relationships | Esther Kim |
-| **CoLab** | Plain-language communication, captain training & support, Brown Act monitoring, health equity | Megan Hinchliffe Gerig · Gabriella Caparco |
+| **CoLab** | Plain-language communication, captain training & support, Brown Act monitoring, health equity | Megan Hinchliffe Gerig · Gabriella Caparco-Robertson |
 | **Alting** | Process design, decision-record system, dashboard, synthesis | Petra Wennberg |
 | **Altagether** | Distribution and education through the 150+ block-captain network | John Mayo |
 
@@ -154,13 +153,13 @@ Used consistently throughout this proposal and the deck:
 
 | Term | Definition |
 |---|---|
-| **Sponsor** | The agency, utility, developer, or consultant paying for or initiating a project that affects Altadena |
+| **Project owner** | The agency, utility, developer, or consultant paying for or initiating a project that affects Altadena |
 | **PFA** | Public Financing Authority — the body administering EIFD/AWRIFD funds. The funding agency. Stands alone |
 | **Community** | Residents, commercial owners, and anyone with a verified Altadena location |
 | **Block captain** | An Altagether-trained resident facilitating deliberation on their block |
 | Subject & cause experts | Subject-matter expertise (architects, planners, mediators) AND cause-based representation (cultural advocacy groups, environmental orgs). Pulled in by **relevance**, not self-selection |
 | **Partners** | Organizations that help in some way — CAPS Roundtable members, ARRC, ARLA, others |
-| **Stakeholder** | Anyone with a vested interest in the process — community, sponsors, partners, experts |
+| **Stakeholder** | Anyone with a vested interest in the process — community, project owners, partners, experts |
 
 ---
 
@@ -188,7 +187,7 @@ Three pockets — honest about who pays for what:
 
 | Source | What it funds |
 |---|---|
-| **Sponsor budgets** | Each sponsor pays for its own delivery to the standard. Normal cost of public infrastructure or development work, not new spend |
+| **Project owner budgets** | Each project owner pays for its own delivery to the standard. Normal cost of public infrastructure or development work, not new spend |
 | **EIFD via PFA** | A small fraction of the $2B financing layer funds the engagement infrastructure — delivery standard, captain toolkit, decision-record system, dashboard, mediation |
 | **Local hires** | Community-side professionals (facilitators, mediators, legal, translators) — paid via EIFD + external grants (Annenberg, Emerson, Omidyar lanes). Local-first so dollars recirculate inside Altadena |
 
@@ -202,12 +201,13 @@ How we’ll know this worked:
 
 | Metric | Year-1 target |
 |---|---|
-| Sponsors meeting the delivery standard | At least 3 (CIP + 2 others) |
+| Project owners meeting the delivery standard | At least 3 (CIP + 2 others) |
 | Active block captains using the toolkit | 50+ captains, 30+ blocks |
 | Decision records submitted | 1 corridor (Fair Oaks) end-to-end |
 | Dashboard MVP live | By Q3 2027 |
 | EIFD line item secured | Engagement-infrastructure earmark adopted at a PFA meeting |
 | Community survey | >60% of participating residents say their input shaped the outcome |
+| Fair Oaks pilot reach | Process reaches 30%+ of residents who didn't attend prior rebuild engagement |
 
 ---
 
@@ -271,7 +271,7 @@ How we’ll know this worked:
 
 ## Appendix A — Partners (CAPS Roundtable coalition)
 
-Altadena Bloom · Altadena Chamber of Commerce · Altadena Collective · Altadena Green · Altadena Heritage · Altadena Town Council · ARRC · CCAR · Dena Hive · League of Women Voters · Neighbors Building a Greater Altadena · NOMA · PUSD School Board · Steadfast · WRTT
+Altadena Bloom · Altadena Chamber of Commerce · Altadena Collective · Altadena Green · Altadena Heritage · Altadena Town Council · ARRC · CCAR · Dena Hive · League of Women Voters · Neighbors Building a Better Altadena · NOMA · PUSD School Board · Steadfast · WRTT
 
 ## Appendix B — Subject & cause experts (worked through during pilot)
 
@@ -281,10 +281,11 @@ Altadena Bloom · Altadena Chamber of Commerce · Altadena Collective · Altaden
 | Heritage & cultural memory | Altadena Heritage, Black cultural advocacy groups (to identify) |
 | Ecology & watersheds | Altadena Green, TreePeople, Reimagining our Watersheds, AIR |
 | Health & equity | Denas Just Futures, Altadena CoLab |
+| Mental health & trauma-informed support | Trauma Resource Institute (Megan & Gabby certified), EFC, Hillsides, Dept of Mental Health |
 | Civic & governance | League of Women Voters, CCAR, ARRC |
 | Business & commerce | Altadena Chamber of Commerce, commercial-owner network |
 
-## Appendix C — Sponsors expected to engage
+## Appendix C — Project owners expected to engage
 
 LA County: Public Works (CIP) · Regional Planning (WSGVAP) · Sanitation · Flood Control · Fire · Parks & Recreation
 Utilities: Edison/SCE · SoCalGas · Las Flores Water · Lincoln Avenue Water · Rubio Cañon Land & Water
@@ -307,7 +308,7 @@ Other: PUSD · Paradigm (Edison’s outreach consultant) · Toole Design (County
 
 - [ ] Esther Kim (Altadena Village)
 - [ ] Megan Hinchliffe Gerig (CoLab)
-- [ ] Gabriella Caparco (CoLab)
+- [ ] Gabriella Caparco-Robertson (CoLab)
 - [ ] Petra Wennberg (Alting)
 - [ ] John Mayo (Altagether)
 

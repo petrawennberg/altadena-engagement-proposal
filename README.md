@@ -27,6 +27,6 @@ Both are styled with the same joinalting brand language. Share either URL.
 |---|---|---|
 | Esther Kim | Altadena Village | Architecture, commercial corridor work, mobility, CIP/EIFD accuracy |
 | Megan Hinchliffe Gerig | CoLab | Plain-language communication, captain outreach |
-| Gabriella Caparco | CoLab | Systems thinking, health equity, Brown Act monitoring |
+| Gabriella Caparco-Robertson | CoLab | Systems thinking, health equity, Brown Act monitoring |
 | Petra Wennberg | Alting | Design pattern, synthesis, decision records, dashboard |
 | John Mayo | Altagether | Distribution and education through the 150+ block-captain network |
