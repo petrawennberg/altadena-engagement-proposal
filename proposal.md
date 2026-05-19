@@ -10,7 +10,7 @@ A collaboration: **Altadena Village · CoLab · Alting · Altagether**
 
 ## TL;DR
 
-Altadena’s commercial and public spaces are being rebuilt. There’s no defined process for the community to shape what they become or see the impact of their input. We propose a five-step engagement process — anchored in proximity, supported by Altadena’s 150+ block captains, with subject & cause experts pulled in by relevance — and a small set of concrete tools to make it run. We’re asking CAPS to **co-sign this process** so it becomes the default standard for every project owner working in Altadena.
+Altadena’s commercial and public spaces are being rebuilt. There’s no defined process for the community to shape what they become or see the impact of their input. We propose a five-step engagement process — anchored in proximity, supported by Altadena’s 150+ block captains, with subject & cause experts pulled in by relevance — and a small set of concrete tools to make it run. We’re asking CAPS to **co-sign this process** so it becomes the default guidelines for every project owner working in Altadena.
 
 ---
 
@@ -32,7 +32,7 @@ Each runs its own engagement (or none). Residents are asked the same questions f
 
 ## 2 · Values
 
-Seven principles guide every decision the working group makes — and every Project owner that adopts this process commits to upholding them. They are the standard the project is measured against.
+Seven principles guide every decision the working group makes — and every Project owner that adopts this process commits to upholding them. They are what the project is measured against.
 
 | # | Value | What it means |
 |---|---|---|
@@ -61,7 +61,7 @@ A **defined process every project owner follows** when working in Altadena. Five
 
 | # | Step | What happens |
 |---|------|---|
-| 01 | **Scope** | Project owner defines decision within one of three scopes — **A** Recovery Master Plan / CIP · **B** Commercial corridors · **C** Public right-of-way & standards — with problem, ask, geographic area, timeline, multi-modal delivery (text · video · languages · walking tours), expert access |
+| 01 | **Scope** | Project owner defines decision within one of three scopes — **A** Recovery Master Plan / CIP · **B** Commercial corridors · **C** Public right-of-way & guidelines — with problem, ask, geographic area, timeline, multi-modal delivery (text · video · languages · walking tours), expert access |
 | 02 | **Training & Distribution** | Materials route through Altagether’s 150+ block captains and the commercial-owner network; subject & cause experts pulled in by relevance |
 | 03 | **Facilitating Discussion** | Block captains lead time-bound community deliberation at the block level |
 | 04 | **Aggregation** | Block deliberations compile into a coherent record, organized by area and project owner’s categories. Private dialogue stays private; outcomes become public |
@@ -73,7 +73,7 @@ A **defined process every project owner follows** when working in Altadena. Five
 |---|---|---|---|
 | **A · Recovery Master Plan / CIP** | Block-by-block infrastructure feedback into the County's recovery plan (Jun–Jul 2026) | Mandatory — happening with or without us | Public Works / CIP team |
 | **B · Commercial corridors** | Commercial property-owner input on corridor rebuild | Discretionary — contingent on owner interest | Altadena Village / commercial-owner network |
-| **C · Public right-of-way & standards** | Sidewalks, streetscape, and shared standards across all of Altadena | Ongoing — open to everyone | General standards record |
+| **C · Public right-of-way & guidelines** | Sidewalks, streetscape, and shared guidelines across all of Altadena | Ongoing — open to everyone | General guidelines record |
 
 *Fair Oaks Corridor (next section) is the **Scope A** pilot.*
 
@@ -83,7 +83,7 @@ A **defined process every project owner follows** when working in Altadena. Five
 
 Five tangible things produced in the first 9 months. Each has an owner and acceptance criteria.
 
-### 3.1 — Delivery standard (the spec)
+### 3.1 — Delivery guidelines (the spec)
 
 A single document describing what every project owner must produce before community engagement begins.
 
@@ -112,7 +112,7 @@ The structured artifact that captures what each block decided. Private dialogue,
 
 - **Owner:** Alting (Petra) + CoLab (Gabriella)
 - **Acceptance criteria:**
-  - Records use the standard template (block, date, project owner, decision, dissent)
+  - Records use the shared template (block, date, project owner, decision, dissent)
   - Stored in shared Google Drive folder per corridor
   - Aggregation by corridor / zone / project owner category is straightforward (manual)
   - No individual attribution — outcomes public, dialogue private
@@ -181,7 +181,7 @@ Used consistently throughout this proposal and the deck:
 | **May 21 – Jun 4** | Feedback & refinement window | All |
 | **Late May – Jun 30** | Build out project plan · open feedback & refinement · outreach & circulation | Petra + working group |
 | **May 22 – Jun 30** | ATC + Altagether ratification | Esther + John |
-| **Jun – Sep 2026** | Delivery standard + captain toolkit built | Petra, Megan |
+| **Jun – Sep 2026** | Delivery guidelines + captain toolkit built | Petra, Megan |
 | **Jul – Dec 2026** | EIFD advocacy at PFA hearings | All |
 | **Mid-Aug – Nov 2026** | Captain training cohorts (kick-off after Petra returns Aug 9) | Megan, Gabriella, John |
 | **Sep 2026 – Jun 2027** | Fair Oaks pilot — hand-hacked live use case | All |
@@ -197,8 +197,8 @@ Three pockets — honest about who pays for what:
 
 | Source | What it funds |
 |---|---|
-| **Project owner budgets** | Each project owner pays for its own delivery to the standard. Normal cost of public infrastructure or development work, not new spend |
-| **EIFD via PFA** | A small fraction of the $2B financing layer funds the engagement infrastructure — delivery standard, captain toolkit, decision-record system, dashboard, mediation |
+| **Project owner budgets** | Each project owner pays for its own delivery to the guidelines. Normal cost of public infrastructure or development work |
+| **EIFD via PFA** | The EIFD (Altadena Wildfire Recovery Infrastructure Financing District, AWRIFD) — a small fraction of the $2B financing layer funds the engagement infrastructure: delivery guidelines, captain toolkit, decision-record system, dashboard, mediation |
 | **Local hires** | Community-side professionals (facilitators, mediators, legal, translators) — paid via EIFD + external grants (Annenberg, Emerson, Omidyar lanes). Local-first so dollars recirculate inside Altadena |
 
 CAPS is not asked to fund any of this. CAPS buy-in is what moves EIFD toward an actual earmark.
@@ -211,7 +211,7 @@ How we’ll know this worked:
 
 | Metric | Year-1 target |
 |---|---|
-| Project owners meeting the delivery standard | At least 3 (CIP + 2 others) |
+| Project owners meeting the delivery guidelines | At least 3 (CIP + 2 others) |
 | Active block captains using the toolkit | 50+ captains, 30+ blocks |
 | Decision records submitted | 1 corridor (Fair Oaks) end-to-end |
 | Dashboard MVP live | By Q3 2027 |
@@ -234,7 +234,7 @@ How we’ll know this worked:
 *This is a coalition framework. It’s stronger with your name on it.*
 
 **For ATC — Jun–Jul:**
-- Land Use Committee ratification of the engagement standard as the structured channel for community input on rebuild projects
+- Land Use Committee ratification of the engagement guidelines as the structured channel for community input on rebuild projects
 
 **For Altagether — Jun–Jul:**
 - Formal partnership confirming distribution and training through the 150+ block captains
@@ -262,12 +262,12 @@ How we’ll know this worked:
 - [ ] **Outreach & circulation** — share the plan with EFC, ACONA, ART, Altadena Rising, My Tribe Rise, Hands in the Soul, broader CAPS coalition, ATC, partners, and community
 - [ ] ATC Land Use Committee briefing & ratification outreach
 - [ ] First captain training cohort scheduled (mid-Aug — after Petra returns Aug 9)
-- [ ] First draft of delivery standard (Petra) opens for review
+- [ ] First draft of delivery guidelines (Petra) opens for review
 - [ ] First draft of captain toolkit (Megan) opens for review
 - [ ] **Ask LA County when PFA is reconvening** — no 2026 dates posted; flag any meetings in Jul 13–Aug 9 (Petra in Sweden) for proxy attendance
 
 **By end of June:**
-- [ ] Delivery standard v1 published
+- [ ] Delivery guidelines v1 published
 - [ ] Captain toolkit v1 published
 - [ ] EIFD advocacy plan with PFA hearing calendar
 
@@ -275,7 +275,7 @@ How we’ll know this worked:
 - [ ] PFA hearings: advocate for an EIFD earmark for engagement infrastructure
 
 **Fall 2026:**
-- [ ] Fair Oaks corridor pilot launches using the standard
+- [ ] Fair Oaks corridor pilot launches using the guidelines
 
 ---
 
