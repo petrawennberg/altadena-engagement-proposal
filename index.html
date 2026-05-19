@@ -525,6 +525,30 @@
     text-align: center;
   }
 
+  /* ============ MAP / IMAGE SLIDE ============ */
+  .map-figure {
+    flex-grow: 1;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    min-height: 0; gap: 20px;
+  }
+  .map-figure img {
+    max-width: 100%; max-height: 76%;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 28px rgba(46,61,38,0.18);
+  }
+  .map-caption {
+    font-size: var(--t-body); line-height: 1.45;
+    color: var(--forest-soft); text-align: center;
+    max-width: 1000px;
+  }
+  .map-caption strong { color: var(--coral); font-weight: 700; }
+  .map-placeholder-tag {
+    font-size: var(--t-label-sm); letter-spacing: 2px; text-transform: uppercase;
+    color: var(--coral); font-weight: 700; opacity: 0.7;
+  }
+
   /* ============ SCENARIO SLIDE (legacy classes kept) ============ */
   .scenario-setup {
     background: var(--sage-tint); padding: 22px 28px;
@@ -1095,6 +1119,24 @@
     </div>
   </section>
 
+  <!-- ====== MAP A: ALTAGETHER NETWORK (before proposal) ====== -->
+  <section class="slide">
+    <div class="slide-header">
+      <div class="slide-tag">The network we build on</div>
+      <h2 class="slide-title">150+ Altagether blocks across Altadena</h2>
+    </div>
+    <div class="slide-body">
+      <div class="map-figure">
+        <img src="images/altagether-blocks.png" alt="Map of Altadena showing the Altagether block-captain network">
+        <div class="map-caption">Each shaded area is a block with a captain &mdash; the existing distribution and facilitation network this process runs on. <span class="map-placeholder-tag">Placeholder image</span></div>
+      </div>
+    </div>
+    <div class="slide-footer">
+      <div class="slide-footer-partners">Altadena Village &middot; CoLab &middot; Alting &middot; Altagether</div>
+      <div class="slide-footer-num">&mdash;</div>
+    </div>
+  </section>
+
   <!-- ====== 04: THE PROPOSAL (2-col top + span bottom) ====== -->
   <section class="slide">
     <div class="slide-header">
@@ -1109,7 +1151,7 @@
               <div class="flow-num">01</div>
               <div>
                 <div class="flow-step-name"><span class="flow-step-arrow">&darr;</span>Definition</div>
-                <div class="flow-step-text">Project owners define their decision based on <strong>engagement standards</strong> &mdash; problem, ask, geographic area, timeline, and multi-modal delivery (text &middot; video &middot; walking tours &middot; languages &middot; ADA) with expert access.</div>
+                <div class="flow-step-text">Project owners define their decision within one of three scopes &mdash; <strong>A</strong> Recovery Master Plan / CIP &middot; <strong>B</strong> Commercial corridors &middot; <strong>C</strong> Public right-of-way &amp; standards. Each defines problem, ask, area, timeline, and multi-modal delivery (text &middot; video &middot; walking tours &middot; languages &middot; ADA) with expert access.</div>
                 <div class="flow-who"><span class="flow-who-label">Who</span>County agencies &middot; utilities &middot; developers &middot; consultants</div>
               </div>
             </div>
@@ -1163,6 +1205,24 @@
     </div>
   </section>
 
+  <!-- ====== MAP B: FAIR OAKS PILOT AREA (between proposal and Fair Oaks walkthrough) ====== -->
+  <section class="slide">
+    <div class="slide-header">
+      <div class="slide-tag">Where we start &middot; Scope A pilot</div>
+      <h2 class="slide-title">Fair Oaks Corridor &mdash; the pilot area</h2>
+    </div>
+    <div class="slide-body">
+      <div class="map-figure">
+        <img src="images/fair-oaks-blocks.png" alt="Map of the Fair Oaks Corridor showing residential and commercial blocks in the pilot area">
+        <div class="map-caption">The pilot tests <strong>Scope A</strong> &mdash; getting block-by-block feedback into the Recovery Master Plan before it locks. Fair Oaks North &amp; South residential blocks plus commercial blocks, anchored by a community church. <span class="map-placeholder-tag">Placeholder image</span></div>
+      </div>
+    </div>
+    <div class="slide-footer">
+      <div class="slide-footer-partners">Altadena Village &middot; CoLab &middot; Alting &middot; Altagether</div>
+      <div class="slide-footer-num">&mdash;</div>
+    </div>
+  </section>
+
   <!-- ====== FAIR OAKS (5-step framework, hand-hacked) ====== -->
   <section class="slide">
     <div class="slide-header">
@@ -1177,7 +1237,7 @@
               <div class="flow-num">01</div>
               <div>
                 <div class="flow-step-name"><span class="flow-step-arrow">&darr;</span>Definition</div>
-                <div class="flow-step-text">CIP surveys customized for Altadena &mdash; by area, across six categories (Mobility &middot; Stormwater &middot; Sewer &middot; Water &middot; Energy &middot; Multi-Benefit). Plain-language briefs in EN + ES.</div>
+                <div class="flow-step-text"><strong>Scope A</strong> &middot; Recovery Master Plan / CIP. Surveys customized for Altadena &mdash; by area, across six categories (Mobility &middot; Stormwater &middot; Sewer &middot; Water &middot; Energy &middot; Multi-Benefit). Plain-language briefs in EN + ES.</div>
               </div>
             </div>
           </div>

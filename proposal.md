@@ -48,7 +48,7 @@ Seven principles guide every decision the working group makes — and every Proj
 
 ## 3 · Proposal — the five-step process
 
-A **defined process every project project owner follows** when working in Altadena. Five steps; the framework flows top-down (content) and bottom-up (consensus):
+A **defined process every project owner follows** when working in Altadena. Five steps; the framework flows top-down (information) and bottom-up (consensus):
 
 ```
 ↓ INFORMATION FLOWS DOWN                       ↑ CONSENSUS FLOWS UP
@@ -61,11 +61,21 @@ A **defined process every project project owner follows** when working in Altade
 
 | # | Step | What happens |
 |---|------|---|
-| 01 | **Definition** | Project owner defines decision per engagement standards — problem, ask, geographic area, timeline, multi-modal delivery (text · video · Spanish · walking tours), expert access |
+| 01 | **Definition** | Project owner defines decision within one of three scopes — **A** Recovery Master Plan / CIP · **B** Commercial corridors · **C** Public right-of-way & standards — with problem, ask, geographic area, timeline, multi-modal delivery (text · video · languages · walking tours), expert access |
 | 02 | **Training & Distribution** | Materials route through Altagether’s 150+ block captains and the commercial-owner network; subject & cause experts pulled in by relevance |
 | 03 | **Facilitating Discussion** | Block captains lead time-bound community deliberation at the block level |
 | 04 | **Aggregation** | Block deliberations compile into a coherent record, organized by area and project owner’s categories. Private dialogue stays private; outcomes become public |
 | 05 | **Shared record** | The record goes public — tracked on a dashboard, visible to all stakeholders |
+
+**The three scopes** (the top-level inputs at Definition):
+
+| Scope | What it covers | Status | Feedback routes to |
+|---|---|---|---|
+| **A · Recovery Master Plan / CIP** | Block-by-block infrastructure feedback into the County's recovery plan (Jun–Jul 2026) | Mandatory — happening with or without us | Public Works / CIP team |
+| **B · Commercial corridors** | Commercial property-owner input on corridor rebuild | Discretionary — contingent on owner interest | Altadena Village / commercial-owner network |
+| **C · Public right-of-way & standards** | Sidewalks, streetscape, and shared standards across all of Altadena | Ongoing — open to everyone | General standards record |
+
+*Fair Oaks Corridor (next section) is the **Scope A** pilot.*
 
 ---
 
