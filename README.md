@@ -1,4 +1,6 @@
-# Altadena Community Engagement Proposal
+# Altadena Commons
+
+*A community engagement strategy for the Altadena rebuild*
 
 Working group: **Altadena Village · CoLab · Alting · Altagether**
 CAPS presentation: **Thursday, May 21, 2026**

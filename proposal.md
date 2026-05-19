@@ -1,4 +1,6 @@
-# Altadena Community Engagement Proposal
+# Altadena Commons
+
+*A community engagement strategy for the Altadena rebuild*
 
 *Working Group Proposal · v1 · Work in Progress*
 
