@@ -826,6 +826,7 @@
     justify-content: center; align-items: center; text-align: center;
   }
   .title-slide .slide-footer { display: none; }  /* body already names it — no redundant footer */
+  .title-symbol { margin-bottom: 30px; line-height: 0; }
   .title-main {
     font-family: var(--serif); font-size: 104px; line-height: 0.98;
     color: var(--coral); margin-bottom: 22px;
@@ -918,6 +919,13 @@
   <!-- ====== 01: TITLE ====== -->
   <section class="slide title-slide active">
     <div class="slide-body">
+      <div class="title-symbol" aria-hidden="true">
+        <svg width="76" height="76" viewBox="0 0 80 80" fill="none">
+          <path d="M25 21 L40 34 L55 21" stroke="#E5905A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="22" y1="40" x2="58" y2="40" stroke="#2E3D26" stroke-width="5" stroke-linecap="round"/>
+          <path d="M25 59 L40 46 L55 59" stroke="#7A8A6E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
       <h1 class="title-main">Common Ground</h1>
       <div class="title-subtitle">A community engagement strategy for the Altadena rebuild</div>
       <div class="title-attribution">A collaboration of Altadena Village &middot; CoLab &middot; Alting &middot; Altagether</div>
