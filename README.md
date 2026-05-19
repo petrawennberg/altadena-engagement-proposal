@@ -19,7 +19,6 @@ Both are styled with the same joinalting brand language. Share either URL.
 | `index.html` | The deck — open in browser, arrow keys, F for fullscreen |
 | `proposal.html` | The structured proposal — scrollable doc, print-friendly |
 | `proposal.md` | The proposal in markdown — source for collaborative edits via PRs |
-| `team-sync-agenda.md` | Agenda for the Tue May 19 working-group sync to lock the deck before Petra travels |
 | `README.md` | This file |
 
 ## Working group
