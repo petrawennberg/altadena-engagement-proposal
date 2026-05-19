@@ -1,4 +1,4 @@
-# Altadena Commons
+# Common Ground
 
 *A community engagement strategy for the Altadena rebuild*
 
