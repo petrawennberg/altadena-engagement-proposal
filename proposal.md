@@ -52,7 +52,7 @@ A **defined process every project owner follows** when working in Altadena. Five
 
 ```
 ↓ INFORMATION FLOWS DOWN                       ↑ CONSENSUS FLOWS UP
-   01 DEFINITION                              05 SHARED RECORD
+   01 SCOPE                                   05 SHARED RECORD
    02 TRAINING & DISTRIBUTION                 04 AGGREGATION
 
                        ○ DELIBERATION
@@ -61,7 +61,7 @@ A **defined process every project owner follows** when working in Altadena. Five
 
 | # | Step | What happens |
 |---|------|---|
-| 01 | **Definition** | Project owner defines decision within one of three scopes — **A** Recovery Master Plan / CIP · **B** Commercial corridors · **C** Public right-of-way & standards — with problem, ask, geographic area, timeline, multi-modal delivery (text · video · languages · walking tours), expert access |
+| 01 | **Scope** | Project owner defines decision within one of three scopes — **A** Recovery Master Plan / CIP · **B** Commercial corridors · **C** Public right-of-way & standards — with problem, ask, geographic area, timeline, multi-modal delivery (text · video · languages · walking tours), expert access |
 | 02 | **Training & Distribution** | Materials route through Altagether’s 150+ block captains and the commercial-owner network; subject & cause experts pulled in by relevance |
 | 03 | **Facilitating Discussion** | Block captains lead time-bound community deliberation at the block level |
 | 04 | **Aggregation** | Block deliberations compile into a coherent record, organized by area and project owner’s categories. Private dialogue stays private; outcomes become public |
