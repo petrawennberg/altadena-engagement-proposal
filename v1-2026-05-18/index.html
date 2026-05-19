@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A community engagement strategy for Altadena rebuild &mdash; CAPS, May 21, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #FAF6F0;
+    --cream-deep: #F0EAE0;
+    --forest: #2E3D26;
+    --forest-soft: #5A6953;
+    --coral: #E5905A;
+    --coral-tint: #FBEBDC;
+    --sage: #7A8A6E;
+    --sage-tint: #E8EDE3;
+    --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+
+    /* TYPE SCALE — single source of truth across all slides */
+    --t-hero: 76px;         /* title slide + headline-only slides */
+    --t-h1: 50px;           /* every standard slide title */
+    --t-h2: 30px;           /* sub-headlines (rare) */
+    --t-numeral: 42px;      /* step / card numerals */
+    --t-numeral-sm: 32px;   /* secondary numerals */
+    --t-lead: 22px;         /* lead paragraphs, primary item titles */
+    --t-body: 18px;         /* standard body */
+    --t-body-sm: 15px;      /* supporting body / captions */
+    --t-label: 14px;        /* slide tags, section labels (caps + spaced) */
+    --t-label-sm: 12px;     /* small labels, sub-attribution */
+    --t-micro: 11px;        /* footer */
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    font-family: var(--sans);
+    background: var(--forest);
+    color: var(--forest);
+    overflow: hidden;
+  }
+  .deck { width: 100vw; height: 100vh; position: relative; }
+
+  /* ============ UNIFIED SLIDE TEMPLATE ============ */
+  .slide {
+    position: absolute; inset: 0;
+    background: var(--cream);
+    padding: 70px 100px 50px;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .slide.active { display: flex; }
+
+  /* ============ HEADER (top) ============ */
+  .slide-header {
+    flex-shrink: 0;
+    margin-bottom: 44px;
+  }
+  .slide-tag {
+    font-size: var(--t-label); letter-spacing: 4px; text-transform: uppercase;
+    color: var(--coral); font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .slide-title {
+    font-family: var(--serif); font-size: var(--t-h1); line-height: 1.05;
+    color: var(--forest); font-weight: 400;
+    max-width: 1300px;
+  }
+  .slide-subtitle {
+    font-size: var(--t-lead); line-height: 1.4; color: var(--forest-soft);
+    margin-top: 20px; max-width: 1200px;
+  }
+
+  /* ============ BODY (top-aligned) ============ */
+  .slide-body {
+    flex-grow: 1;
+    display: flex; flex-direction: column;
+    justify-content: flex-start;
+    min-height: 0;
+  }
+
+  /* ============ FOOTER (bottom, consistent) ============ */
+  .slide-footer {
+    flex-shrink: 0;
+    margin-top: 36px;
+    padding-top: 20px;
+    border-top: 1px solid var(--sage-tint);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--t-micro);
+    letter-spacing: 2px;
+    color: var(--forest-soft);
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .slide-footer-partners { font-weight: 500; }
+  .slide-footer-num { display: none; }  /* slide number lives in nav counter only */
+
+  /* ============ TYPOGRAPHY: LISTS ============ */
+  .big-list { list-style: none; }
+  .big-list li {
+    font-size: var(--t-lead); line-height: 1.4;
+    padding: 16px 0 16px 44px;
+    position: relative;
+    border-bottom: 1px solid var(--sage-tint);
+    color: var(--forest);
+  }
+  .big-list li:last-child { border-bottom: none; }
+  .big-list li::before {
+    content: "—"; position: absolute; left: 0;
+    color: var(--coral); font-weight: 700; font-size: 24px;
+  }
+  .big-list li strong { color: var(--coral); font-weight: 700; }
+
+  /* ============ VALUES STRIP ============ */
+  .values-strip {
+    margin-top: 32px; padding: 24px 0 0;
+    border-top: 2px solid var(--coral);
+    text-align: center;
+  }
+  .values-strip-label {
+    font-size: var(--t-label-sm); letter-spacing: 4px; text-transform: uppercase;
+    color: var(--coral); font-weight: 700; margin-bottom: 14px;
+  }
+  .values-strip-items {
+    font-size: var(--t-body); color: var(--forest); font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+
+  /* ============ 3-COLUMN CARDS ============ */
+  .cards-3 {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 28px; flex-grow: 1; align-content: stretch;
+  }
+  .card {
+    background: white;
+    padding: 44px 36px 36px;
+    border-top: 6px solid var(--coral);
+    border-radius: 0 0 8px 8px;
+    display: flex; flex-direction: column;
+  }
+  .card.sage-top { border-top-color: var(--sage); }
+  .card.forest-top { border-top-color: var(--forest); }
+  .card-num {
+    font-family: var(--serif); font-size: var(--t-numeral); line-height: 1;
+    color: var(--coral); margin-bottom: 20px;
+  }
+  .card.sage-top .card-num { color: var(--sage); }
+  .card.forest-top .card-num { color: var(--forest); }
+  .card-title {
+    font-size: var(--t-label); font-weight: 700; line-height: 1.2;
+    margin-bottom: 16px; letter-spacing: 1.5px;
+    text-transform: uppercase; color: var(--forest);
+  }
+  .card-text {
+    font-size: var(--t-body); line-height: 1.45;
+    color: var(--forest); font-weight: 400;
+  }
+  .card-text strong { color: var(--coral); font-weight: 700; }
+  .card.sage-top .card-text strong { color: var(--sage); }
+  .card.forest-top .card-text strong { color: var(--forest); }
+  .card-tag {
+    margin-top: auto; padding-top: 22px;
+    font-size: var(--t-label-sm); letter-spacing: 2px; text-transform: uppercase;
+    color: var(--forest-soft); font-weight: 700;
+  }
+
+  /* ============ STAKEHOLDER 2-COLUMN GRID ============ */
+  .sh-grid-2col {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 0 48px; flex-grow: 1;
+  }
+  .sh-side { display: flex; flex-direction: column; }
+  .sh-side-label {
+    font-size: var(--t-label); letter-spacing: 3px; text-transform: uppercase;
+    color: var(--coral); font-weight: 700;
+    margin-bottom: 16px;
+    padding-bottom: 10px; border-bottom: 2px solid var(--coral);
+  }
+  .sh-side.institutional .sh-side-label {
+    color: var(--sage); border-bottom-color: var(--sage);
+  }
+  .sh-item {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--sage-tint);
+  }
+  .sh-item:last-child { border-bottom: none; }
+  .sh-item-name {
+    font-size: var(--t-lead); font-weight: 700; color: var(--forest);
+    line-height: 1.2; margin-bottom: 6px;
+  }
+  .sh-item-name span {
+    display: block; font-size: var(--t-label-sm); font-weight: 400;
+    color: var(--forest-soft); margin-top: 4px; line-height: 1.4;
+    letter-spacing: 0;
+  }
+  .sh-item-need {
+    font-size: var(--t-body); line-height: 1.45; color: var(--forest);
+  }
+  /* Legacy table (kept for reference) */
+  .sh-table { width: 100%; border-collapse: collapse; }
+  .sh-row { border-bottom: 1px solid var(--sage-tint); }
+  .sh-cell { padding: 26px 16px; vertical-align: top; }
+  .sh-name { font-size: 24px; font-weight: 700; color: var(--forest); width: 42%; padding-right: 32px; }
+  .sh-name span { display: block; font-size: 15px; font-weight: 400; color: var(--forest-soft); margin-top: 6px; line-height: 1.4; }
+  .sh-need { font-size: 22px; line-height: 1.45; color: var(--forest); }
+
+  /* ============ FLOW LAYOUT (slide 4: 2-col top, span-bottom) ============ */
+  .flow-layout {
+    display: flex; flex-direction: column;
+    gap: 18px; flex-grow: 1;
+  }
+  .flow-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 18px; flex: 1;
+  }
+  .flow-col {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 22px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .flow-bottom {
+    background: white;
+    color: var(--forest);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 22px 26px;
+  }
+  .flow-arrow-col { display: none; } /* legacy left arrow column — replaced by inline .flow-step-arrow */
+  .flow-step-arrow {
+    display: inline-flex;
+    align-items: center; justify-content: center;
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    background: var(--coral-tint);
+    color: var(--coral);
+    font-weight: 700;
+    font-size: 17px; line-height: 1;
+    flex-shrink: 0;
+  }
+  .flow-step-arrow.cycle {
+    background: var(--coral);
+    color: var(--cream);
+    font-size: 17px;
+  }
+  /* Pink accent variant for slide 6 step 03 — white box, pink cycle icon + numeral to tie to the popup retail row on slide 7 */
+  .flow-bottom.pink .flow-step-arrow.cycle {
+    background: #E85A85;
+    color: var(--cream);
+  }
+  .flow-bottom.pink .flow-num {
+    color: #E85A85;
+  }
+  .flow-bottom.pink .flow-who-label {
+    color: #E85A85;
+  }
+  .flow-framing {
+    font-size: var(--t-label);
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--forest-soft);
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .flow-framing strong {
+    color: var(--coral);
+    font-weight: 700;
+  }
+  .flow-col-content {
+    padding: 0;
+    display: flex; flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+  .flow-label {
+    font-size: var(--t-label); letter-spacing: 3px;
+    text-transform: uppercase; font-weight: 700;
+    margin-bottom: 18px;
+  }
+  .flow-col.down .flow-label { color: var(--coral); }
+  .flow-col.up .flow-label { color: var(--sage); }
+  .flow-bottom .flow-label { color: var(--coral); }
+  .flow-step {
+    display: flex; gap: 18px;
+    padding: 12px 0;
+    align-items: flex-start;
+  }
+  .flow-step + .flow-step { border-top: 1px solid var(--sage-tint); }
+  .flow-col-arrow { display: none; }
+  .flow-num {
+    font-family: var(--serif); font-size: var(--t-numeral);
+    line-height: 1; color: var(--coral);
+    flex-shrink: 0; min-width: 54px;
+  }
+  .flow-step-name {
+    font-size: var(--t-lead); font-weight: 700;
+    letter-spacing: 0; text-transform: none;
+    color: var(--forest); margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    line-height: 1;
+  }
+  .flow-step-text {
+    font-size: var(--t-body); line-height: 1.45;
+    color: var(--forest);
+  }
+
+  /* Who's involved (under each flow-step description) */
+  .flow-who {
+    margin-top: 12px;
+    font-size: var(--t-body-sm);
+    color: var(--forest-soft);
+    font-style: italic;
+    line-height: 1.5;
+  }
+  .flow-who-label {
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--coral);
+    margin-right: 8px;
+    font-size: 12px;
+  }
+  /* Sub-bullets inside flow-step (used on slide 4) */
+  .flow-bullets {
+    margin-top: 8px;
+    list-style: none;
+    padding: 0;
+  }
+  .flow-bullets li {
+    font-size: var(--t-body-sm);
+    line-height: 1.5;
+    padding: 3px 0 3px 16px;
+    position: relative;
+    color: var(--forest-soft);
+  }
+  .flow-bullets li::before {
+    content: "·";
+    position: absolute; left: 4px;
+    color: var(--coral);
+    font-weight: 700;
+  }
+  /* Simple numbered list (used on slide 3) — matches stakeholder slide type */
+  .flow-list { display: flex; flex-direction: column; }
+  .flow-list .flow-step { padding: 16px 0; gap: 24px; }
+  .flow-list .flow-step + .flow-step { border-top: 1px solid var(--sage-tint); }
+  .flow-list .flow-num {
+    font-size: var(--t-numeral); min-width: 60px;
+  }
+  .flow-list .flow-step-name {
+    font-size: var(--t-lead);
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: none;
+    margin-bottom: 6px;
+  }
+  .flow-list .flow-step-text {
+    font-size: var(--t-body);
+    line-height: 1.45;
+  }
+
+  /* Legacy styles kept for backwards compatibility (unused) */
+  .flow-stack { display: flex; flex-direction: column; flex-grow: 1; }
+  .phase-zone { display: none; }
+  .svg-frame { display: none; }
+  .diagram-attribution { display: none; }
+
+  /* ============ TIMELINE SLIDE ============ */
+  .tl-row {
+    display: grid; grid-template-columns: 340px 1fr;
+    gap: 36px; padding: 22px 0;
+    border-bottom: 1px solid var(--sage-tint);
+    align-items: center;
+  }
+  .tl-row:first-child { border-top: 1px solid var(--sage-tint); }
+  .tl-name { font-size: var(--t-lead); font-weight: 700; color: var(--forest); line-height: 1.2; }
+  .tl-name span {
+    display: block; font-size: var(--t-label-sm); font-weight: 400;
+    color: var(--forest-soft); margin-top: 4px;
+  }
+  .tl-window { font-size: var(--t-body); line-height: 1.4; color: var(--forest); }
+  .tl-window strong { color: var(--coral); font-weight: 700; }
+  .punch {
+    margin-top: 26px; padding: 22px 26px;
+    background: var(--coral-tint); border-left: 4px solid var(--coral);
+    font-size: var(--t-body); line-height: 1.45; color: var(--forest);
+  }
+  .punch strong { display: block; font-size: var(--t-label-sm); letter-spacing: 3px; text-transform: uppercase; color: var(--coral); margin-bottom: 8px; }
+
+  /* ============ GANTT CHART (slide 6) ============ */
+  .gantt { display: flex; flex-direction: column; gap: 9px; }
+  .gantt-header, .gantt-row {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: center;
+  }
+  .gantt-time-axis { display: flex; flex-direction: column; gap: 3px; }
+  .gantt-years {
+    display: grid;
+    grid-template-columns: repeat(22, 1fr);
+    gap: 2px;
+  }
+  .gantt-year {
+    text-align: center;
+    font-size: var(--t-label-sm); letter-spacing: 2px;
+    text-transform: uppercase; font-weight: 700;
+    color: var(--forest);
+    background: var(--sage-tint);
+    padding: 4px 0;
+    border-radius: 3px;
+  }
+  .gantt-months {
+    display: grid;
+    grid-template-columns: repeat(22, 1fr);
+    gap: 1px;
+  }
+  .gantt-month {
+    text-align: center;
+    font-size: 12px; letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--forest-soft); font-weight: 700;
+    padding: 4px 0 6px;
+    border-bottom: 1px solid var(--sage-tint);
+  }
+  .gantt-row-label {
+    font-size: var(--t-body-sm); font-weight: 700;
+    color: var(--forest); padding-right: 14px; line-height: 1.2;
+  }
+  .gantt-row-label span {
+    display: block; font-size: var(--t-label-sm); font-weight: 400;
+    color: var(--forest-soft); margin-top: 2px;
+  }
+  .gantt-track {
+    display: grid;
+    grid-template-columns: repeat(22, 1fr);
+    gap: 1px;
+    min-height: 32px;
+    background: rgba(122, 138, 110, 0.06);
+    border-radius: 4px;
+    padding: 2px;
+  }
+  .gantt-bar {
+    background: var(--coral);
+    border-radius: 3px;
+    font-size: 12px;
+    color: white;
+    padding: 0 8px;
+    display: flex; align-items: center;
+    white-space: nowrap; overflow: hidden;
+    font-weight: 600;
+  }
+  .gantt-bar.sage { background: var(--sage); }
+  .gantt-bar.forest { background: var(--forest); }
+  .gantt-bar.popup {
+    background: #E85A85;
+    color: white;
+  }
+  .gantt-bar.tbd {
+    background: transparent;
+    border: 1.5px dashed var(--coral);
+    color: var(--coral);
+  }
+  .gantt-bar.tbd.sage-tbd {
+    border-color: var(--sage); color: var(--sage);
+  }
+
+  /* ============ 5-STEP PROCESS (shared by slide 3 and slide 9) ============ */
+  .process-steps { display: flex; flex-direction: column; gap: 10px; }
+  .phase-group { display: flex; flex-direction: column; }
+  .phase-label {
+    font-size: var(--t-label-sm); letter-spacing: 3px; text-transform: uppercase;
+    font-weight: 700; padding: 8px 16px;
+    margin-bottom: 8px; border-radius: 4px;
+    display: inline-block; align-self: flex-start;
+  }
+  .phase-label.down { color: var(--coral); background: var(--coral-tint); }
+  .phase-label.mid { color: var(--cream); background: var(--forest); }
+  .phase-label.up { color: var(--sage); background: var(--sage-tint); }
+  .step-row {
+    display: grid;
+    grid-template-columns: 36px 220px 1fr;
+    gap: 22px;
+    padding: 14px 10px;
+    align-items: start;
+    border-bottom: 1px solid var(--sage-tint);
+  }
+  .step-row:last-child { border-bottom: none; }
+  .step-arrow {
+    font-size: 24px; font-weight: 700; line-height: 1;
+    padding-top: 4px; text-align: center;
+  }
+  .step-arrow.down { color: var(--coral); }
+  .step-arrow.mid { color: var(--forest-soft); }
+  .step-arrow.up { color: var(--sage); }
+  .step-label {
+    font-size: var(--t-lead); font-weight: 700; color: var(--forest);
+    line-height: 1.2;
+  }
+  .step-label-num {
+    display: block; font-size: var(--t-micro); letter-spacing: 2px;
+    color: var(--coral); font-weight: 700; margin-bottom: 4px;
+  }
+  .step-content {
+    font-size: var(--t-body); line-height: 1.45; color: var(--forest);
+  }
+  .step-content strong { color: var(--forest); font-weight: 700; }
+  .step-content em { color: var(--forest-soft); font-style: italic; }
+  .process-footnote {
+    margin-top: 18px; padding: 14px 22px;
+    background: var(--sage-tint); border-radius: 6px;
+    font-size: var(--t-body-sm); color: var(--forest); font-style: italic;
+    text-align: center;
+  }
+
+  /* ============ SCENARIO SLIDE (legacy classes kept) ============ */
+  .scenario-setup {
+    background: var(--sage-tint); padding: 22px 28px;
+    border-radius: 6px; margin-bottom: 26px;
+    font-size: var(--t-lead); line-height: 1.5; font-style: italic;
+    color: var(--forest);
+  }
+  .modality-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 18px; margin-bottom: 24px;
+  }
+  .modality {
+    background: white;
+    padding: 22px 24px;
+    border-left: 4px solid var(--coral);
+    border-radius: 0 6px 6px 0;
+  }
+  .modality-name {
+    font-size: var(--t-lead); font-weight: 700; color: var(--forest);
+    margin-bottom: 6px;
+  }
+  .modality-text {
+    font-size: var(--t-body-sm); color: var(--forest-soft); line-height: 1.4;
+  }
+  .modality-output {
+    background: var(--forest); color: var(--cream);
+    padding: 22px 28px; border-radius: 6px;
+    font-size: var(--t-body); line-height: 1.5;
+    text-align: center;
+  }
+  .modality-output strong { color: var(--coral); font-weight: 700; }
+  /* Legacy: kept for spine reference */
+  .steps-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 24px 48px;
+  }
+  .step { display: flex; gap: 22px; align-items: flex-start; }
+  .step-num { font-family: var(--serif); font-size: 40px; color: var(--coral); line-height: 1; min-width: 44px; }
+  .step-text { font-size: 18px; line-height: 1.45; color: var(--forest); }
+  .step-text strong { color: var(--forest); font-weight: 700; }
+
+  /* ============ TEAM SLIDE (simplified: 4 collab orgs + CAPS coalition) ============ */
+  .partners-section { margin-bottom: 24px; }
+  .partners-label {
+    font-size: var(--t-label); letter-spacing: 3px; text-transform: uppercase;
+    color: var(--coral); font-weight: 700;
+    margin-bottom: 14px;
+  }
+  .partners-section.caps .partners-label {
+    color: var(--sage);
+  }
+  .partners-row {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  .partner-org {
+    background: white; padding: 18px 20px;
+    border-radius: 6px;
+    border-top: 4px solid var(--coral);
+  }
+  .partner-org.colab { border-top-color: var(--sage); }
+  .partner-org.alting { border-top-color: var(--coral); }
+  .partner-org.altagether { border-top-color: var(--forest); }
+  .partner-org.av { border-top-color: var(--coral); }
+  .partner-org-name {
+    font-size: var(--t-lead); font-weight: 700;
+    color: var(--forest); margin-bottom: 6px;
+  }
+  .partner-org-lead {
+    font-size: var(--t-body-sm); color: var(--forest-soft); line-height: 1.4;
+  }
+  .caps-orgs {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .caps-org {
+    background: var(--sage-tint); padding: 14px 18px;
+    border-radius: 6px;
+  }
+  .caps-org-name {
+    font-size: var(--t-body); font-weight: 700;
+    color: var(--forest); margin-bottom: 2px;
+  }
+  .caps-org-lead {
+    font-size: var(--t-label-sm); color: var(--forest-soft);
+  }
+  /* Sponsors chip grid */
+  .sponsor-chips {
+    display: flex; flex-wrap: wrap; gap: 10px;
+  }
+  .sponsor-chip {
+    background: var(--sage-tint);
+    padding: 10px 16px;
+    border-radius: 8px;
+    color: var(--forest);
+    display: flex; flex-direction: column; gap: 2px;
+  }
+  .sponsor-chip-name {
+    font-size: var(--t-body-sm);
+    font-weight: 700;
+    color: var(--forest);
+  }
+  .sponsor-chip-person {
+    font-size: var(--t-label-sm);
+    color: var(--forest-soft);
+    font-weight: 400;
+  }
+  /* Proposed sponsor (CAPS) — featured */
+  .proposed-sponsor {
+    background: var(--forest);
+    color: var(--cream);
+    padding: 16px 22px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .proposed-sponsor-label {
+    font-size: var(--t-label-sm);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--coral);
+    white-space: nowrap;
+  }
+  .proposed-sponsor-name {
+    font-size: var(--t-lead);
+    font-weight: 700;
+    color: var(--cream);
+  }
+  /* Legacy team-grid styles kept (unused) */
+  .team-grid { display: none; }
+  .person { display: none; }
+  .traction-bar {
+    background: var(--coral-tint); padding: 20px 28px;
+    border-radius: 6px; font-size: var(--t-body); color: var(--forest);
+    line-height: 1.45;
+  }
+  .traction-bar strong { color: var(--coral); display: block; font-size: var(--t-label-sm); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px; }
+  .not-line {
+    margin-top: 18px; font-size: var(--t-body-sm); color: var(--forest-soft);
+    line-height: 1.5;
+  }
+  .not-line strong { color: var(--forest); font-weight: 700; }
+
+  /* ============ ASK SLIDE (INVERTED) ============ */
+  .ask-slide {
+    background: var(--forest);
+    color: var(--cream);
+    padding: 70px 120px 50px;
+  }
+  .ask-slide .slide-tag { color: var(--coral); }
+  .ask-slide .slide-title { color: var(--cream); }
+  .ask-slide .slide-footer {
+    border-top-color: rgba(250,246,240,0.2);
+    color: rgba(250,246,240,0.55);
+  }
+  .ask-main {
+    font-family: var(--serif); font-size: var(--t-hero); line-height: 1.05;
+    color: var(--cream); max-width: 1100px; margin-bottom: 40px;
+  }
+  .ask-detail {
+    font-size: var(--t-lead); line-height: 1.5; color: rgba(250,246,240,0.85);
+    max-width: 1000px; margin-bottom: 40px;
+  }
+  .ask-enables {
+    border-top: 1px solid rgba(250,246,240,0.25);
+    padding-top: 26px; max-width: 1000px;
+  }
+  .ask-enables-label {
+    font-size: var(--t-label-sm); letter-spacing: 3px; text-transform: uppercase;
+    color: var(--coral); margin-bottom: 12px; font-weight: 700;
+  }
+  .ask-enables-text {
+    font-size: var(--t-body); line-height: 1.5; color: rgba(250,246,240,0.85);
+  }
+  .ask-next-steps {
+    border-top: 1px solid rgba(250,246,240,0.25);
+    padding-top: 28px; max-width: 1100px;
+  }
+  .ask-next-label {
+    font-size: var(--t-label-sm); letter-spacing: 3px; text-transform: uppercase;
+    color: var(--coral); margin-bottom: 18px; font-weight: 700;
+  }
+  .ask-next-list { list-style: none; padding: 0; margin: 0; }
+  .ask-next-list li {
+    font-size: var(--t-body); line-height: 1.5;
+    color: rgba(250,246,240,0.92);
+    padding: 11px 0 11px 32px; position: relative;
+    border-bottom: 1px solid rgba(250,246,240,0.10);
+    display: flex; align-items: baseline; gap: 22px;
+  }
+  .ask-next-list li:last-child { border-bottom: none; }
+  .ask-next-list li::before {
+    content: "→"; position: absolute; left: 0; top: 11px;
+    color: var(--coral); font-weight: 700; font-size: var(--t-body);
+  }
+  .ask-next-when {
+    flex: 0 0 170px; color: var(--coral); font-weight: 700;
+    font-size: var(--t-label); letter-spacing: 1px; text-transform: uppercase;
+  }
+  .ask-next-what { flex: 1; }
+  .ask-proposal-callout {
+    background: rgba(229,144,90,0.13);
+    border-left: 4px solid var(--coral);
+    border-radius: 4px;
+    padding: 20px 24px;
+    margin-bottom: 32px;
+    max-width: 1100px;
+  }
+  .ask-proposal-label {
+    font-size: var(--t-label-sm); letter-spacing: 3px;
+    text-transform: uppercase; color: var(--coral);
+    font-weight: 700; margin-bottom: 8px;
+  }
+  .ask-proposal-text {
+    font-size: var(--t-body); line-height: 1.45;
+    color: rgba(250,246,240,0.92);
+    margin-bottom: 10px;
+  }
+  .ask-proposal-url {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: var(--t-body-sm);
+    color: var(--cream); font-weight: 600;
+    letter-spacing: 0.2px;
+    border-bottom: 1px solid rgba(250,246,240,0.4);
+    padding-bottom: 2px;
+    display: inline-block;
+  }
+  .ask-today-callout {
+    background: var(--coral);
+    color: var(--cream);
+    border-radius: 6px;
+    padding: 20px 26px;
+    margin-bottom: 28px;
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+  }
+  .ask-today-label {
+    font-size: var(--t-label-sm); letter-spacing: 3px;
+    text-transform: uppercase; color: rgba(250,246,240,0.9);
+    font-weight: 700; flex-shrink: 0;
+  }
+  .ask-today-main {
+    font-family: var(--serif);
+    font-size: 30px; line-height: 1.15;
+    color: var(--cream);
+    flex: 1;
+  }
+
+  /* ============ TITLE SLIDE ============ */
+  .title-slide {
+    background: var(--cream);
+    padding: 70px 100px 50px;
+  }
+  .title-slide .slide-body {
+    justify-content: center; align-items: center; text-align: center;
+  }
+  .title-eyebrow {
+    font-size: var(--t-label); letter-spacing: 6px; text-transform: uppercase;
+    color: var(--coral); font-weight: 700; margin-bottom: 32px;
+  }
+  .title-accent {
+    width: 70px; height: 4px; background: var(--coral);
+    margin: 0 auto 40px;
+  }
+  .title-main {
+    font-family: var(--serif); font-size: var(--t-hero); line-height: 1.05;
+    color: var(--forest); margin-bottom: 50px;
+    max-width: 1200px;
+  }
+  .title-partners {
+    font-size: var(--t-lead); letter-spacing: 3px; color: var(--forest);
+    margin-bottom: 14px; font-weight: 500;
+  }
+  .title-meta {
+    font-size: var(--t-label-sm); color: var(--forest-soft);
+    letter-spacing: 2px; margin-top: 50px;
+  }
+
+  /* ============ HEADLINE-ONLY SLIDE ============ */
+  .headline-slide .slide-body {
+    justify-content: center;
+  }
+  .headline-main {
+    font-family: var(--serif); font-size: var(--t-hero); line-height: 1.1;
+    color: var(--forest); max-width: 1300px;
+  }
+  .pull-quote {
+    margin-top: 56px;
+    padding: 22px 0 22px 36px;
+    border-left: 4px solid var(--coral);
+    font-family: var(--serif);
+    font-size: 32px; line-height: 1.3;
+    color: var(--forest);
+    font-style: italic;
+    max-width: 1100px;
+  }
+  .pull-quote-attr {
+    display: block;
+    font-family: var(--sans);
+    font-size: var(--t-label);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--forest-soft);
+    font-style: normal;
+    margin-top: 16px;
+    font-weight: 700;
+  }
+
+  /* ============ NAVIGATION ============ */
+  .nav {
+    position: fixed; bottom: 16px; right: 24px;
+    display: flex; gap: 8px; align-items: center;
+    z-index: 100;
+  }
+  .nav-btn {
+    background: var(--forest); color: var(--cream);
+    border: none; width: 32px; height: 32px;
+    font-family: var(--sans); font-size: 14px;
+    cursor: pointer; border-radius: 50%;
+    transition: background 0.2s;
+    opacity: 0.7;
+  }
+  .nav-btn:hover { background: var(--coral); opacity: 1; }
+  .nav-counter {
+    background: rgba(46, 61, 38, 0.7); color: var(--cream);
+    padding: 6px 12px; border-radius: 16px;
+    font-size: 11px; letter-spacing: 1px; font-weight: 500;
+    opacity: 0.7;
+  }
+  .hint {
+    position: fixed; bottom: 22px; left: 24px;
+    color: var(--cream); opacity: 0.3;
+    font-size: 10px; letter-spacing: 1.5px;
+  }
+
+  /* ============ PRINT ============ */
+  @media print {
+    body { background: white; overflow: visible; }
+    .deck { width: auto; height: auto; }
+    .slide { position: relative; inset: auto; display: flex !important; page-break-after: always; height: 100vh; }
+    .nav, .hint { display: none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="deck">
+
+  <!-- ====== 01: TITLE ====== -->
+  <section class="slide title-slide active">
+    <div class="slide-body">
+      <div class="title-eyebrow">A collaboration</div>
+      <div class="title-accent"></div>
+      <h1 class="title-main">A community engagement strategy for Altadena rebuild</h1>
+      <div class="title-partners">Altadena Village &nbsp;&middot;&nbsp; CoLab &nbsp;&middot;&nbsp; Alting &nbsp;&middot;&nbsp; Altagether</div>
+      <div class="title-meta">Presented to CAPS &nbsp;&middot;&nbsp; May 21, 2026</div>
+    </div>
+    <div class="slide-footer">
+      <div class="slide-footer-partners">Altadena Village &middot; CoLab &middot; Alting &middot; Altagether</div>
+      <div class="slide-footer-num">01 / 12</div>
+    </div>
+  </section>
+
+  <!-- ====== 02: WHY (headline) ====== -->
+  <section class="slide headline-slide">
+    <div class="slide-header">
+      <div class="slide-tag">Why we&rsquo;re here</div>
+    </div>
+    <div class="slide-body">
+      <h2 class="headline-main">Altadena&rsquo;s commercial and public spaces are being rebuilt. There&rsquo;s no process for the community to shape what they become and see the impact of their input.</h2>
+    </div>
+    <div class="slide-footer">
+      <div class="slide-footer-partners">Altadena Village &middot; CoLab &middot; Alting &middot; Altagether</div>
+      <div class="slide-footer-num">02 / 11</div>
+    </div>
+  </section>
+
+  <!-- ====== 03: TIMELINE (Gantt) ====== -->
+  <section class="slide">
+    <div class="slide-header">
+      <div class="slide-tag">Why we&rsquo;re here</div>
+      <h2 class="slide-title">Separate schedules, no coordination</h2>
+    </div>
+    <div class="slide-body">
+      <div class="gantt">
+        <div class="gantt-header">
+          <div></div>
+          <div class="gantt-time-axis">
+            <div class="gantt-years">
+              <div class="gantt-year" style="grid-column: 1 / 11;">2026</div>
+              <div class="gantt-year" style="grid-column: 11 / 23;">2027</div>
+            </div>
+            <div class="gantt-months">
+              <div class="gantt-month">Mar</div>
+              <div class="gantt-month">Apr</div>
+              <div class="gantt-month">May</div>
+              <div class="gantt-month">Jun</div>
+              <div class="gantt-month">Jul</div>
+              <div class="gantt-month">Aug</div>
+              <div class="gantt-month">Sep</div>
+              <div class="gantt-month">Oct</div>
+              <div class="gantt-month">Nov</div>
+              <div class="gantt-month">Dec</div>
+              <div class="gantt-month">Jan</div>
+              <div class="gantt-month">Feb</div>
+              <div class="gantt-month">Mar</div>
+              <div class="gantt-month">Apr</div>
+              <div class="gantt-month">May</div>
+              <div class="gantt-month">Jun</div>
+              <div class="gantt-month">Jul</div>
+              <div class="gantt-month">Aug</div>
+              <div class="gantt-month">Sep</div>
+              <div class="gantt-month">Oct</div>
+              <div class="gantt-month">Nov</div>
+              <div class="gantt-month">Dec</div>
+            </div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-row-label">CIP<span>LA County Public Works</span></div>
+          <div class="gantt-track">
+            <div class="gantt-bar" style="grid-column: 1 / 3;">Survey</div>
+            <div class="gantt-bar tbd" style="grid-column: 4 / 15;">Comment period TBD</div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-row-label">Regional Planning<span>WSGVAP refresh</span></div>
+          <div class="gantt-track">
+            <div class="gantt-bar tbd sage-tbd" style="grid-column: 5 / 20;">Refresh cycle TBD</div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-row-label">Sanitation<span>LA County sewer</span></div>
+          <div class="gantt-track">
+            <div class="gantt-bar sage" style="grid-column: 1 / 23;">Ongoing rebuild interaction</div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-row-label">Water utilities<span>Las Flores &middot; Lincoln &middot; Rubio Ca&ntilde;on</span></div>
+          <div class="gantt-track">
+            <div class="gantt-bar sage" style="grid-column: 1 / 23;">Ongoing restoration &amp; planning</div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-row-label">Flood Control<span>LA County stormwater</span></div>
+          <div class="gantt-track">
+            <div class="gantt-bar tbd sage-tbd" style="grid-column: 4 / 17;">Stormwater windows TBD</div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-row-label">Edison / SCE</div>
+          <div class="gantt-track">
+            <div class="gantt-bar sage" style="grid-column: 1 / 23;">Undergrounding &amp; restoration planning &mdash; ongoing</div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-row-label">SoCalGas</div>
+          <div class="gantt-track">
+            <div class="gantt-bar sage" style="grid-column: 1 / 23;">Gas restoration ongoing</div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-row-label">PUSD<span>School-site rebuild</span></div>
+          <div class="gantt-track">
+            <div class="gantt-bar tbd" style="grid-column: 5 / 18;">Decisions TBD</div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-row-label">Parks &amp; Rec<span>LA County multi-benefit</span></div>
+          <div class="gantt-track">
+            <div class="gantt-bar tbd sage-tbd" style="grid-column: 6 / 20;">Parks &amp; green corridors TBD</div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-row-label">Tree restoration<span>LA County &middot; TreePeople &middot; Altadena Bloom</span></div>
+          <div class="gantt-track">
+            <div class="gantt-bar tbd sage-tbd" style="grid-column: 6 / 23;">Urban canopy restoration TBD</div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-row-label">Commercial developers<span>Various private projects</span></div>
+          <div class="gantt-track">
+            <div class="gantt-bar sage" style="grid-column: 1 / 12;">Active rebuild projects ongoing</div>
+            <div class="gantt-bar tbd sage-tbd" style="grid-column: 12 / 23;">New permits &amp; projects TBD</div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-row-label">Paradigm<span>Edison&rsquo;s outreach consultant</span></div>
+          <div class="gantt-track">
+            <div class="gantt-bar tbd" style="grid-column: 1 / 23;">Engagement windows TBD</div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-row-label">Toole<span>LA County&rsquo;s planning consultant</span></div>
+          <div class="gantt-track">
+            <div class="gantt-bar forest" style="grid-column: 1 / 6;">Master plan in progress</div>
+            <div class="gantt-bar tbd" style="grid-column: 6 / 23;">No engagement scheduled</div>
+          </div>
+        </div>
+      </div>
+      <div class="punch">
+        <strong>And the PFA</strong>
+        The <b>Public Financing Authority</b> has convened &mdash; but hasn&rsquo;t held the meetings required by its own bylaws. The engagement standard adopted at those meetings will be the default for every project above.
+      </div>
+    </div>
+    <div class="slide-footer">
+      <div class="slide-footer-partners">Altadena Village &middot; CoLab &middot; Alting &middot; Altagether</div>
+      <div class="slide-footer-num">03 / 11</div>
+    </div>
+  </section>
+
+  <!-- ====== WHAT'S MISSING (5 values, formatted like slide 5) ====== -->
+  <section class="slide">
+    <div class="slide-header">
+      <div class="slide-tag">What&rsquo;s missing</div>
+      <h2 class="slide-title">Five gaps &mdash; and the values that close them</h2>
+    </div>
+    <div class="slide-body">
+      <div class="flow-list">
+        <div class="flow-step">
+          <div class="flow-num">01</div>
+          <div>
+            <div class="flow-step-name">Proximity</div>
+            <div class="flow-step-text">Community carries context the County doesn&rsquo;t have, with no channel for it to land.</div>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">02</div>
+          <div>
+            <div class="flow-step-name">Local agency</div>
+            <div class="flow-step-text">Commercial owners have coordinated a shared vision, but no defined path to the County&rsquo;s infrastructure rollout.</div>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">03</div>
+          <div>
+            <div class="flow-step-name">Coordination</div>
+            <div class="flow-step-text">Agencies plan in parallel, on separate schedules, with no shared way to coordinate.</div>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">04</div>
+          <div>
+            <div class="flow-step-name">Accountability</div>
+            <div class="flow-step-text">No way to track whether community input shaped what actually gets built.</div>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">05</div>
+          <div>
+            <div class="flow-step-name">Trauma-informed</div>
+            <div class="flow-step-text">No engagement design built for a community that&rsquo;s been through this much.</div>
+          </div>
+        </div>
+      </div>
+      <blockquote class="pull-quote">
+        &ldquo;Right now recovery feels like attempting to have a sip of water from eight fire hoses that are going on full blast. It&rsquo;s impossible.&rdquo;
+        <span class="pull-quote-attr">Mike Tuccillo &middot; Altadena resident &amp; block captain</span>
+      </blockquote>
+    </div>
+    <div class="slide-footer">
+      <div class="slide-footer-partners">Altadena Village &middot; CoLab &middot; Alting &middot; Altagether</div>
+      <div class="slide-footer-num">03 / 10</div>
+    </div>
+  </section>
+
+  <!-- ====== 04: THE PROPOSAL (2-col top + span bottom) ====== -->
+  <section class="slide">
+    <div class="slide-header">
+      <div class="slide-tag">What we&rsquo;re proposing</div>
+      <h2 class="slide-title">Five steps &mdash; content flows down, consensus flows up</h2>
+    </div>
+    <div class="slide-body">
+      <div class="flow-layout">
+        <div class="flow-top">
+          <div class="flow-col">
+            <div class="flow-step">
+              <div class="flow-num">01</div>
+              <div>
+                <div class="flow-step-name"><span class="flow-step-arrow">&darr;</span>Definition</div>
+                <div class="flow-step-text">Sponsors define their decision based on <strong>community standards</strong> &mdash; problem, ask, geographic area, timeline, and multi-modal delivery (text &middot; video &middot; walking tours &middot; languages &middot; ADA) with expert access.</div>
+                <div class="flow-who"><span class="flow-who-label">Who</span>County agencies &middot; utilities &middot; developers &middot; consultants</div>
+              </div>
+            </div>
+          </div>
+          <div class="flow-col">
+            <div class="flow-step">
+              <div class="flow-num">05</div>
+              <div>
+                <div class="flow-step-name"><span class="flow-step-arrow">&uarr;</span>Shared record</div>
+                <div class="flow-step-text">The record goes public &mdash; tracked on a dashboard, visible to all stakeholders.</div>
+                <div class="flow-who"><span class="flow-who-label">Who</span>All stakeholders</div>
+              </div>
+            </div>
+          </div>
+          <div class="flow-col">
+            <div class="flow-step">
+              <div class="flow-num">02</div>
+              <div>
+                <div class="flow-step-name"><span class="flow-step-arrow">&darr;</span>Training &amp; Distribution</div>
+                <div class="flow-step-text">Through existing channels &mdash; <strong>Altagether&rsquo;s 150+ block captains</strong> and the commercial-owner network, trained to facilitate with on-call backup.</div>
+                <div class="flow-who"><span class="flow-who-label">Who</span>Altagether + CoLab (training)</div>
+              </div>
+            </div>
+          </div>
+          <div class="flow-col">
+            <div class="flow-step">
+              <div class="flow-num">04</div>
+              <div>
+                <div class="flow-step-name"><span class="flow-step-arrow">&uarr;</span>Aggregation</div>
+                <div class="flow-step-text">Block deliberations compile into a coherent record &mdash; organized by area, corridor, zone, and by the sponsor&rsquo;s own categories. Private dialogue stays private; outcomes become public.</div>
+                <div class="flow-who"><span class="flow-who-label">Who</span>Captains record &middot; synthesized by AI</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flow-bottom">
+          <div class="flow-step">
+            <div class="flow-num">03</div>
+            <div>
+              <div class="flow-step-name"><span class="flow-step-arrow cycle">&#10227;</span>Facilitating Discussion</div>
+              <div class="flow-step-text">Altagether Block Captains facilitate local input sessions, with community support, resources and clear guidelines.</div>
+              <div class="flow-who"><span class="flow-who-label">Who</span>Altagether captains + CoLab &middot; commercial-owner network &middot; Public &middot; Experts</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-footer">
+      <div class="slide-footer-partners">Altadena Village &middot; CoLab &middot; Alting &middot; Altagether</div>
+      <div class="slide-footer-num">04 / 10</div>
+    </div>
+  </section>
+
+  <!-- ====== FAIR OAKS (5-step framework, hand-hacked) ====== -->
+  <section class="slide">
+    <div class="slide-header">
+      <div class="slide-tag">Worked example</div>
+      <h2 class="slide-title">Fair Oaks Corridor (Immediate need)</h2>
+    </div>
+    <div class="slide-body">
+      <div class="flow-layout">
+        <div class="flow-top">
+          <div class="flow-col">
+            <div class="flow-step">
+              <div class="flow-num">01</div>
+              <div>
+                <div class="flow-step-name"><span class="flow-step-arrow">&darr;</span>Definition</div>
+                <div class="flow-step-text">CIP surveys customized for Altadena &mdash; by area, across six categories (Mobility &middot; Stormwater &middot; Sewer &middot; Water &middot; Energy &middot; Multi-Benefit). Plain-language briefs in EN + ES.</div>
+              </div>
+            </div>
+          </div>
+          <div class="flow-col">
+            <div class="flow-step">
+              <div class="flow-num">05</div>
+              <div>
+                <div class="flow-step-name"><span class="flow-step-arrow">&uarr;</span>Shared record</div>
+                <div class="flow-step-text">Structured packets to CIP &mdash; manually plotted on map. <em>No automated dashboard yet.</em></div>
+              </div>
+            </div>
+          </div>
+          <div class="flow-col">
+            <div class="flow-step">
+              <div class="flow-num">02</div>
+              <div>
+                <div class="flow-step-name"><span class="flow-step-arrow">&darr;</span>Training &amp; Distribution</div>
+                <div class="flow-step-text">Altagether&rsquo;s 150+ block captains and the commercial-owner network, trained to facilitate discussion.</div>
+              </div>
+            </div>
+          </div>
+          <div class="flow-col">
+            <div class="flow-step">
+              <div class="flow-num">04</div>
+              <div>
+                <div class="flow-step-name"><span class="flow-step-arrow">&uarr;</span>Aggregation</div>
+                <div class="flow-step-text">Compiling decisions and feedback through Google Form and AI notetakers &middot; per-category compilation. <em>Manual aggregation &mdash; no dashboard yet.</em></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flow-bottom pink">
+          <div class="flow-step">
+            <div class="flow-num">03</div>
+            <div>
+              <div class="flow-step-name"><span class="flow-step-arrow cycle">&#10227;</span>Facilitating Discussion</div>
+              <div class="flow-step-text">Ensure distribution of Survey, information sessions, discussion groups, Zoom calls, with support from experts and county resources.<br><strong style="color:#E85A85">Popup retail / Activation</strong> to inform the public of what we are doing.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="process-footnote">
+        Fair Oaks is the <strong>hand-hacked</strong> version &mdash; the framework works while we build the automated tools (real-time dashboard, auto-aggregation) once funded.
+      </div>
+    </div>
+    <div class="slide-footer">
+      <div class="slide-footer-partners">Altadena Village &middot; CoLab &middot; Alting &middot; Altagether</div>
+      <div class="slide-footer-num">07 / 11</div>
+    </div>
+  </section>
+
+  <!-- ====== 08: PROJECT PLAN (proposed implementation Gantt) ====== -->
+  <section class="slide">
+    <div class="slide-header">
+      <div class="slide-tag">Project plan &middot; <span style="opacity:0.85; font-style: italic;">Work in Progress</span></div>
+      <h2 class="slide-title">Path forward</h2>
+    </div>
+    <div class="slide-body">
+      <div class="gantt">
+        <div class="gantt-header">
+          <div></div>
+          <div class="gantt-time-axis">
+            <div class="gantt-years">
+              <div class="gantt-year" style="grid-column: 1 / 11;">2026</div>
+              <div class="gantt-year" style="grid-column: 11 / 23;">2027</div>
+            </div>
+            <div class="gantt-months">
+              <div class="gantt-month">Mar</div>
+              <div class="gantt-month">Apr</div>
+              <div class="gantt-month">May</div>
+              <div class="gantt-month">Jun</div>
+              <div class="gantt-month">Jul</div>
+              <div class="gantt-month">Aug</div>
+              <div class="gantt-month">Sep</div>
+              <div class="gantt-month">Oct</div>
+              <div class="gantt-month">Nov</div>
+              <div class="gantt-month">Dec</div>
+              <div class="gantt-month">Jan</div>
+              <div class="gantt-month">Feb</div>
+              <div class="gantt-month">Mar</div>
+              <div class="gantt-month">Apr</div>
+              <div class="gantt-month">May</div>
+              <div class="gantt-month">Jun</div>
+              <div class="gantt-month">Jul</div>
+              <div class="gantt-month">Aug</div>
+              <div class="gantt-month">Sep</div>
+              <div class="gantt-month">Oct</div>
+              <div class="gantt-month">Nov</div>
+              <div class="gantt-month">Dec</div>
+            </div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-row-label">CAPS coalition co-sign<span>Today</span></div>
+          <div class="gantt-track">
+            <div class="gantt-bar" style="grid-column: 3 / 4;">May 21</div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-row-label">ATC Land Use Committee<span>Briefing &amp; ratification</span></div>
+          <div class="gantt-track">
+            <div class="gantt-bar" style="grid-column: 4 / 6;">Jun&ndash;Jul</div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-row-label">EIFD advocacy<span>At PFA hearings</span></div>
+          <div class="gantt-track">
+            <div class="gantt-bar" style="grid-column: 5 / 11;">Funding push</div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-row-label">Delivery standard + Captain toolkit<span>v1 by end of June, then iterate</span></div>
+          <div class="gantt-track">
+            <div class="gantt-bar sage" style="grid-column: 4 / 9;">Build &amp; iterate</div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-row-label">Block Captain training<span>Altagether facilitation cohorts</span></div>
+          <div class="gantt-track">
+            <div class="gantt-bar sage" style="grid-column: 6 / 10;">Mid-Aug kick-off &rarr;</div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-row-label">Fair Oaks pilot<span>Hand-hacked live use case</span></div>
+          <div class="gantt-track">
+            <div class="gantt-bar forest" style="grid-column: 7 / 17;">Pilot in flight</div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-row-label">Popup retail<span>Fair Oaks corridor activation</span></div>
+          <div class="gantt-track">
+            <div class="gantt-bar popup" style="grid-column: 6 / 23;">Activations &amp; community-led commerce</div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-row-label">Dashboard MVP<span>Public accountability layer</span></div>
+          <div class="gantt-track">
+            <div class="gantt-bar sage" style="grid-column: 13 / 19;">Build &amp; launch</div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-row-label">Iterate from pilot</div>
+          <div class="gantt-track">
+            <div class="gantt-bar sage" style="grid-column: 14 / 18;">Refine</div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-row-label">Scale to additional corridors</div>
+          <div class="gantt-track">
+            <div class="gantt-bar" style="grid-column: 17 / 23;">Roll out</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-footer">
+      <div class="slide-footer-partners">Altadena Village &middot; CoLab &middot; Alting &middot; Altagether</div>
+      <div class="slide-footer-num">08 / 11</div>
+    </div>
+  </section>
+
+  <!-- ====== 09: WHO PAYS ====== -->
+  <section class="slide">
+    <div class="slide-header">
+      <div class="slide-tag">Who pays</div>
+      <h2 class="slide-title">Who pays for what</h2>
+    </div>
+    <div class="slide-body">
+      <div class="sh-side">
+        <div class="sh-item">
+          <div class="sh-item-name">Sponsors</div>
+          <div class="sh-item-need">Pay for their own delivery &mdash; out of existing project budgets, not new spend.</div>
+        </div>
+        <div class="sh-item">
+          <div class="sh-item-name">EIFD</div>
+          <div class="sh-item-need">Funds the engagement infrastructure &mdash; administered through the PFA, a small fraction of the $2B financing layer.</div>
+        </div>
+        <div class="sh-item">
+          <div class="sh-item-name">Local professionals</div>
+          <div class="sh-item-need">Do the work &mdash; facilitators, mediators, legal, translators from inside Altadena, so dollars recirculate.</div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-footer">
+      <div class="slide-footer-partners">Altadena Village &middot; CoLab &middot; Alting &middot; Altagether</div>
+      <div class="slide-footer-num">08 / 10</div>
+    </div>
+  </section>
+
+  <!-- ====== 09: TEAM & PARTNERS ====== -->
+  <section class="slide">
+    <div class="slide-header">
+      <div class="slide-tag">Team &amp; partners</div>
+      <h2 class="slide-title">Team &amp; partners</h2>
+    </div>
+    <div class="slide-body">
+
+      <div class="partners-section">
+        <div class="partners-label">Collaboration team</div>
+        <div class="partners-row">
+          <div class="partner-org av">
+            <div class="partner-org-name">Altadena Village</div>
+            <div class="partner-org-lead">Esther Kim</div>
+          </div>
+          <div class="partner-org colab">
+            <div class="partner-org-name">CoLab</div>
+            <div class="partner-org-lead">Megan Hinchliffe Gerig &middot; Gabriella Caparco</div>
+          </div>
+          <div class="partner-org alting">
+            <div class="partner-org-name">Alting</div>
+            <div class="partner-org-lead">Petra Wennberg</div>
+          </div>
+          <div class="partner-org altagether">
+            <div class="partner-org-name">Altagether</div>
+            <div class="partner-org-lead">John Mayo &middot; 150+ block captains</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="partners-section caps">
+        <div class="partners-label">Partners</div>
+        <div class="sponsor-chips">
+          <span class="sponsor-chip"><span class="sponsor-chip-name">Altadena Bloom</span><span class="sponsor-chip-person">Ty Garrison</span></span>
+          <span class="sponsor-chip"><span class="sponsor-chip-name">Altadena Chamber of Commerce</span><span class="sponsor-chip-person">Judy Matthews</span></span>
+          <span class="sponsor-chip"><span class="sponsor-chip-name">Altadena Collective</span><span class="sponsor-chip-person">Chris Corbett</span></span>
+          <span class="sponsor-chip"><span class="sponsor-chip-name">Altadena Green</span><span class="sponsor-chip-person">Stephanie Landregan &middot; Wynn Wilson</span></span>
+          <span class="sponsor-chip"><span class="sponsor-chip-name">Altadena Heritage</span><span class="sponsor-chip-person">Hans Allhoff &middot; Michele Zack</span></span>
+          <span class="sponsor-chip"><span class="sponsor-chip-name">Altadena Town Council</span><span class="sponsor-chip-person">Dorothy Wong &middot; Morgan Whirledge</span></span>
+          <span class="sponsor-chip"><span class="sponsor-chip-name">ARRC</span><span class="sponsor-chip-person">Anders Corey</span></span>
+          <span class="sponsor-chip"><span class="sponsor-chip-name">CCAR</span><span class="sponsor-chip-person">Hans Allhoff</span></span>
+          <span class="sponsor-chip"><span class="sponsor-chip-name">Dena Hive</span><span class="sponsor-chip-person">Dorothy Wong</span></span>
+          <span class="sponsor-chip"><span class="sponsor-chip-name">League of Women Voters</span><span class="sponsor-chip-person">Joan Riback</span></span>
+          <span class="sponsor-chip"><span class="sponsor-chip-name">Neighbors Building a Greater Altadena</span><span class="sponsor-chip-person">Karen Gibson</span></span>
+          <span class="sponsor-chip"><span class="sponsor-chip-name">NOMA</span><span class="sponsor-chip-person">Steve Lewis</span></span>
+          <span class="sponsor-chip"><span class="sponsor-chip-name">PUSD School Board</span><span class="sponsor-chip-person">Jennifer Hall Lee</span></span>
+          <span class="sponsor-chip"><span class="sponsor-chip-name">Steadfast</span><span class="sponsor-chip-person">Jodi McLaughlin &middot; Hans Allhoff</span></span>
+          <span class="sponsor-chip"><span class="sponsor-chip-name">WRTT</span><span class="sponsor-chip-person">Ty Garrison</span></span>
+        </div>
+      </div>
+
+    </div>
+    <div class="slide-footer">
+      <div class="slide-footer-partners">Altadena Village &middot; CoLab &middot; Alting &middot; Altagether</div>
+      <div class="slide-footer-num">09 / 10</div>
+    </div>
+  </section>
+
+  <!-- ====== 12: ASK ====== -->
+  <section class="slide ask-slide">
+    <div class="slide-header">
+      <div class="slide-tag">What we want from you today</div>
+      <h2 class="ask-main">Co-sign and carry it forward.</h2>
+    </div>
+    <div class="slide-body">
+      <div class="ask-today-callout">
+        <div class="ask-today-label">Today</div>
+        <div class="ask-today-main">Buy-in on the overall approach.</div>
+      </div>
+      <div class="ask-next-steps">
+        <div class="ask-next-label">Next steps</div>
+        <ul class="ask-next-list">
+          <li><span class="ask-next-when">Today</span><span class="ask-next-what">CAPS coalition co-signs the framework &mdash; or surfaces feedback that feeds the next phase</span></li>
+          <li><span class="ask-next-when">Today &ndash; Jun 4</span><span class="ask-next-what">Feedback &amp; refinement &mdash; informal conversations from this room outward; integrate inputs from CAPS, ATC, and community partners</span></li>
+          <li><span class="ask-next-when">Late May</span><span class="ask-next-what">Build out the full <a href="proposal.html" target="_blank" rel="noopener noreferrer" style="color:var(--coral); border-bottom:1px solid var(--coral); text-decoration:none;">structured proposal</a> &mdash; expand owners, milestones, dependencies, and deliverable specs</span></li>
+          <li><span class="ask-next-when">Jun</span><span class="ask-next-what">Outreach &amp; circulation &mdash; share the plan with EFC, ACONA, ART, Altadena Rising, My Tribe Rise, Hands in the Soul, broader CAPS coalition, ATC, partners, and community</span></li>
+          <li><span class="ask-next-when">End of June</span><span class="ask-next-what">Working group publishes v1 delivery standard and block-captain toolkit</span></li>
+          <li><span class="ask-next-when">June</span><span class="ask-next-what">ATC Land Use Committee briefing &middot; first captain training cohort scheduled</span></li>
+          <li><span class="ask-next-when">Jul &ndash; Dec</span><span class="ask-next-what">PFA hearings: advocate for an EIFD earmark for engagement infrastructure</span></li>
+          <li><span class="ask-next-when">Fall 2026</span><span class="ask-next-what">Fair Oaks corridor pilot launches using the standard</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="slide-footer">
+      <div class="slide-footer-partners">Altadena Village &middot; CoLab &middot; Alting &middot; Altagether</div>
+      <div class="slide-footer-num">12 / 12</div>
+    </div>
+  </section>
+
+</div>
+
+<div class="nav">
+  <button class="nav-btn" onclick="prev()" aria-label="Previous slide">&lsaquo;</button>
+  <span class="nav-counter"><span id="cur">1</span> &nbsp;/&nbsp; <span id="tot">10</span></span>
+  <button class="nav-btn" onclick="next()" aria-label="Next slide">&rsaquo;</button>
+</div>
+<div class="hint">&larr; &rarr; arrows &middot; F fullscreen &middot; P print</div>
+
+<script>
+  let i = 0;
+  const slides = document.querySelectorAll('.slide');
+  const total = slides.length;
+  document.getElementById('tot').textContent = total;
+
+  function show(n) {
+    slides.forEach(s => s.classList.remove('active'));
+    slides[n].classList.add('active');
+    document.getElementById('cur').textContent = n + 1;
+  }
+  function next() { if (i < total - 1) { i++; show(i); } }
+  function prev() { if (i > 0) { i--; show(i); } }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); next(); }
+    if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); prev(); }
+    if (e.key === 'Home') { i = 0; show(0); }
+    if (e.key === 'End') { i = total - 1; show(i); }
+    if (e.key === 'f' || e.key === 'F') {
+      if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+      else document.exitFullscreen();
+    }
+    if (e.key === 'p' || e.key === 'P') { window.print(); }
+  });
+
+  show(0);
+</script>
+
+</body>
+</html>

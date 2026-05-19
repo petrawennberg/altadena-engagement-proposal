@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Altadena Community Engagement Proposal &mdash; v1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #FAF6F0;
+    --cream-deep: #F0EAE0;
+    --forest: #2E3D26;
+    --forest-soft: #5A6953;
+    --coral: #E5905A;
+    --coral-tint: #FBEBDC;
+    --sage: #7A8A6E;
+    --sage-tint: #E8EDE3;
+    --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--sans);
+    background: var(--cream);
+    color: var(--forest);
+    line-height: 1.55;
+    font-size: 17px;
+  }
+  .page {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 80px 40px 120px;
+  }
+
+  /* ===== HEADER ===== */
+  .doc-eyebrow {
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--coral);
+    font-weight: 700;
+    margin-bottom: 18px;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: 52px;
+    line-height: 1.05;
+    color: var(--forest);
+    font-weight: 400;
+    margin-bottom: 18px;
+  }
+  .doc-meta {
+    font-size: 14px;
+    color: var(--forest-soft);
+    margin-bottom: 14px;
+  }
+  .doc-meta strong { color: var(--forest); }
+  .doc-collab {
+    font-size: 15px;
+    color: var(--forest);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding-bottom: 32px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--sage-tint);
+  }
+
+  /* ===== TL;DR ===== */
+  .tldr {
+    background: var(--coral-tint);
+    border-left: 4px solid var(--coral);
+    padding: 22px 26px;
+    margin-bottom: 56px;
+    border-radius: 0 6px 6px 0;
+  }
+  .tldr-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--coral);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .tldr-body { font-size: 17px; line-height: 1.55; color: var(--forest); }
+
+  /* ===== SECTIONS ===== */
+  h2 {
+    font-family: var(--serif);
+    font-size: 32px;
+    line-height: 1.15;
+    color: var(--forest);
+    font-weight: 400;
+    margin: 56px 0 20px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid var(--coral);
+  }
+  h2 .num {
+    color: var(--coral);
+    margin-right: 14px;
+    font-weight: 400;
+  }
+  h3 {
+    font-family: var(--sans);
+    font-size: 20px;
+    color: var(--forest);
+    font-weight: 700;
+    margin: 32px 0 14px;
+    letter-spacing: 0.2px;
+  }
+  h4 {
+    font-family: var(--sans);
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--coral);
+    font-weight: 700;
+    margin: 24px 0 10px;
+  }
+  p { margin-bottom: 16px; color: var(--forest); }
+  p strong { color: var(--forest); font-weight: 700; }
+  em { color: var(--forest-soft); }
+
+  /* ===== LISTS ===== */
+  ul, ol { margin: 0 0 18px 24px; }
+  li { margin-bottom: 6px; }
+  ul.checklist {
+    list-style: none;
+    margin-left: 0;
+  }
+  ul.checklist li {
+    padding-left: 28px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  ul.checklist li::before {
+    content: "☐";
+    position: absolute; left: 0; top: 0;
+    color: var(--coral);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  /* ===== TABLES ===== */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0 28px;
+    font-size: 15px;
+  }
+  th, td {
+    text-align: left;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--sage-tint);
+    vertical-align: top;
+  }
+  th {
+    background: var(--sage-tint);
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--forest);
+  }
+  td strong { font-weight: 700; }
+  td code { font-family: monospace; font-size: 13px; background: var(--cream-deep); padding: 1px 6px; border-radius: 3px; }
+
+  /* ===== QUOTE ===== */
+  blockquote {
+    margin: 24px 0;
+    padding: 18px 28px;
+    border-left: 4px solid var(--coral);
+    font-family: var(--serif);
+    font-size: 22px;
+    line-height: 1.4;
+    color: var(--forest);
+    font-style: italic;
+  }
+  blockquote cite {
+    display: block;
+    margin-top: 14px;
+    font-family: var(--sans);
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--forest-soft);
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  /* ===== CODE BLOCK (ASCII diagram) ===== */
+  pre {
+    background: var(--cream-deep);
+    padding: 18px 22px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--forest);
+    margin: 18px 0;
+  }
+
+  /* ===== DELIVERABLE CARD ===== */
+  .deliverable {
+    background: white;
+    border-left: 4px solid var(--sage);
+    padding: 24px 28px;
+    margin: 20px 0 28px;
+    border-radius: 0 6px 6px 0;
+  }
+  .deliverable h3 { margin-top: 0; }
+  .deliverable .meta-row {
+    font-size: 14px;
+    color: var(--forest-soft);
+    margin-bottom: 12px;
+  }
+  .deliverable .meta-row strong { color: var(--forest); }
+  .user-story {
+    background: var(--sage-tint);
+    padding: 12px 18px;
+    border-radius: 4px;
+    margin-top: 14px;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--forest);
+  }
+  .user-story strong { font-style: normal; color: var(--coral); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; margin-right: 8px; font-weight: 700; }
+
+  /* ===== ASK BOX ===== */
+  .ask-box {
+    background: var(--forest);
+    color: var(--cream);
+    padding: 28px 32px;
+    border-radius: 8px;
+    margin: 24px 0;
+  }
+  .ask-box h3 { color: var(--cream); margin-top: 0; }
+  .ask-box p { color: var(--cream); }
+  .ask-box ul { margin-top: 8px; }
+  .ask-box li { color: var(--cream); }
+  .ask-box strong { color: var(--coral); }
+
+  /* ===== SIGNOFF ===== */
+  .signoff {
+    background: var(--coral-tint);
+    padding: 24px 28px;
+    border-radius: 6px;
+    margin-top: 40px;
+  }
+  .signoff h4 { margin-top: 0; color: var(--coral); }
+
+  /* ===== TOC ===== */
+  .toc {
+    background: var(--cream-deep);
+    padding: 22px 28px;
+    border-radius: 6px;
+    margin-bottom: 48px;
+  }
+  .toc-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--coral);
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .toc ol { margin: 0 0 0 22px; font-size: 15px; }
+  .toc li { margin-bottom: 4px; }
+  .toc a { color: var(--forest); text-decoration: none; }
+  .toc a:hover { color: var(--coral); text-decoration: underline; }
+
+  /* ===== LINKS ===== */
+  a { color: var(--coral); text-decoration: underline; }
+  a:hover { color: var(--forest); }
+
+  /* ===== FOOTER ===== */
+  .doc-footer {
+    margin-top: 80px;
+    padding-top: 32px;
+    border-top: 1px solid var(--sage-tint);
+    font-size: 12px;
+    color: var(--forest-soft);
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  .doc-footer a { color: var(--forest-soft); }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 640px) {
+    .page { padding: 40px 24px 80px; }
+    h1 { font-size: 36px; }
+    h2 { font-size: 26px; }
+  }
+
+  @media print {
+    body { background: white; font-size: 11pt; }
+    .page { padding: 0; max-width: none; }
+    .ask-box, .signoff, .tldr, .deliverable, pre, blockquote {
+      background: white !important;
+      border: 1px solid #888 !important;
+      color: black !important;
+      page-break-inside: avoid;
+    }
+    .ask-box * { color: black !important; }
+  }
+</style>
+</head>
+<body>
+<article class="page">
+
+  <div class="doc-eyebrow">Working Group Proposal &middot; v1 &middot; Work in Progress</div>
+  <h1>Altadena Community Engagement Proposal</h1>
+  <div class="doc-meta"><strong>For working group review &amp; CAPS buy-in</strong> &nbsp;·&nbsp; May 21, 2026</div>
+  <div class="doc-collab">A collaboration: <strong>Altadena Village · CoLab · Alting · Altagether</strong></div>
+
+  <!-- TOC -->
+  <nav class="toc">
+    <div class="toc-label">Contents</div>
+    <ol>
+      <li><a href="#problem">Problem</a></li>
+      <li><a href="#values">Values</a></li>
+      <li><a href="#proposal">Proposal — the five-step process</a></li>
+      <li><a href="#built">What gets built</a></li>
+      <li><a href="#who">Who does what</a></li>
+      <li><a href="#vocab">Vocabulary</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="#cost">Cost</a></li>
+      <li><a href="#metrics">Success criteria</a></li>
+      <li><a href="#ask">The ask</a></li>
+      <li><a href="#next">Next steps</a></li>
+      <li><a href="#appendix">Appendices</a></li>
+    </ol>
+  </nav>
+
+  <!-- TL;DR -->
+  <div class="tldr">
+    <div class="tldr-label">TL;DR</div>
+    <div class="tldr-body">
+      Altadena&rsquo;s commercial and public spaces are being rebuilt. There&rsquo;s no defined process for the community to shape what they become or see the impact of their input. We propose a five-step engagement process &mdash; anchored in proximity, supported by Altadena&rsquo;s 150+ block captains, with subject &amp; cause experts pulled in by relevance &mdash; and a small set of concrete tools to make it run. We&rsquo;re asking CAPS to <strong>co-sign this process</strong> so it becomes the default standard for every sponsor working in Altadena.
+    </div>
+  </div>
+
+  <!-- 1. PROBLEM -->
+  <h2 id="problem"><span class="num">1</span>Problem</h2>
+  <p>Altadena&rsquo;s rebuild is being shaped right now by:</p>
+  <ul>
+    <li><strong>6+ County agencies</strong> (Public Works, Regional Planning, Sanitation, Flood Control, Parks &amp; Rec, Fire) on uncoordinated schedules</li>
+    <li><strong>Utilities</strong> (Edison, SoCalGas, water companies) doing parallel infrastructure work</li>
+    <li><strong>PUSD</strong> making school-site decisions</li>
+    <li><strong>Private commercial developers</strong> rebuilding parcels</li>
+    <li><strong>County-hired consultants</strong> (Paradigm, Toole) producing master-plan documents</li>
+  </ul>
+  <p>Each runs its own engagement (or none). Residents are asked the same questions five times. Commercial owners with a shared vision can&rsquo;t get it onto the County&rsquo;s rollout. Subject &amp; cause experts and advocacy groups have no defined way to be pulled in. The PFA &mdash; the body that funds all this &mdash; has convened but has not held the meetings required by its own bylaws.</p>
+  <blockquote>
+    Right now recovery feels like attempting to have a sip of water from eight fire hoses that are going on full blast. It&rsquo;s impossible.
+    <cite>Mike Tuccillo · Altadena resident &amp; block captain · May 15, 2026</cite>
+  </blockquote>
+
+  <!-- 2. PROPOSAL -->
+  <h2 id="values"><span class="num">2</span>Values</h2>
+
+  <p>Eight principles guide every decision the working group makes &mdash; and every Sponsor that adopts this process commits to upholding them. They are the standard the project is measured against.</p>
+
+  <table>
+    <thead><tr><th>#</th><th>Value</th><th>What it means</th></tr></thead>
+    <tbody>
+      <tr><td>01</td><td><strong>Proximity</strong></td><td>Lived knowledge from being on the block carries weight. The closer to the place, the closer to the call. Community members carry context the County doesn&rsquo;t have &mdash; this process makes sure it lands.</td></tr>
+      <tr><td>02</td><td><strong>Local agency</strong></td><td>People affected have a defined path to shape what gets built &mdash; not just commented on. Commercial owners and residents move from being consulted to being decision partners.</td></tr>
+      <tr><td>03</td><td><strong>Co-creation</strong></td><td>Community is not consulted on a finished proposal &mdash; it shapes the question from the start. Sponsors and community members draft, revise, and decide together. Engagement is participatory architecture, not surveying.</td></tr>
+      <tr><td>04</td><td><strong>Coordination</strong></td><td>Multiple agencies, utilities, and developers converge in one process the community can follow &mdash; no more being asked the same question five times by five different sponsors on five different schedules.</td></tr>
+      <tr><td>05</td><td><strong>Transparency</strong></td><td>The process is visible end-to-end. Proposals, decisions, and decision rationales are public. Stakeholders can see at any moment what&rsquo;s been proposed, decided, or ruled out &mdash; and why. Private dialogue stays private; outcomes become public record.</td></tr>
+      <tr><td>06</td><td><strong>Accountability</strong></td><td>Every input is traceable to an outcome &mdash; or to an explicit decision not to act on it, with a reason. Promises don&rsquo;t expire silently.</td></tr>
+      <tr><td>07</td><td><strong>Access to conflict resolution</strong></td><td>Disagreement has a clear, low-cost path. When community input is rejected, when sponsors and stakeholders clash, when factions within the community disagree &mdash; there is a defined way to surface, hear, and resolve it inside the process. Conflict that has no channel routes to lawsuits, social media, or exit; this process refuses that default.</td></tr>
+      <tr><td>08</td><td><strong>Trauma-informed</strong></td><td>Engagement is designed for a community that has lost a lot. Pace, format, language, and tone honor the cost. Multi-modal delivery (text &middot; video &middot; walking tours &middot; languages &middot; ADA) is non-negotiable.</td></tr>
+    </tbody>
+  </table>
+
+  <h2 id="proposal"><span class="num">3</span>Proposal — the five-step process</h2>
+  <p>A <strong>defined process every project sponsor follows</strong> when working in Altadena. Five steps; the framework flows top-down (content) and bottom-up (consensus):</p>
+<pre>↓ CONTENT FLOWS DOWN                       ↑ CONSENSUS FLOWS UP
+   01 DEFINITION                              05 SHARED RECORD
+   02 TRAINING &amp; DISTRIBUTION                 04 AGGREGATION
+
+                       ○ DELIBERATION
+                       03 FACILITATING DISCUSSION</pre>
+  <table>
+    <thead><tr><th>#</th><th>Step</th><th>What happens</th></tr></thead>
+    <tbody>
+      <tr><td>01</td><td><strong>Definition</strong></td><td>Sponsor defines decision per community standards &mdash; problem, ask, geographic area, timeline, multi-modal delivery (text · video · Spanish · walking tours), expert access</td></tr>
+      <tr><td>02</td><td><strong>Training &amp; Distribution</strong></td><td>Materials route through Altagether&rsquo;s 150+ block captains and the commercial-owner network; subject &amp; cause experts pulled in by relevance</td></tr>
+      <tr><td>03</td><td><strong>Facilitating Discussion</strong></td><td>Block captains lead time-bound community deliberation at the block level</td></tr>
+      <tr><td>04</td><td><strong>Aggregation</strong></td><td>Block deliberations compile into a coherent record, organized by area and sponsor&rsquo;s categories. Private dialogue stays private; outcomes become public</td></tr>
+      <tr><td>05</td><td><strong>Shared record</strong></td><td>The record goes public &mdash; tracked on a dashboard, visible to all stakeholders</td></tr>
+    </tbody>
+  </table>
+
+  <!-- 3. WHAT GETS BUILT -->
+  <h2 id="built"><span class="num">4</span>What gets built (deliverables)</h2>
+  <p>Five tangible things produced in the first 9 months. Each has an owner and acceptance criteria.</p>
+
+  <div class="deliverable">
+    <h3>3.1 — Delivery standard (the spec)</h3>
+    <p>A single document describing what every sponsor must produce before community engagement begins.</p>
+    <div class="meta-row"><strong>Owner:</strong> Alting (Petra)</div>
+    <h4>Acceptance criteria</h4>
+    <ul>
+      <li>Specifies the six required elements (problem definition, ask, geographic area, timeline, expert access, multi-modal materials)</li>
+      <li>Co-signed by CAPS, ATC, and at least one County agency</li>
+      <li>Templated so any sponsor can fill it in &lt; 2 hours</li>
+    </ul>
+    <div class="user-story"><strong>User story</strong>As a sponsor, I want a clear spec to deliver to, so I know what community engagement looks like for my project.</div>
+  </div>
+
+  <div class="deliverable">
+    <h3>3.2 — Block-captain toolkit</h3>
+    <p>Pre-built facilitation guides, conversation prompts, and decision-record templates that captains can use without inventing the form each time.</p>
+    <div class="meta-row"><strong>Owner:</strong> CoLab (Megan)</div>
+    <h4>Acceptance criteria</h4>
+    <ul>
+      <li>Facilitation guide for a 1-hour block meeting (printable + digital)</li>
+      <li>Decision-record template that captures consensus, dissent, and unresolved questions</li>
+      <li>Plain-language brief template (translates any sponsor&rsquo;s delivery into a 1-page summary)</li>
+      <li>All materials available in English &amp; Spanish</li>
+    </ul>
+    <div class="user-story"><strong>User story</strong>As a block captain, I want pre-built guides, so I can run conversations without designing the form each time.</div>
+  </div>
+
+  <div class="deliverable">
+    <h3>3.3 — Decision-record system</h3>
+    <p>The structured artifact that captures what each block decided. Private dialogue, public outcome. Manual at first.</p>
+    <div class="meta-row"><strong>Owner:</strong> Alting (Petra) + CoLab (Gabriella)</div>
+    <h4>Acceptance criteria</h4>
+    <ul>
+      <li>Records use the standard template (block, date, sponsor, decision, dissent)</li>
+      <li>Stored in shared Google Drive folder per corridor</li>
+      <li>Aggregation by corridor / zone / sponsor category is straightforward (manual)</li>
+      <li>No individual attribution &mdash; outcomes public, dialogue private</li>
+    </ul>
+    <div class="user-story"><strong>User story</strong>As a resident, I want my block&rsquo;s input recorded in a way that&rsquo;s traceable, so I know my voice was heard.</div>
+  </div>
+
+  <div class="deliverable">
+    <h3>3.4 — Captain training program</h3>
+    <p>A short, repeatable training that prepares block captains to facilitate. On-call backup so no captain is alone.</p>
+    <div class="meta-row"><strong>Owner:</strong> CoLab (Megan + Gabriella) with Altagether (John)</div>
+    <h4>Acceptance criteria</h4>
+    <ul>
+      <li>2-hour training session: facilitation basics, trauma-informed engagement, decision-record use, Brown Act guardrails</li>
+      <li>Delivered to 30+ captains in the first cohort</li>
+      <li>On-call CoLab support during any live facilitation</li>
+      <li>Refresher loop every 6 months</li>
+    </ul>
+    <div class="user-story"><strong>User story</strong>As a new block captain, I want training and someone to call if it gets hard, so I&rsquo;m not on my own.</div>
+  </div>
+
+  <div class="deliverable">
+    <h3>3.5 — Cross-instrument dashboard</h3>
+    <p>A public-facing view showing what input each project is getting, across all sponsors. MVP = manually maintained; v2 = automated.</p>
+    <div class="meta-row"><strong>Owner:</strong> Alting (Petra) &mdash; design; build TBD</div>
+    <h4>Acceptance criteria — MVP</h4>
+    <ul>
+      <li>One row per active project across CIP, EIFD, WSGVAP, Paradigm, etc.</li>
+      <li>Status per project: engagement window, decisions submitted, agency response</li>
+      <li>Updated weekly during the Fair Oaks pilot</li>
+    </ul>
+    <h4>Acceptance criteria — v2 (post-funding)</h4>
+    <ul>
+      <li>Auto-pulled from decision-record system</li>
+      <li>Public URL, no login required for viewing</li>
+    </ul>
+    <div class="user-story"><strong>User story</strong>As a CAPS member or resident, I want to see what input each project is getting, so we can coordinate across agencies and track follow-through.</div>
+  </div>
+
+  <!-- 4. WHO DOES WHAT -->
+  <h2 id="who"><span class="num">5</span>Who does what</h2>
+  <table>
+    <thead><tr><th>Org</th><th>Role</th><th>Lead</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Altadena Village</strong></td><td>Commercial-corridor work, mobility, CIP/EIFD accuracy, planner relationships</td><td>Esther Kim</td></tr>
+      <tr><td><strong>CoLab</strong></td><td>Plain-language communication, captain training &amp; support, Brown Act monitoring, health equity</td><td>Megan Hinchliffe Gerig · Gabriella Caparco</td></tr>
+      <tr><td><strong>Alting</strong></td><td>Process design, decision-record system, dashboard, synthesis</td><td>Petra Wennberg</td></tr>
+      <tr><td><strong>Altagether</strong></td><td>Distribution and education through the 150+ block-captain network</td><td>John Mayo</td></tr>
+    </tbody>
+  </table>
+
+  <!-- 5. VOCABULARY -->
+  <h2 id="vocab"><span class="num">6</span>Vocabulary</h2>
+  <p>Used consistently throughout this proposal and the deck:</p>
+  <table>
+    <thead><tr><th>Term</th><th>Definition</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Sponsor</strong></td><td>The agency, utility, developer, or consultant paying for or initiating a project that affects Altadena</td></tr>
+      <tr><td><strong>PFA</strong></td><td>Public Financing Authority &mdash; the body administering EIFD/AWRIFD funds. The funding agency. Stands alone</td></tr>
+      <tr><td><strong>Community</strong></td><td>Residents, commercial owners, and anyone with a verified Altadena location</td></tr>
+      <tr><td><strong>Block captain</strong></td><td>An Altagether-trained resident facilitating deliberation on their block</td></tr>
+      <tr><td>Subject &amp; cause experts</td><td>Subject-matter expertise (architects, planners, mediators) AND cause-based representation (cultural advocacy groups, environmental orgs). Pulled in by <strong>relevance</strong>, not self-selection</td></tr>
+      <tr><td><strong>Partners</strong></td><td>Organizations that help in some way &mdash; CAPS Roundtable members, ARRC, ARLA, others</td></tr>
+      <tr><td><strong>Stakeholder</strong></td><td>Anyone with a vested interest in the process &mdash; community, sponsors, partners, experts</td></tr>
+    </tbody>
+  </table>
+
+  <!-- 6. TIMELINE -->
+  <h2 id="timeline"><span class="num">7</span>Timeline</h2>
+  <table>
+    <thead><tr><th>When</th><th>What</th><th>Lead</th></tr></thead>
+    <tbody>
+      <tr><td><strong>May 21, 2026</strong></td><td>CAPS presentation; ask for buy-in</td><td>Gabriella (presenting), Petra (in Stockholm)</td></tr>
+      <tr><td>May 21 &ndash; Jun 4</td><td>Feedback &amp; refinement window</td><td>All</td></tr>
+      <tr><td>Late May – Jun 30</td><td>Build out project plan &middot; open feedback &amp; refinement &middot; outreach &amp; circulation</td><td>Petra + working group</td></tr>
+      <tr><td>May 22 – Jun 30</td><td>ATC + Altagether ratification</td><td>Esther + John</td></tr>
+      <tr><td>Jun – Sep 2026</td><td>Delivery standard + captain toolkit built</td><td>Petra, Megan</td></tr>
+      <tr><td>Jul – Dec 2026</td><td>EIFD advocacy at PFA hearings</td><td>All</td></tr>
+      <tr><td>Mid-Aug – Nov 2026</td><td>Captain training cohorts (kick-off after Petra returns Aug 9)</td><td>Megan, Gabriella, John</td></tr>
+      <tr><td>Sep 2026 – Jun 2027</td><td>Fair Oaks pilot &mdash; hand-hacked live use case</td><td>All</td></tr>
+      <tr><td>Mar – Aug 2027</td><td>Dashboard MVP build</td><td>Petra (design lead)</td></tr>
+      <tr><td>Apr – Jul 2027</td><td>Iterate from pilot learnings</td><td>All</td></tr>
+      <tr><td>Jul 2027 →</td><td>Scale to additional corridors</td><td>All</td></tr>
+    </tbody>
+  </table>
+
+  <!-- 7. COST -->
+  <h2 id="cost"><span class="num">8</span>Cost</h2>
+  <p>Three pockets &mdash; honest about who pays for what:</p>
+  <table>
+    <thead><tr><th>Source</th><th>What it funds</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Sponsor budgets</strong></td><td>Each sponsor pays for its own delivery to the standard. Normal cost of public infrastructure or development work, not new spend</td></tr>
+      <tr><td><strong>EIFD via PFA</strong></td><td>A small fraction of the $2B financing layer funds the engagement infrastructure &mdash; delivery standard, captain toolkit, decision-record system, dashboard, mediation</td></tr>
+      <tr><td><strong>Local hires</strong></td><td>Community-side professionals (facilitators, mediators, legal, translators) &mdash; paid via EIFD + external grants (Annenberg, Emerson, Omidyar lanes). Local-first so dollars recirculate inside Altadena</td></tr>
+    </tbody>
+  </table>
+  <p><em>CAPS is not asked to fund any of this. CAPS buy-in is what moves EIFD toward an actual earmark.</em></p>
+
+  <!-- 8. SUCCESS CRITERIA -->
+  <h2 id="metrics"><span class="num">9</span>Success criteria</h2>
+  <p>How we&rsquo;ll know this worked:</p>
+  <table>
+    <thead><tr><th>Metric</th><th>Year-1 target</th></tr></thead>
+    <tbody>
+      <tr><td>Sponsors meeting the delivery standard</td><td>At least 3 (CIP + 2 others)</td></tr>
+      <tr><td>Active block captains using the toolkit</td><td>50+ captains, 30+ blocks</td></tr>
+      <tr><td>Decision records submitted</td><td>1 corridor (Fair Oaks) end-to-end</td></tr>
+      <tr><td>Dashboard MVP live</td><td>By Q3 2027</td></tr>
+      <tr><td>EIFD line item secured</td><td>Engagement-infrastructure earmark adopted at a PFA meeting</td></tr>
+      <tr><td>Community survey</td><td>&gt;60% of participating residents say their input shaped the outcome</td></tr>
+    </tbody>
+  </table>
+
+  <!-- 9. THE ASK -->
+  <h2 id="ask"><span class="num">10</span>The ask</h2>
+
+  <div class="ask-box">
+    <h3>For CAPS — Thursday May 21</h3>
+    <p><strong>Co-sign and carry it forward.</strong></p>
+    <p>We&rsquo;re not asking for approval &mdash; the working group is moving with or without buy-in. We&rsquo;re asking the coalition gathered at CAPS to take this up:</p>
+    <ul>
+      <li><strong>Co-sign</strong> the framework where it fits your org</li>
+      <li><strong>Carry it forward</strong> into your constituency and the conversations you&rsquo;re already in</li>
+      <li><strong>Convene the right voices</strong> when this lands at ATC and the PFA</li>
+    </ul>
+    <p style="margin-top:14px"><em>This is a coalition framework. It&rsquo;s stronger with your name on it.</em></p>
+  </div>
+
+  <h3>For ATC — Jun–Jul</h3>
+  <p>Land Use Committee ratification of the engagement standard as the structured channel for community input on rebuild projects.</p>
+
+  <h3>For Altagether — Jun–Jul</h3>
+  <p>Formal partnership confirming distribution and training through the 150+ block captains.</p>
+
+  <!-- 10. NEXT STEPS -->
+  <h2 id="next"><span class="num">11</span>Next steps</h2>
+
+  <h4>This week (May 17 – 20)</h4>
+  <ul class="checklist">
+    <li>Send proposal doc to working group (Petra, before Tue 5pm)</li>
+    <li>John Mayo confirms Altagether co-presenting</li>
+  </ul>
+
+  <h4>Today &mdash; May 21</h4>
+  <ul class="checklist">
+    <li>CAPS presentation &mdash; Gabriella presents; Petra in Stockholm</li>
+    <li>CAPS coalition co-signs the framework &mdash; or surfaces feedback that feeds the next phase</li>
+  </ul>
+
+  <h4>Today &ndash; Jun 4 (Feedback &amp; refinement window)</h4>
+  <ul class="checklist">
+    <li>Informal conversations from the CAPS room outward; mentions at adjacent meetings</li>
+    <li>Integrate inputs from CAPS, ATC, and community partners into v1</li>
+  </ul>
+
+  <h4>Late May</h4>
+  <ul class="checklist">
+    <li><strong>Build out the full structured proposal</strong> &mdash; expand owners, milestones, dependencies, and deliverable specs</li>
+  </ul>
+
+  <h4>June</h4>
+  <ul class="checklist">
+    <li><strong>Outreach &amp; circulation</strong> &mdash; share the plan with EFC, ACONA, ART, Altadena Rising, My Tribe Rise, Hands in the Soul, broader CAPS coalition, ATC, partners, and community</li>
+    <li>ATC Land Use Committee briefing &amp; ratification outreach</li>
+    <li>First captain training cohort scheduled (mid-Aug &mdash; after Petra returns Aug 9)</li>
+    <li>First draft of delivery standard (Petra) opens for review</li>
+    <li>First draft of captain toolkit (Megan) opens for review</li>
+    <li><strong>Ask LA County when PFA is reconvening</strong> &mdash; no 2026 dates posted; flag any meetings in Jul 13&ndash;Aug 9 (Petra in Sweden) for proxy attendance</li>
+  </ul>
+
+  <h4>By end of June</h4>
+  <ul class="checklist">
+    <li>Delivery standard v1 published</li>
+    <li>Captain toolkit v1 published</li>
+    <li>EIFD advocacy plan with PFA hearing calendar</li>
+  </ul>
+
+  <h4>Jul &ndash; Dec 2026</h4>
+  <ul class="checklist">
+    <li>PFA hearings: advocate for an EIFD earmark for engagement infrastructure</li>
+  </ul>
+
+  <h4>Fall 2026</h4>
+  <ul class="checklist">
+    <li>Fair Oaks corridor pilot launches using the standard</li>
+  </ul>
+
+  <!-- APPENDIX -->
+  <h2 id="appendix"><span class="num">+</span>Appendices</h2>
+
+  <h3>A — Partners (CAPS Roundtable coalition)</h3>
+  <p>Altadena Bloom · Altadena Chamber of Commerce · Altadena Collective · Altadena Green · Altadena Heritage · Altadena Town Council · ARRC · CCAR · Dena Hive · League of Women Voters · Neighbors Building a Greater Altadena · NOMA · PUSD School Board · Steadfast · WRTT</p>
+
+  <h3>B — Subject &amp; cause experts (worked through during pilot)</h3>
+  <table>
+    <thead><tr><th>Domain</th><th>Example orgs</th></tr></thead>
+    <tbody>
+      <tr><td>Architecture &amp; planning</td><td>NOMA, Altadena Village Partners, ArtCenter College of Design</td></tr>
+      <tr><td>Heritage &amp; cultural memory</td><td>Altadena Heritage, Black cultural advocacy groups (to identify)</td></tr>
+      <tr><td>Ecology &amp; watersheds</td><td>Altadena Green, TreePeople, Reimagining our Watersheds, AIR</td></tr>
+      <tr><td>Health &amp; equity</td><td>Denas Just Futures, Altadena CoLab</td></tr>
+      <tr><td>Civic &amp; governance</td><td>League of Women Voters, CCAR, ARRC</td></tr>
+      <tr><td>Business &amp; commerce</td><td>Altadena Chamber of Commerce, commercial-owner network</td></tr>
+    </tbody>
+  </table>
+
+  <h3>C — Sponsors expected to engage</h3>
+  <p><strong>LA County:</strong> Public Works (CIP) · Regional Planning (WSGVAP) · Sanitation · Flood Control · Fire · Parks &amp; Recreation</p>
+  <p><strong>Utilities:</strong> Edison/SCE · SoCalGas · Las Flores Water · Lincoln Avenue Water · Rubio Cañon Land &amp; Water</p>
+  <p><strong>Other:</strong> PUSD · Paradigm (Edison&rsquo;s outreach consultant) · Toole Design (County&rsquo;s planning consultant) · private commercial developers</p>
+
+  <h3>D — Scope (what&rsquo;s NOT in v1)</h3>
+  <table>
+    <thead><tr><th>Out of scope (for v1)</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td>Native mobile app for captains</td><td>Browser + Google Docs is enough for v1</td></tr>
+      <tr><td>AI transcription / summarization</td><td>Manual notes during pilot; automate later</td></tr>
+      <tr><td>Translation beyond English &amp; Spanish</td><td>Spanish covers ~90% of non-English speakers in Altadena; add as needed</td></tr>
+      <tr><td>Automated routing of input to agencies</td><td>Manual hand-off during pilot; automate after pattern stabilizes</td></tr>
+      <tr><td>Real-time public dashboard</td><td>MVP is weekly-updated; real-time = post-funding</td></tr>
+      <tr><td>Federation with other LA County rebuild work (e.g., Palisades)</td><td>Stay focused on Altadena; federation when pattern is proven</td></tr>
+    </tbody>
+  </table>
+
+  <!-- SIGNOFF -->
+  <div class="signoff">
+    <h4>Working group sign-off</h4>
+    <ul class="checklist">
+      <li>Esther Kim (Altadena Village)</li>
+      <li>Megan Hinchliffe Gerig (CoLab)</li>
+      <li>Gabriella Caparco (CoLab)</li>
+      <li>Petra Wennberg (Alting)</li>
+      <li>John Mayo (Altagether)</li>
+    </ul>
+    <p style="margin-top: 16px; font-size: 14px; color: var(--forest); font-weight: 500;">CAPS buy-in target: <strong>Thursday, May 21, 2026</strong></p>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="doc-footer">
+    Altadena Village · CoLab · Alting · Altagether<br>
+    <a href="./">View the deck</a> · <a href="https://github.com/petrawennberg/altadena-engagement-proposal">Repository</a>
+  </div>
+
+</article>
+</body>
+</html>
