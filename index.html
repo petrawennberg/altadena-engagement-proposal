@@ -525,6 +525,19 @@
     text-align: center;
   }
 
+  /* ============ SCOPE LIST (slide 5 step 01) ============ */
+  .scope-list {
+    list-style: none; margin: 8px 0 0; padding: 0;
+  }
+  .scope-list li {
+    font-size: var(--t-body); line-height: 1.5;
+    padding: 3px 0; color: var(--forest);
+  }
+  .scope-list li strong {
+    display: inline-block; width: 26px;
+    color: var(--coral); font-weight: 700;
+  }
+
   /* ============ MAP / IMAGE SLIDE ============ */
   .map-figure {
     flex-grow: 1;
@@ -1151,7 +1164,12 @@
               <div class="flow-num">01</div>
               <div>
                 <div class="flow-step-name"><span class="flow-step-arrow">&darr;</span>Definition</div>
-                <div class="flow-step-text">Project owners define their decision within one of three scopes &mdash; <strong>A</strong> Recovery Master Plan / CIP &middot; <strong>B</strong> Commercial corridors &middot; <strong>C</strong> Public right-of-way &amp; standards. Each defines problem, ask, area, timeline, and multi-modal delivery (text &middot; video &middot; walking tours &middot; languages &middot; ADA) with expert access.</div>
+                <div class="flow-step-text">Project owners define their decision within one of three scopes:</div>
+                <ol class="scope-list">
+                  <li><strong>A</strong>Recovery Master Plan / CIP</li>
+                  <li><strong>B</strong>Commercial corridors</li>
+                  <li><strong>C</strong>Public right-of-way &amp; standards</li>
+                </ol>
                 <div class="flow-who"><span class="flow-who-label">Who</span>County agencies &middot; utilities &middot; developers &middot; consultants</div>
               </div>
             </div>
