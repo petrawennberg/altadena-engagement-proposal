@@ -34,18 +34,18 @@
     --serif: 'DM Serif Display', Georgia, serif;
     --sans: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
 
-    /* TYPE SCALE — single source of truth across all slides (bumped ~10% for laptop legibility) */
-    --t-hero: 80px;         /* title slide + headline-only slides */
-    --t-h1: 54px;           /* every standard slide title */
-    --t-h2: 32px;           /* sub-headlines (rare) */
-    --t-numeral: 44px;      /* step / card numerals */
-    --t-numeral-sm: 34px;   /* secondary numerals */
-    --t-lead: 24px;         /* lead paragraphs, primary item titles */
-    --t-body: 20px;         /* standard body */
-    --t-body-sm: 16px;      /* supporting body / captions */
-    --t-label: 15px;        /* slide tags, section labels (caps + spaced) */
-    --t-label-sm: 13px;     /* small labels, sub-attribution */
-    --t-micro: 12px;        /* footer */
+    /* TYPE SCALE — fluid & responsive (clamp: min · viewport-relative · max). Reference width 1600px. */
+    --t-hero: clamp(48px, 5vw, 92px);          /* title slide + headline-only slides */
+    --t-h1: clamp(34px, 3.4vw, 62px);          /* every standard slide title */
+    --t-h2: clamp(22px, 2vw, 38px);            /* sub-headlines (rare) */
+    --t-numeral: clamp(30px, 2.75vw, 52px);    /* step / card numerals */
+    --t-numeral-sm: clamp(24px, 2.1vw, 40px);  /* secondary numerals */
+    --t-lead: clamp(18px, 1.5vw, 28px);        /* lead paragraphs, primary item titles */
+    --t-body: clamp(16px, 1.25vw, 23px);       /* standard body */
+    --t-body-sm: clamp(13px, 1vw, 18px);       /* supporting body / captions */
+    --t-label: clamp(12px, 0.94vw, 17px);      /* slide tags, section labels (caps + spaced) */
+    --t-label-sm: clamp(11px, 0.8vw, 15px);    /* small labels, sub-attribution */
+    --t-micro: clamp(10px, 0.75vw, 13px);      /* footer */
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { height: 100%; }
@@ -54,15 +54,8 @@
     background: var(--cream);
     color: var(--forest);
     overflow: hidden;
-    position: relative;
   }
-  /* Fixed 16:9 reference stage, scaled to fit any screen (see fitDeck() in script) */
-  .deck {
-    width: 1600px; height: 900px;
-    position: absolute; top: 50%; left: 50%;
-    transform: translate(-50%, -50%) scale(var(--deck-scale, 1));
-    transform-origin: center center;
-  }
+  .deck { width: 100vw; height: 100vh; position: relative; }
 
   /* ============ UNIFIED SLIDE TEMPLATE ============ */
   .slide {
@@ -857,7 +850,7 @@
   }
   .ask-today-main {
     font-family: var(--serif);
-    font-size: 30px; line-height: 1.15;
+    font-size: clamp(20px, 1.9vw, 34px); line-height: 1.15;
     color: var(--cream);
     flex: 1;
   }
@@ -873,13 +866,13 @@
   .title-slide .slide-footer { display: none; }  /* body already names it — no redundant footer */
   .title-symbol { margin-bottom: 30px; line-height: 0; }
   .title-main {
-    font-family: var(--serif); font-size: 104px; line-height: 0.98;
+    font-family: var(--serif); font-size: clamp(60px, 6.5vw, 120px); line-height: 0.98;
     color: var(--coral); margin-bottom: 22px;
     letter-spacing: -1px;
     max-width: 1300px;
   }
   .title-subtitle {
-    font-size: 34px; line-height: 1.3; color: var(--forest);
+    font-size: clamp(22px, 2.15vw, 40px); line-height: 1.3; color: var(--forest);
     font-weight: 700;
     margin-bottom: 64px; max-width: 1000px;
   }
@@ -1643,15 +1636,6 @@
     }
     if (e.key === 'p' || e.key === 'P') { window.print(); }
   });
-
-  // Scale the 1920×1080 stage to fit any screen
-  function fitDeck() {
-    const s = Math.min(window.innerWidth / 1600, window.innerHeight / 900);
-    document.documentElement.style.setProperty('--deck-scale', s);
-  }
-  window.addEventListener('resize', fitDeck);
-  document.addEventListener('fullscreenchange', fitDeck);
-  fitDeck();
 
   show(0);
 </script>
