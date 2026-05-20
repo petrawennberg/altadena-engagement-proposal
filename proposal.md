@@ -300,7 +300,7 @@ Altadena Bloom · Altadena Chamber of Commerce · Altadena Collective · Altaden
 ## Appendix C — Project owners expected to engage
 
 LA County: Public Works (CIP) · Regional Planning (WSGVAP) · Sanitation · Flood Control · Fire · Parks & Recreation
-Utilities: Edison/SCE · SoCalGas · Las Flores Water · Lincoln Avenue Water · Rubio Cañon Land & Water
+Utilities: Edison/SCE · SoCalGas · Las Flores Water · Lincoln Avenue Water · Rubio Cañon Land & Water · Foothill Municipal Water
 Other: PUSD · Paradigm (Edison’s outreach consultant) · Toole Design (County’s planning consultant) · private commercial developers
 
 ## Appendix D — Scope (what’s NOT in v1)
