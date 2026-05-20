@@ -227,9 +227,9 @@ How we’ll know this worked:
 
 **For CAPS — Thursday May 21:**
 
-**Co-sign and carry it forward.** We’re not asking for approval — the working group is moving with or without buy-in. We’re asking the coalition gathered at CAPS to take this up:
+**Community endorsement — carry it forward.** We’re not asking for approval — the working group is moving with or without buy-in. We’re asking the coalition gathered at CAPS to take this up:
 
-- **Co-sign** the framework where it fits your org
+- **Community endorsement** of the framework where it fits your org
 - **Carry it forward** into your constituency and the conversations you’re already in
 - **Convene the right voices** when this lands at ATC and the PFA
 
