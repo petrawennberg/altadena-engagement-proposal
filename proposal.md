@@ -276,14 +276,3 @@ Other: PUSD · Paradigm (Edison’s outreach consultant) · Toole Design (County
 | Real-time public dashboard | MVP is weekly-updated; real-time = post-funding |
 | Federation with other LA County rebuild work (e.g., Palisades) | Stay focused on Altadena; federation when pattern is proven |
 
----
-
-*Working group sign-off:*
-
-- [ ] Esther Kim (Altadena Village)
-- [ ] Megan Hinchliffe Gerig (CoLab)
-- [ ] Gabriella Caparco-Robertson (CoLab)
-- [ ] Petra Wennberg (Alting)
-- [ ] John Mayo (Altagether)
-
-*CAPS buy-in target: Thursday, May 21, 2026.*
