@@ -78,7 +78,7 @@
   /* ============ HEADER (top) ============ */
   .slide-header {
     flex-shrink: 0;
-    margin-bottom: 44px;
+    margin-bottom: 30px;
   }
   .slide-tag {
     font-size: var(--t-label); letter-spacing: 4px; text-transform: uppercase;
@@ -95,13 +95,20 @@
     margin-top: 20px; max-width: 1200px;
   }
 
-  /* ============ BODY (top-aligned) ============ */
+  /* ============ BODY (top-aligned; scrolls if content overflows, footer stays pinned) ============ */
   .slide-body {
     flex-grow: 1;
     display: flex; flex-direction: column;
     justify-content: flex-start;
     min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: var(--sage) transparent;
   }
+  .slide-body::-webkit-scrollbar { width: 8px; }
+  .slide-body::-webkit-scrollbar-thumb { background: var(--sage); border-radius: 4px; }
+  .slide-body::-webkit-scrollbar-track { background: transparent; }
 
   /* ============ FOOTER (bottom, consistent) ============ */
   .slide-footer {
