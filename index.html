@@ -54,14 +54,13 @@
     background: var(--forest);
     color: var(--forest);
     overflow: hidden;
-    display: flex; align-items: center; justify-content: center;
+    position: relative;
   }
   /* Fixed 16:9 reference stage, scaled to fit any screen (see fitDeck() in script) */
   .deck {
     width: 1920px; height: 1080px;
-    position: relative;
-    flex: none;
-    transform: scale(var(--deck-scale, 1));
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%) scale(var(--deck-scale, 1));
     transform-origin: center center;
   }
 
@@ -923,19 +922,21 @@
     z-index: 100;
   }
   .nav-btn {
-    background: var(--forest); color: var(--cream);
+    background: var(--coral); color: var(--cream);
     border: none; width: 32px; height: 32px;
     font-family: var(--sans); font-size: 14px;
     cursor: pointer; border-radius: 50%;
-    transition: background 0.2s;
-    opacity: 0.7;
+    transition: background 0.2s, opacity 0.2s;
+    opacity: 0.9;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
   }
-  .nav-btn:hover { background: var(--coral); opacity: 1; }
+  .nav-btn:hover { background: var(--forest); opacity: 1; }
   .nav-counter {
-    background: rgba(46, 61, 38, 0.7); color: var(--cream);
+    background: var(--coral); color: var(--cream);
     padding: 6px 12px; border-radius: 16px;
     font-size: 11px; letter-spacing: 1px; font-weight: 500;
-    opacity: 0.7;
+    opacity: 0.9;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
   }
   .hint {
     position: fixed; bottom: 22px; left: 24px;
@@ -946,7 +947,7 @@
   /* ============ PRINT ============ */
   @media print {
     body { background: white; overflow: visible; display: block; }
-    .deck { width: auto; height: auto; transform: none; }
+    .deck { width: auto; height: auto; transform: none; position: static; top: auto; left: auto; }
     .slide { position: relative; inset: auto; display: flex !important; page-break-after: always; height: 100vh; }
     .nav, .hint { display: none !important; }
   }
