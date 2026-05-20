@@ -34,18 +34,18 @@
     --serif: 'DM Serif Display', Georgia, serif;
     --sans: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
 
-    /* TYPE SCALE — fluid & responsive (clamp: min · viewport-relative · max). Bounded so big screens stay moderate. */
-    --t-hero: clamp(40px, 3.1vw, 64px);        /* title slide + headline-only slides */
-    --t-h1: clamp(26px, 2vw, 42px);            /* every standard slide title */
-    --t-h2: clamp(18px, 1.4vw, 26px);          /* sub-headlines (rare) */
-    --t-numeral: clamp(22px, 1.7vw, 36px);     /* step / card numerals */
-    --t-numeral-sm: clamp(18px, 1.35vw, 28px); /* secondary numerals */
-    --t-lead: clamp(15px, 0.95vw, 20px);       /* lead paragraphs, primary item titles */
-    --t-body: clamp(13px, 0.72vw, 16px);       /* standard body */
-    --t-body-sm: clamp(11px, 0.6vw, 14px);     /* supporting body / captions */
-    --t-label: clamp(10px, 0.56vw, 13px);      /* slide tags, section labels (caps + spaced) */
-    --t-label-sm: clamp(9px, 0.5vw, 11px);     /* small labels, sub-attribution */
-    --t-micro: clamp(8px, 0.45vw, 10px);       /* footer */
+    /* TYPE SCALE — fixed px, tuned to the 1600×900 stage (which scales uniformly to fill any screen). */
+    --t-hero: 74px;         /* title slide + headline-only slides */
+    --t-h1: 48px;           /* every standard slide title */
+    --t-h2: 30px;           /* sub-headlines (rare) */
+    --t-numeral: 42px;      /* step / card numerals */
+    --t-numeral-sm: 32px;   /* secondary numerals */
+    --t-lead: 22px;         /* lead paragraphs, primary item titles */
+    --t-body: 18px;         /* standard body */
+    --t-body-sm: 15px;      /* supporting body / captions */
+    --t-label: 14px;        /* slide tags, section labels (caps + spaced) */
+    --t-label-sm: 12px;     /* small labels, sub-attribution */
+    --t-micro: 11px;        /* footer */
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { height: 100%; }
@@ -54,8 +54,15 @@
     background: var(--cream);
     color: var(--forest);
     overflow: hidden;
+    position: relative;
   }
-  .deck { width: 100vw; height: 100vh; position: relative; }
+  /* Fixed 16:9 stage scaled uniformly to fill the screen (see fitDeck() in script) */
+  .deck {
+    width: 1600px; height: 900px;
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%) scale(var(--deck-scale, 1));
+    transform-origin: center center;
+  }
 
   /* ============ UNIFIED SLIDE TEMPLATE ============ */
   .slide {
@@ -850,7 +857,7 @@
   }
   .ask-today-main {
     font-family: var(--serif);
-    font-size: clamp(17px, 1.25vw, 23px); line-height: 1.15;
+    font-size: 30px; line-height: 1.15;
     color: var(--cream);
     flex: 1;
   }
@@ -866,13 +873,13 @@
   .title-slide .slide-footer { display: none; }  /* body already names it — no redundant footer */
   .title-symbol { margin-bottom: 30px; line-height: 0; }
   .title-main {
-    font-family: var(--serif); font-size: clamp(44px, 3.7vw, 74px); line-height: 0.98;
+    font-family: var(--serif); font-size: 96px; line-height: 0.98;
     color: var(--coral); margin-bottom: 22px;
     letter-spacing: -1px;
     max-width: 1300px;
   }
   .title-subtitle {
-    font-size: clamp(17px, 1.35vw, 24px); line-height: 1.3; color: var(--forest);
+    font-size: 32px; line-height: 1.3; color: var(--forest);
     font-weight: 700;
     margin-bottom: 64px; max-width: 1000px;
   }
@@ -1636,6 +1643,15 @@
     }
     if (e.key === 'p' || e.key === 'P') { window.print(); }
   });
+
+  // Scale the 1600×900 stage uniformly to fill the screen (preserves 16:9, letterboxes)
+  function fitDeck() {
+    const s = Math.min(window.innerWidth / 1600, window.innerHeight / 900);
+    document.documentElement.style.setProperty('--deck-scale', s);
+  }
+  window.addEventListener('resize', fitDeck);
+  document.addEventListener('fullscreenchange', () => setTimeout(fitDeck, 60));
+  fitDeck();
 
   show(0);
 </script>
