@@ -54,8 +54,16 @@
     background: var(--forest);
     color: var(--forest);
     overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
   }
-  .deck { width: 100vw; height: 100vh; position: relative; }
+  /* Fixed 16:9 reference stage, scaled to fit any screen (see fitDeck() in script) */
+  .deck {
+    width: 1920px; height: 1080px;
+    position: relative;
+    flex: none;
+    transform: scale(var(--deck-scale, 1));
+    transform-origin: center center;
+  }
 
   /* ============ UNIFIED SLIDE TEMPLATE ============ */
   .slide {
@@ -937,8 +945,8 @@
 
   /* ============ PRINT ============ */
   @media print {
-    body { background: white; overflow: visible; }
-    .deck { width: auto; height: auto; }
+    body { background: white; overflow: visible; display: block; }
+    .deck { width: auto; height: auto; transform: none; }
     .slide { position: relative; inset: auto; display: flex !important; page-break-after: always; height: 100vh; }
     .nav, .hint { display: none !important; }
   }
@@ -1627,6 +1635,15 @@
     }
     if (e.key === 'p' || e.key === 'P') { window.print(); }
   });
+
+  // Scale the 1920×1080 stage to fit any screen
+  function fitDeck() {
+    const s = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
+    document.documentElement.style.setProperty('--deck-scale', s);
+  }
+  window.addEventListener('resize', fitDeck);
+  document.addEventListener('fullscreenchange', fitDeck);
+  fitDeck();
 
   show(0);
 </script>
