@@ -235,12 +235,6 @@ How we’ll know this worked:
 
 *This is a coalition framework. It’s stronger with your name on it.*
 
-**For ATC — Jun–Jul:**
-- Land Use Committee ratification of the engagement guidelines as the structured channel for community input on rebuild projects
-
-**For Altagether — Jun–Jul:**
-- Formal partnership confirming distribution and training through the 150+ block captains
-
 ---
 
 ## Appendix A — Partners (CAPS Roundtable coalition)
