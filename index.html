@@ -58,7 +58,7 @@
   }
   /* Fixed 16:9 reference stage, scaled to fit any screen (see fitDeck() in script) */
   .deck {
-    width: 1920px; height: 1080px;
+    width: 1600px; height: 900px;
     position: absolute; top: 50%; left: 50%;
     transform: translate(-50%, -50%) scale(var(--deck-scale, 1));
     transform-origin: center center;
@@ -1639,7 +1639,7 @@
 
   // Scale the 1920×1080 stage to fit any screen
   function fitDeck() {
-    const s = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
+    const s = Math.min(window.innerWidth / 1600, window.innerHeight / 900);
     document.documentElement.style.setProperty('--deck-scale', s);
   }
   window.addEventListener('resize', fitDeck);
